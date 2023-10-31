@@ -1,0 +1,51 @@
+//accourdion
+
+
+.item {
+    height: 100px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 80vw;
+    height: auto;
+    margin-left: 10vw;
+}
+
+#pin1,
+#pin2 {
+    width: 100%;
+}
+
+#pin1 {
+    height: calc(100vh - 100px * 2);
+}
+
+h1 {
+    height: 100px;
+}
+
+#pin1 h1 {
+    background-color: green;
+}
+
+#pin2 h1 {
+    background-color: red;
+}
+
+#pin3 h1 {
+    background-color: steelblue;
+}
+
+.spacer {
+    height: 50vh;
+    background: lightgrey;
+}
+
+.spacer.top {
+    height: calc(100vh - 100px);
+}
+
+.spacer.bot {
+    height: 100vh;
+}
