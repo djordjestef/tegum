@@ -34,7 +34,7 @@ $(function () {
     console.log('clicked');
     // Toggle the dropdown without preventing default
     $(this).parent().find('ul').first().toggle(300);
-    $(this).parent('li').addClass('opened');
+    $(this).parent('li').toggleClass('opened');
     $(this).parent().siblings().find('ul').hide(200);
     $(this).parent().siblings('li').removeClass('opened');
     $(this).siblings().find('li').removeClass('opened');
