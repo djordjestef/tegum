@@ -31,7 +31,6 @@ $(document).ready(function () {
 $(function () {
   //   $('li.dropdown > a').on('click', function (event) {
   $(document).on('click', 'li.dropdown > a', function (event) {
-    console.log('clicked');
     // Toggle the dropdown without preventing default
     $(this).parent().find('ul').first().toggle(300);
     $(this).parent('li').toggleClass('opened');

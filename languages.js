@@ -9,13 +9,13 @@ const jsonSR = {
 $('.en').click(function () {
   console.log('clicked EN');
   localStorage.setItem('lang', 'en');
-  location.reload();
+  // location.reload();
 });
 
 $('.sr').click(function () {
   console.log('clicked SR');
   localStorage.setItem('lang', 'sr');
-  location.reload();
+  // location.reload();
 });
 
 $(document).ready(function () {

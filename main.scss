@@ -3,12 +3,12 @@
 .item {
     height: 100px;
     overflow: hidden;
-}
 
-.item img {
-    width: 80vw;
-    height: auto;
-    margin-left: 10vw;
+    & img {
+        width: 80vw;
+        height: auto;
+        margin-left: 10vw;
+    }
 }
 
 #pin1,
@@ -18,11 +18,11 @@
 
 #pin1 {
     height: calc(100vh - 100px * 2);
-}
 
-#pin1 h1 {
-    background-color: green;
-    height: 100px;
+    & h1 {
+        background-color: green;
+        height: 100px;
+    }
 }
 
 #pin2 h1 {
@@ -45,57 +45,6 @@
 }
 
 //navbar
-.language_holder {
-    display: inline-block;
-    float: right;
-}
-.main-navigation ul {
-    background-color: white;
-    // border-top: 3px solid dodgerblue;
-    list-style: none;
-    margin-bottom: 0;
-    display: inline-block;
-}
-.main-navigation ul li {
-    display: inline-block;
-}
-.main-navigation ul li a {
-    display: block;
-    color: gray;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-// .top-nav ul li a:hover {
-//     // background-color: dodgerblue;
-// }
-
-/* Dropdown */
-li.dropdown {
-    position: relative;
-}
-ul.dropdown-menu {
-    position: absolute;
-    min-width: 120px;
-    background-color: #fff !important;
-}
-ul.dropdown-menu li {
-    display: block !important;
-    white-space: nowrap;
-}
-
-/* Sub Dropdown */
-ul.dropdown-menu ul.dropdown-menu {
-    left: 100%;
-    top: 0;
-}
-
-/* Display none by Default */
-ul.dropdown-menu {
-    display: none;
-}
-.opened {
-    background: #fff;
-}
 
 .main-navigation {
     position: fixed;
@@ -109,6 +58,56 @@ ul.dropdown-menu {
     -o-transition: 0.25s ease-out;
     transition: 0.25s ease-out;
     z-index: 100000;
+
+    .opened {
+        background: #fff;
+    }
+
+    .language_holder {
+        display: inline-block;
+        float: right;
+    }
+
+    & ul {
+        background-color: white;
+        list-style: none;
+        margin-bottom: 0;
+        display: inline-block;
+
+        &.dropdown-menu &.dropdown-menu {
+            left: 100%;
+            top: 0;
+        }
+
+        &.dropdown-menu {
+            display: none;
+        }
+
+        &.dropdown-menu {
+            position: absolute;
+            min-width: 120px;
+            background-color: #fff !important;
+        }
+        &.dropdown-menu li {
+            display: block !important;
+            white-space: nowrap;
+        }
+
+        & li {
+            display: inline-block;
+
+            &.dropdown {
+                position: relative;
+            }
+
+            & a {
+                display: block;
+                color: gray;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .main-navigation.nav-up {

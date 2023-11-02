@@ -2,7 +2,6 @@
   height: 100px;
   overflow: hidden;
 }
-
 .item img {
   width: 80vw;
   height: auto;
@@ -17,7 +16,6 @@
 #pin1 {
   height: calc(100vh - 200px);
 }
-
 #pin1 h1 {
   background-color: green;
   height: 100px;
@@ -42,60 +40,6 @@
   height: 100vh;
 }
 
-.language_holder {
-  display: inline-block;
-  float: right;
-}
-
-.main-navigation ul {
-  background-color: white;
-  list-style: none;
-  margin-bottom: 0;
-  display: inline-block;
-}
-
-.main-navigation ul li {
-  display: inline-block;
-}
-
-.main-navigation ul li a {
-  display: block;
-  color: gray;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* Dropdown */
-li.dropdown {
-  position: relative;
-}
-
-ul.dropdown-menu {
-  position: absolute;
-  min-width: 120px;
-  background-color: #fff !important;
-}
-
-ul.dropdown-menu li {
-  display: block !important;
-  white-space: nowrap;
-}
-
-/* Sub Dropdown */
-ul.dropdown-menu ul.dropdown-menu {
-  left: 100%;
-  top: 0;
-}
-
-/* Display none by Default */
-ul.dropdown-menu {
-  display: none;
-}
-
-.opened {
-  background: #fff;
-}
-
 .main-navigation {
   position: fixed;
   top: 0;
@@ -105,6 +49,47 @@ ul.dropdown-menu {
   background: #fff;
   transition: 0.25s ease-out;
   z-index: 100000;
+}
+.main-navigation .opened {
+  background: #fff;
+}
+.main-navigation .language_holder {
+  display: inline-block;
+  float: right;
+}
+.main-navigation ul {
+  background-color: white;
+  list-style: none;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.main-navigation ul.dropdown-menu .main-navigation ul.dropdown-menu {
+  left: 100%;
+  top: 0;
+}
+.main-navigation ul.dropdown-menu {
+  display: none;
+}
+.main-navigation ul.dropdown-menu {
+  position: absolute;
+  min-width: 120px;
+  background-color: #fff !important;
+}
+.main-navigation ul.dropdown-menu li {
+  display: block !important;
+  white-space: nowrap;
+}
+.main-navigation ul li {
+  display: inline-block;
+}
+.main-navigation ul li.dropdown {
+  position: relative;
+}
+.main-navigation ul li a {
+  display: block;
+  color: gray;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 .main-navigation.nav-up {
