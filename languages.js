@@ -1,21 +1,23 @@
 const jsonEN = {
   storage_sub: ' We offer what everyone seems to be missing — space.',
+  about_lang: 'About',
 };
 
 const jsonSR = {
   storage_sub: 'Mi imamo ono što svima nedostaje - prostor.',
+  about_lang: 'o tome',
 };
 
-$('.en').click(function () {
+$(document).on('click', '.en', function (event) {
   console.log('clicked EN');
   localStorage.setItem('lang', 'en');
-  // location.reload();
+  setTimeout(() => location.reload(), 100);
 });
 
-$('.sr').click(function () {
+$(document).on('click', '.sr', function (event) {
   console.log('clicked SR');
   localStorage.setItem('lang', 'sr');
-  // location.reload();
+  setTimeout(() => location.reload(), 100);
 });
 
 $(document).ready(function () {
@@ -23,21 +25,20 @@ $(document).ready(function () {
 
   if (localStorage.getItem('lang') === null) {
     localStorage.setItem('lang', 'en');
-
     $('.sr').addClass('active');
-    location.reload();
+    setTimeout(() => location.reload(), 100);
   } else {
-    if (localStorage.getItem('lang') === 'sr') {
-      $('.en').addClass('active');
+    const lang = localStorage.getItem('lang');
+    const jsonData = lang === 'sr' ? jsonSR : jsonEN;
+    const activeButton = lang === 'sr' ? '.en' : '.sr';
+    setTimeout(() => {
+      $(activeButton).addClass('active');
+    }, 300);
 
-      for (let key in jsonSR) {
-        document.querySelector('.' + key).textContent = jsonSR[key];
-      }
-    } else {
-      $('.sr').addClass('active');
-
-      for (let key in jsonEN) {
-        document.querySelector('.' + key).textContent = jsonEN[key];
+    for (let key in jsonData) {
+      const element = document.querySelector('.' + key);
+      if (element) {
+        element.textContent = jsonData[key];
       }
     }
   }

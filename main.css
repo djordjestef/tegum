@@ -57,6 +57,20 @@
   display: inline-block;
   float: right;
 }
+.main-navigation .language_holder .sr {
+  all: unset;
+  display: none;
+}
+.main-navigation .language_holder .sr.active {
+  display: inline-block;
+}
+.main-navigation .language_holder .en {
+  all: unset;
+  display: none;
+}
+.main-navigation .language_holder .en.active {
+  display: inline-block;
+}
 .main-navigation ul {
   background-color: white;
   list-style: none;
@@ -69,11 +83,11 @@
 }
 .main-navigation ul.dropdown-menu {
   display: none;
-}
-.main-navigation ul.dropdown-menu {
-  position: absolute;
+  position: fixed;
   min-width: 120px;
   background-color: #fff !important;
+  width: 100%;
+  left: 0;
 }
 .main-navigation ul.dropdown-menu li {
   display: block !important;

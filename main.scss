@@ -66,6 +66,24 @@
     .language_holder {
         display: inline-block;
         float: right;
+
+        .sr {
+            all: unset;
+            display: none;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+
+        .en {
+            all: unset;
+            display: none;
+
+            &.active {
+                display: inline-block;
+            }
+        }
     }
 
     & ul {
@@ -80,14 +98,17 @@
         }
 
         &.dropdown-menu {
-            display: none;
         }
 
         &.dropdown-menu {
-            position: absolute;
+            display: none;
+            position: fixed;
             min-width: 120px;
             background-color: #fff !important;
+            width: 100%;
+            left: 0;
         }
+
         &.dropdown-menu li {
             display: block !important;
             white-space: nowrap;

@@ -29,12 +29,35 @@ $(document).ready(function () {
 
 //navbar
 $(function () {
-  //   $('li.dropdown > a').on('click', function (event) {
   $(document).on('click', 'li.dropdown > a', function (event) {
-    // Toggle the dropdown without preventing default
-    $(this).parent().find('ul').first().toggle(300);
+    // $(this).parent().find('ul').first().toggle();
+    var $ul = $(this).parent().find('ul').first();
+
+    var isOpened = $ul.css('display') === 'block';
+    if (!isOpened) {
+      $ul.css({ opacity: 0, display: 'block' }).stop().animate(
+        {
+          opacity: 1,
+        },
+        {
+          duration: 200,
+        },
+      );
+    } else {
+      $ul.stop().animate(
+        {
+          opacity: 0,
+        },
+        {
+          duration: 200,
+          complete: function () {
+            $ul.css('display', 'none');
+          },
+        },
+      );
+    }
     $(this).parent('li').toggleClass('opened');
-    $(this).parent().siblings().find('ul').hide(200);
+    $(this).parent().siblings().find('ul').hide(100);
     $(this).parent().siblings('li').removeClass('opened');
     $(this).siblings().find('li').removeClass('opened');
 
@@ -90,4 +113,12 @@ $(function () {
   };
 
   pageScroll();
+
+  $('section').click(function () {
+    $('.dropdown-menu').hide();
+  });
+
+  $('.dropdown-menu').click(function (event) {
+    event.stopPropagation();
+  });
 });
