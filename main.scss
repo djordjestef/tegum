@@ -59,6 +59,30 @@
     transition: 0.25s ease-out;
     z-index: 100000;
 
+    .flex-container {
+        display: flex;
+        
+
+        .flex-item {
+            flex-grow: 2;
+            position: relative;
+            width: 50%;
+
+            img {
+                // width: 500px;
+                // position: fixed;
+                // right: 0;
+            }
+        }
+    
+    }
+
+    a {
+        &.active {
+            color: rgb(255, 123, 0);
+        }
+    }
+
     .opened {
         background: #fff;
     }
@@ -97,8 +121,8 @@
             top: 0;
         }
 
-        &.dropdown-menu {
-        }
+        // &.dropdown-menu {
+        // }
 
         &.dropdown-menu {
             display: none;

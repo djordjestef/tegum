@@ -9,13 +9,11 @@ const jsonSR = {
 };
 
 $(document).on('click', '.en', function (event) {
-  console.log('clicked EN');
   localStorage.setItem('lang', 'en');
   setTimeout(() => location.reload(), 100);
 });
 
 $(document).on('click', '.sr', function (event) {
-  console.log('clicked SR');
   localStorage.setItem('lang', 'sr');
   setTimeout(() => location.reload(), 100);
 });

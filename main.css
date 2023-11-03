@@ -50,6 +50,17 @@
   transition: 0.25s ease-out;
   z-index: 100000;
 }
+.main-navigation .flex-container {
+  display: flex;
+}
+.main-navigation .flex-container .flex-item {
+  flex-grow: 2;
+  position: relative;
+  width: 50%;
+}
+.main-navigation a.active {
+  color: rgb(255, 123, 0);
+}
 .main-navigation .opened {
   background: #fff;
 }

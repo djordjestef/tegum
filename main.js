@@ -30,7 +30,6 @@ $(document).ready(function () {
 //navbar
 $(function () {
   $(document).on('click', 'li.dropdown > a', function (event) {
-    // $(this).parent().find('ul').first().toggle();
     var $ul = $(this).parent().find('ul').first();
 
     var isOpened = $ul.css('display') === 'block';
@@ -51,13 +50,13 @@ $(function () {
         {
           duration: 200,
           complete: function () {
-            $ul.css('display', 'none');
+            $ul.css({ display: 'none', opacity: 1 });
           },
         },
       );
     }
     $(this).parent('li').toggleClass('opened');
-    $(this).parent().siblings().find('ul').hide(100);
+    $(this).parent().siblings().find('ul').hide(1);
     $(this).parent().siblings('li').removeClass('opened');
     $(this).siblings().find('li').removeClass('opened');
 
@@ -115,7 +114,20 @@ $(function () {
   pageScroll();
 
   $('section').click(function () {
-    $('.dropdown-menu').hide();
+    $('.nav_arrow').css({ transform: 'rotate(' + 0 + 'deg)' });
+    $('.dropdown-menu')
+      .stop()
+      .animate(
+        {
+          opacity: 0,
+        },
+        {
+          duration: 200,
+          complete: function () {
+            $(this).css('display', 'none');
+          },
+        },
+      );
   });
 
   $('.dropdown-menu').click(function (event) {
