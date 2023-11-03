@@ -1,47 +1,82 @@
 //accourdion
 
-.item {
-    height: 100px;
-    overflow: hidden;
-
-    & img {
-        width: 80vw;
-        height: auto;
-        margin-left: 10vw;
-    }
-}
-
-#pin1,
-#pin2 {
-    width: 100%;
-}
-
-#pin1 {
-    height: calc(100vh - 100px * 2);
-
-    & h1 {
-        background-color: green;
-        height: 100px;
-    }
-}
-
-#pin2 h1 {
-    background-color: red;
-    height: 100px;
-}
-
-#pin3 h1 {
-    background-color: steelblue;
-    height: 100px;
-}
-
 .spacer {
     height: 50vh;
-    background: lightgrey;
+    background: #fff;
 }
 
 .spacer.bot {
     height: 100vh;
+}
+
+.wrapper {
+    .acc_container {
+        .item {
+            height: 100px;
+            overflow: hidden;
+
+            & img {
+                width: 80vw;
+                height: auto;
+                margin-left: 10vw;
+            }
+
+            &_img_1 {
+                display: none;
+            }
+
+            .hover_1:hover &_img_1 {
+                display: block;
+            }
+
+            &_img_2 {
+                display: none;
+            }
+
+            .hover_2:hover &_img_2 {
+                display: block;
+            }
+
+            &_img_3 {
+                display: none;
+            }
+
+            .hover_3:hover &_img_3 {
+                display: block;
+            }
+        }
+
+        #pin1,
+        #pin2 {
+            width: 100%;
+        }
+
+        #pin1 {
+            height: calc(100vh - 100px * 2);
+
+            & h1 {
+                background-color: #fec506;
+                height: 100px;
+                border-bottom: 2px solid #000;
+            }
+        }
+
+        #pin2 {
+            h1 {
+                background-color: #fec506;
+                height: 100px;
+                border-bottom: 2px solid #000;
+            }
+        }
+
+        #pin3 {
+            h1 {
+                background-color: #fec506;
+                height: 100px;
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
 }
 
 //navbar
@@ -59,23 +94,22 @@
     transition: 0.25s ease-out;
     z-index: 100000;
 
-    .flex-container {
-        display: flex;
-        
+    // .flex-container {
+    //     display: flex;
 
-        .flex-item {
-            flex-grow: 2;
-            position: relative;
-            width: 50%;
+    //     .flex-item {
+    //         flex-grow: 2;
+    //         position: relative;
+    //         width: 50%;
 
-            img {
-                // width: 500px;
-                // position: fixed;
-                // right: 0;
-            }
-        }
-    
-    }
+    //         img {
+    //             // width: 500px;
+    //             // position: fixed;
+    //             // right: 0;
+    //         }
+    //     }
+
+    // }
 
     a {
         &.active {
