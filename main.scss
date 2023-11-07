@@ -16,7 +16,7 @@
             overflow: hidden;
 
             & img {
-                width: 80vw;
+                width: 100%;
                 height: auto;
                 margin-left: 10vw;
             }
@@ -165,6 +165,10 @@
             background-color: #fff !important;
             width: 100%;
             left: 0;
+
+            img {
+                height: 500px;
+            }
         }
 
         &.dropdown-menu li {
