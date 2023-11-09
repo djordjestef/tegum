@@ -1,3 +1,7 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
 //accourdion
 
 .spacer {
@@ -81,18 +85,55 @@
 
 //navbar
 
+.plus-minus-toggle {
+    display: inline-block;
+    cursor: pointer;
+    height: 7px;
+    position: relative;
+    width: 20px;
+    &:before,
+    &:after {
+        background: #000;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 10px;
+        transition: transform 300ms ease;
+    }
+    &:after {
+        transform-origin: center;
+    }
+    &.collapsed {
+        &:after {
+            transform: rotate(90deg);
+        }
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .main-navigation {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid #eeeeee;
+    // border-bottom: 1px solid #eeeeee;
     background: #fff;
     -webkit-transition: 0.25s ease-out;
     -moz-transition: 0.25s ease-out;
     -o-transition: 0.25s ease-out;
     transition: 0.25s ease-out;
     z-index: 100000;
+    font-size: 16px;
+
+    .nav_logo {
+        position: absolute;
+        top: 40px;
+        left: 72px;
+    }
 
     // .flex-container {
     //     display: flex;
@@ -124,6 +165,20 @@
     .language_holder {
         display: inline-block;
         float: right;
+        position: absolute;
+        right: 72px;
+        top: 35px;
+
+        .inquire_btn {
+            all: unset;
+            width: 150px;
+            height: 42px;
+            text-align: center;
+            background: #a3f34a 0% 0% no-repeat padding-box;
+            border: 1px solid #a3f34a;
+            font-size: 16px;
+            font-weight: 600;
+        }
 
         .sr {
             all: unset;
@@ -149,6 +204,7 @@
         list-style: none;
         margin-bottom: 0;
         display: inline-block;
+        padding-left: 370px;
 
         &.dropdown-menu &.dropdown-menu {
             left: 100%;
@@ -185,8 +241,8 @@
 
             & a {
                 display: block;
-                color: gray;
-                padding: 10px 20px;
+                color: #000000;
+                padding: 40px 35px;
                 text-decoration: none;
             }
         }
@@ -194,5 +250,5 @@
 }
 
 .main-navigation.nav-up {
-    top: -60px;
+    top: -100px;
 }

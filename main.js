@@ -60,18 +60,10 @@ $(document).ready(function () {
     $(this).siblings().find('li').removeClass('opened');
 
     if ($(this).parent('li').hasClass('opened')) {
-      $(this)
-        .find('img')
-        .css({ transform: 'rotate(' + 180 + 'deg)' });
-      $(this)
-        .parent()
-        .siblings()
-        .find('img')
-        .css({ transform: 'rotate(' + 0 + 'deg)' });
+      $(this).find('.plus-minus-toggle').removeClass('collapsed');
+      $(this).parent().siblings().find('.plus-minus-toggle').addClass('collapsed');
     } else {
-      $(this)
-        .find('img')
-        .css({ transform: 'rotate(' + 0 + 'deg)' });
+      $(this).find('.plus-minus-toggle').addClass('collapsed');
     }
     event.preventDefault();
   });
@@ -113,7 +105,7 @@ $(document).ready(function () {
   pageScroll();
 
   $('section').click(function () {
-    $('.nav_arrow').css({ transform: 'rotate(' + 0 + 'deg)' });
+    $('.plus-minus-toggle').addClass('collapsed');
     $('.dropdown-menu')
       .stop()
       .animate(
