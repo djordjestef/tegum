@@ -4,81 +4,114 @@ body {
 
 //accourdion
 
-.spacer {
-    height: 50vh;
-    background: #fff;
-}
+// .spacer {
+//     height: 50vh;
+//     background: #fff;
+// }
 
-.spacer.bot {
-    height: 100vh;
-}
+// .spacer.bot {
+//     height: 100vh;
+// }
 
-.wrapper {
-    .acc_container {
-        .item {
-            height: 100px;
-            overflow: hidden;
+.what_we_do {
+    background: #a3f34a;
+    padding: 150px 0;
+    padding-bottom: 0;
+    .wrapper {
+        height: 1300px!important;//possible to change
+        .acc_container {
+            // height: 100vh;
+            .container {
+                height: 100%;
+                background-color: #fff;
+            }
+            .item {
+                // height: 1000px;
+                overflow: hidden;
+                margin-left: 72px;
+                margin-right: 72px;
+                margin-bottom: 40px;
 
-            & img {
-                width: 100%;
-                height: auto;
-                margin-left: 10vw;
+                & img {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 10vw;
+                }
+
+                &_img_1 {
+                    display: none;
+                }
+
+                .hover_1:hover &_img_1 {
+                    display: block;
+                }
+
+                &_img_2 {
+                    display: none;
+                }
+
+                .hover_2:hover &_img_2 {
+                    display: block;
+                }
+
+                &_img_3 {
+                    display: none;
+                }
+
+                .hover_3:hover &_img_3 {
+                    display: block;
+                }
             }
 
-            &_img_1 {
-                display: none;
+            #pin1,
+            #pin2 {
+                // width: 100%;
             }
 
-            .hover_1:hover &_img_1 {
-                display: block;
+            .head_holder {
+                background-color: #a3f34a;
+                padding: 60px 0;
+                // border-bottom: 1px solid #000;
+                border-top: 1px solid #000;
+
+                .what_we_do_title {
+                    font-size: 40px;
+                    font-weight: 600;
+                    display: inline-block;
+                    margin: 0;
+                    margin-right: 140px;
+                }
+
+                .what_we_do_description {
+                    display: inline-block;
+                    width: 40%;
+                    vertical-align: top;
+                    margin-top: 11px;
+                }
             }
 
-            &_img_2 {
-                display: none;
+            #pin1 {
+                // height: calc(100vh - 100px * 2);
+                height: 744px;
             }
 
-            .hover_2:hover &_img_2 {
-                display: block;
-            }
+            // #pin2 {
+            //     h1 {
+            //         font-size: 40px;
+            //         font-weight: 600;
 
-            &_img_3 {
-                display: none;
-            }
+            //         margin: 0;
+            //     }
+            // }
 
-            .hover_3:hover &_img_3 {
-                display: block;
-            }
-        }
+            // #pin3 {
+            //     h1 {
+            //         font-size: 40px;
+            //         font-weight: 600;
 
-        #pin1,
-        #pin2 {
-            width: 100%;
-        }
-
-        #pin1 {
-            height: calc(100vh - 100px * 2);
-
-            & h1 {
-                background-color: #fec506;
-                height: 100px;
-                border-bottom: 2px solid #000;
-            }
-        }
-
-        #pin2 {
-            h1 {
-                background-color: #fec506;
-                height: 100px;
-                border-bottom: 2px solid #000;
-            }
-        }
-
-        #pin3 {
-            h1 {
-                background-color: #fec506;
-                height: 100px;
-                border-bottom: 2px solid #000;
-            }
+            //         margin: 0;
+            //     }
+            // }
         }
     }
 }
@@ -257,7 +290,7 @@ body {
 }
 
 .main-navigation.nav-up {
-    top: -100px;
+    top: -132px;
 }
 
 .main_section {
@@ -284,6 +317,14 @@ body {
 
 .about_us {
     padding: 200px 0;
+    position: relative;
+
+    &_title {
+        position: absolute;
+        top: 50px;
+        left: 72px;
+        font-size: 16px;
+    }
     .card_scroller {
         flex-wrap: inherit !important;
 
@@ -293,15 +334,16 @@ body {
         .flex_columns {
             width: 60%;
             position: relative;
-            padding-right: 0;
-            width: 69%;
+            padding-right: 170px;
+            padding-left: 0;
+            width: 59%;
 
             &:last-child {
                 margin-right: 12px;
             }
 
             &_plus {
-                position: absolute!important;
+                position: absolute !important;
                 top: 12px;
                 display: inline-block;
                 cursor: pointer;
