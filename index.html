@@ -18,20 +18,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div id="nav-placeholder"></div>
-    <script>
-      $.get('navigation.html', function (data) {
-        $('#nav-placeholder').replaceWith(data);
-      });
-    </script>
-    <section style="padding-top: 100px">
-      <div class="storage_sub"></div>
+
+    <section class="main_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="main_section_holder">
+              <h1 class="main_section_holder_title"></h1>
+              <p class="main_section_holder_description"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/main_page.png" alt="" class="main_section_img" />
+    </section>
+    <section class="about_us">
+      <div class="container-fluid">
+        <div class="row card_scroller">
+          <div class="flex_columns">
+            <div class="flex_columns_plus collapsed"></div>
+            <div class="flex_columns_title flex_columns_title_1"></div>
+            <div class="flex_columns_description flex_columns_description_1"></div>
+          </div>
+          <div class="flex_columns">
+            <a href="#" class="card_wrapper">
+              <div class="card">
+                <img class="card-img-top" src="assets/blog_1.png" alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <div class="date">March 20. 2022.</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div>INDEX page setup</div>
       <div>
         <div class="spacer top"></div>
@@ -43,18 +80,16 @@
                 <div class="row">
                   <div class="col-6">
                     <h4 class="hover_1">Hover me</h4>
-                 
                   </div>
                   <div class="col-6">
                     <img
-                    src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
-                    height="150"
-                    class="item_img_1"
-                  />
+                      src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
+                      height="150"
+                      class="item_img_1"
+                    />
                   </div>
                 </div>
               </div>
-             
             </div>
 
             <div class="item" id="pin2">
@@ -66,10 +101,10 @@
                   </div>
                   <div class="col-6">
                     <img
-                    src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
-                    height="150"
-                    class="item_img_2"
-                  />
+                      src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
+                      height="150"
+                      class="item_img_2"
+                    />
                   </div>
                 </div>
               </div>
@@ -84,10 +119,10 @@
                   </div>
                   <div class="col-6">
                     <img
-                    src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
-                    height="150"
-                    class="item_img_3"
-                  />
+                      src="https://assets-global.website-files.com/63fcbdddcbc9c7e5e9e5c6b1/63fe35961f67ba24645e21d3_Ekhi%20image.png"
+                      height="150"
+                      class="item_img_3"
+                    />
                   </div>
                 </div>
               </div>
@@ -100,5 +135,11 @@
     </section>
     <script src="main.js"></script>
     <script src="languages.js"></script>
+    <script>
+      $.get('navigation.html', function (data) {
+        console.log('GET NAV'); //ovo mora pre petlje language da se ucita!!!!
+        $('#nav-placeholder').replaceWith(data);
+      });
+    </script>
   </body>
 </html>

@@ -178,11 +178,15 @@ body {
             border: 1px solid #a3f34a;
             font-size: 16px;
             font-weight: 600;
+            cursor: pointer;
         }
 
         .sr {
             all: unset;
             display: none;
+            font-size: 16px;
+            margin-right: 60px;
+            cursor: pointer;
 
             &.active {
                 display: inline-block;
@@ -192,6 +196,9 @@ body {
         .en {
             all: unset;
             display: none;
+            font-size: 16px;
+            margin-right: 60px;
+            cursor: pointer;
 
             &.active {
                 display: inline-block;
@@ -251,4 +258,105 @@ body {
 
 .main-navigation.nav-up {
     top: -100px;
+}
+
+.main_section {
+    margin-top: 225px;
+
+    &_holder {
+        width: 60%;
+        margin-bottom: 156px;
+        &_title {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        &_description {
+            font-size: 22px;
+        }
+    }
+
+    &_img {
+        width: 100%;
+    }
+}
+
+.about_us {
+    padding: 200px 0;
+    .card_scroller {
+        flex-wrap: inherit !important;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        .flex_columns {
+            width: 60%;
+            position: relative;
+            padding-right: 0;
+            width: 69%;
+
+            &:last-child {
+                margin-right: 12px;
+            }
+
+            &_plus {
+                position: absolute!important;
+                top: 12px;
+                display: inline-block;
+                cursor: pointer;
+                height: 7px;
+                position: relative;
+                width: 20px;
+                &:before,
+                &:after {
+                    background: #000;
+                    content: "";
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 20px;
+                    transition: transform 300ms ease;
+                }
+
+                &:after {
+                    transform-origin: center;
+                }
+                &.collapsed {
+                    &:after {
+                        transform: rotate(90deg);
+                    }
+                    &:before {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &_title {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 14px;
+                padding-left: 40px;
+            }
+
+            &_description {
+                font-size: 16px;
+                padding-left: 40px;
+            }
+        }
+    }
+
+    .card_scroller::-webkit-scrollbar {
+        width: 0 !important;
+        // -webkit-appearance: none !important;
+        // height: 0 !important;
+        // background-color: transparent !important;
+    }
+    .card_scroller::-ms-scrollbar {
+        width: 0 !important;
+        // -ms-appearance: none !important;
+        // height: 0 !important;
+        // background-color: transparent !important;
+    }
 }
