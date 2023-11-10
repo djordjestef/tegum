@@ -10,9 +10,10 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: '.acc_container',
       start: 'top top',
-      end: '+=' + (window.innerHeight * 2 - 900),
-      scrub: true,
-      pin: '.acc_container',
+      end: "+=" + (window.innerHeight*3 - 900),
+    scrub: true,
+    // markers: true,
+    pin: '.acc_container' 
     },
   });
 
@@ -23,9 +24,11 @@ $(document).ready(function () {
   accordion.to('#pin2', { height: window.innerHeight - 10 }, 0); //10
   accordion.to('#pin2', { height: 0 }, 1);
   accordion.to('#pin3', { height: window.innerHeight - 10 }, 1); //-10
-  accordion.to('#pin3', { height: 0 }, 2);
+  accordion.to("#pin3", { height: 0 }, 2)
 
-  // gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight - 300) });
+  gsap.set('.spacer.bot', { marginTop: "-=" + (window.innerHeight +500) })
+
+
 
   //end of accordion
 

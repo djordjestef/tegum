@@ -2,13 +2,15 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.spacer {
+  height: 2vh;
+  background: #fff;
+}
+
 .what_we_do {
   background: #a3f34a;
   padding: 150px 0;
   padding-bottom: 0;
-}
-.what_we_do .wrapper {
-  height: 1300px !important;
 }
 .what_we_do .wrapper .acc_container .container {
   height: 100%;
