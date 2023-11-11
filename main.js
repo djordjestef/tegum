@@ -1,34 +1,42 @@
 $(document).ready(function () {
   //accordion
-  gsap.registerPlugin(ScrollTrigger);
 
-  const accordion = gsap.timeline({
-    defaults: {
-      ease: 'none',
-      duration: 1,
-    },
-    scrollTrigger: {
-      trigger: '.acc_container',
-      start: 'top top',
-      end: "+=" + (window.innerHeight*3 - 900),
-    scrub: true,
-    // markers: true,
-    pin: '.acc_container' 
-    },
-  });
+  setTimeout(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  console.log(window.innerHeight * 3 - 900);
-  console.log(window.innerHeight - 10);
+    const accordion = gsap.timeline({
+      defaults: {
+        ease: 'none',
+        duration: 1,
+      },
+      scrollTrigger: {
+        trigger: '.acc_container',
+        start: 'top top',
+        // end: '+=' + (window.innerHeight * 3 - 900),
+        end: '+=200%',
+        scrub: true,
+        // markers: true,
+        pin: '.acc_container',
+      },
+    });
 
-  accordion.to('#pin1', { height: 0 }, 0);
-  accordion.to('#pin2', { height: window.innerHeight - 10 }, 0); //10
-  accordion.to('#pin2', { height: 0 }, 1);
-  accordion.to('#pin3', { height: window.innerHeight - 10 }, 1); //-10
-  accordion.to("#pin3", { height: 0 }, 2)
+    accordion.to('#pin1', { height: 0 }, 0);
+    accordion.to('#pin2', { height: window.innerHeight - 10 }, 0); //-10
+    accordion.to('#pin2', { height: 0 }, 1);
+    accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
+    accordion.to('#pin3', { height: 0 }, 2);
 
-  gsap.set('.spacer.bot', { marginTop: "-=" + (window.innerHeight +500) })
-
-
+    // gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight + 320) });
+    gsap.to('.spacer.bot', {
+      marginTop: `-=${window.innerHeight + 450}`,
+      scrollTrigger: {
+        trigger: '.acc_container',
+        start: 'top top',
+        end: '+=250%', // Adjust this value based on your needs
+        scrub: 1, // Adjust the scrub value to control the scroll speed
+      },
+    });
+  }, 200);
 
   //end of accordion
 

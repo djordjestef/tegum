@@ -3,14 +3,13 @@ body {
 }
 
 .spacer {
-  height: 2vh;
+  height: 20vh;
   background: #fff;
 }
 
 .what_we_do {
   background: #a3f34a;
   padding: 150px 0;
-  padding-bottom: 0;
 }
 .what_we_do .wrapper .acc_container .container {
   height: 100%;
@@ -20,7 +19,6 @@ body {
   overflow: hidden;
   margin-left: 72px;
   margin-right: 72px;
-  margin-bottom: 40px;
 }
 .what_we_do .wrapper .acc_container .item img {
   width: 100%;

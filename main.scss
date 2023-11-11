@@ -5,7 +5,7 @@ body {
 //accourdion
 
 .spacer {
-    height: 2vh;
+    height: 20vh;
     background: #fff;
 }
 
@@ -16,7 +16,7 @@ body {
 .what_we_do {
     background: #a3f34a;
     padding: 150px 0;
-    padding-bottom: 0;
+    // padding-bottom: 0;
     .wrapper {
         // height: 1300px!important;//possible to change
         .acc_container {
@@ -24,13 +24,14 @@ body {
             .container {
                 height: 100%;
                 background-color: #fff;
+                // margin-bottom: 40px;
             }
             .item {
                 // height: 1000px;
                 overflow: hidden;
                 margin-left: 72px;
                 margin-right: 72px;
-                margin-bottom: 40px;
+                // margin-bottom: 40px;
 
                 & img {
                     width: 100%;
