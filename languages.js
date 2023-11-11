@@ -71,10 +71,13 @@ $(document).ready(function () {
 
     for (let key in jsonData) {
       console.log('jsonData', jsonData);
-      const element = document.querySelector('.' + key);
-      if (element) {
-        element.textContent = jsonData[key];
-      }
+      setTimeout(() => {
+        const element = document.querySelector('.' + key);
+        if (element) {
+          element.textContent = jsonData[key];
+        }
+      }, 300);
+     
     }
   }
 });
