@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight + 320) });
     gsap.to('.spacer.bot', {
-      marginTop: `-=${window.innerHeight + 450}`,
+      marginTop: `-=${window.innerHeight + 650}`,
       scrollTrigger: {
         trigger: '.acc_container',
         start: 'top top',

@@ -17,12 +17,44 @@ const jsonEN = {
   what_we_do_title_1: '01 - Project Management',
   what_we_do_title_2: '02 - Consulting Services',
   what_we_do_title_3: '03 - Custom Manufacturing',
-  what_we_do_small_title:'WHAT WE DO',
-  services_small_title:'Services',
+  what_we_do_small_title: 'WHAT WE DO',
+  services_small_title: 'Services',
   option_holder_1_title_1: 'Industrial Project Management',
   option_holder_1_title_2: 'Production Efficiency and Improvement',
   option_holder_1_title_3: 'Quality Control',
   option_holder_1_title_4: 'Financial Consulting and Investment Studies',
+  expertise_holder_number_main: 'Your industrial partner for a future of sustainable success.',
+  expertise_holder_description_main: 'OUR EXPERTISE',
+  expertise_holder_title_1: 'Machine Engineering',
+  expertise_holder_title_2: 'Process Engineering',
+  expertise_holder_title_3: 'FMCG Industry',
+  expertise_holder_title_4: 'Turnkey Consultancy',
+  expertise_holder_title_5: 'Project Lifecycle Expertise',
+  expertise_holder_title_6: 'Operational Excellence',
+  expertise_holder_title_7: 'Industrial Internet of Things',
+  expertise_holder_title_8: 'Investment Studies',
+  expertise_holder_title_9: 'Conveying Systems',
+  expertise_holder_description_1:
+    'Specialized knowledge in industrial project management, production efficiency, and process improvement.',
+  expertise_holder_description_2:
+    'Comprehensive strategy support to enhance your operations and ensure a competitive edge in the market.',
+  expertise_holder_description_3:
+    'Ooptimize sourcing, category management, and quality control to drive efficiency and quality.',
+  expertise_holder_description_4:
+    'Compliance with norms and standards guarantees the highest level of quality and safety in your processes.',
+  expertise_holder_description_5:
+    'Our management consulting and implementation support guarantee smooth objectives execution.',
+  expertise_holder_description_6:
+    'Fnancial consulting and investment studies will help make informed decisions that maximize returns',
+  challenges_title: 'Tackle complex industrial challenges.',
+  challenges_btn: 'Get started',
+  footer_nav_1:'Services',
+  footer_nav_2:'Products',
+  footer_nav_3:'Company',
+  footer_contact_address:'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
+  footer_contact_phone:'Phone:',
+  footer_btn: 'Get started',
+
 };
 
 const jsonSR = {
@@ -46,12 +78,43 @@ const jsonSR = {
   what_we_do_title_1: '01 - Upravljanje projektima',
   what_we_do_title_2: '02 - Konsultantske usluge',
   what_we_do_title_3: '03 - Izrada po meri',
-  what_we_do_small_title:'ŠTA RADIMO',
-  services_small_title:'Usluge',
+  what_we_do_small_title: 'ŠTA RADIMO',
+  services_small_title: 'Usluge',
   option_holder_1_title_1: 'Upravljanje industrijskim projektima',
   option_holder_1_title_2: 'Efikasnost i poboljšanje proizvodnje',
   option_holder_1_title_3: 'Kontrola kvaliteta',
   option_holder_1_title_4: 'Finansijski konsalting i investicione studije',
+  expertise_holder_number_main: 'Vaš industrijski partner za budućnost održivog uspeha.',
+  expertise_holder_description_main: 'NAŠA STRUČNOST',
+  expertise_holder_title_1: 'Mašinsko inženjerstvo',
+  expertise_holder_title_2: 'Procesni inženjering',
+  expertise_holder_title_3: 'FMCG industrija',
+  expertise_holder_title_4: 'Konsultantske usluge po sistemu ključ u ruke',
+  expertise_holder_title_5: 'Stručnost životnog ciklusa projekta',
+  expertise_holder_title_6: 'Operativna izvrsnost',
+  expertise_holder_title_7: 'Industrijski internet stvari',
+  expertise_holder_title_8: 'Investicione studije',
+  expertise_holder_title_9: 'Sistemi za transport',
+  expertise_holder_description_1:
+    'Specijalizovano znanje u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
+  expertise_holder_description_2:
+    'Sveobuhvatna podrška za strategiju za poboljšanje vašeg poslovanja i osiguravanje konkurentske prednosti na tržištu.',
+  expertise_holder_description_3:
+    'Optimizujte izvore, upravljanje kategorijama i kontrolu kvaliteta da biste podstakli efikasnost i kvalitet.',
+  expertise_holder_description_4:
+    'Usklađenost sa normama i standardima garantuje najviši nivo kvaliteta i bezbednosti u vašim procesima.',
+  expertise_holder_description_5:
+    'Naše savetovanje o menadžmentu i podrška implementaciji garantuju nesmetano izvršavanje ciljeva.',
+  expertise_holder_description_6:
+    'Finansijski konsalting i investicione studije će pomoći u donošenju informisanih odluka koje maksimiziraju prinose',
+  challenges_title: 'Rešite se složenih industrijskih izazova.',
+  challenges_btn: 'Počni',
+  footer_nav_1:'Usluge',
+  footer_nav_2:'Proizvodi',
+  footer_nav_3:'Kompanija',
+  footer_contact_address:'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
+  footer_contact_phone:'Telefon:',
+  footer_btn: 'Počni',
 };
 
 $(document).on('click', '.en', function (event) {

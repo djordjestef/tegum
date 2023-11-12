@@ -3,13 +3,13 @@ body {
 }
 
 .spacer {
-  height: 100px;
+  height: 10px;
   background: #fff;
 }
 
 .what_we_do {
   background: #a3f34a;
-  padding: 150px 0;
+  padding: 150px 0 0;
   position: relative;
 }
 .what_we_do_small_title {
@@ -80,11 +80,11 @@ body {
   font-weight: 600;
   display: inline-block;
   margin: 0;
-  margin-right: 140px;
+  margin-right: 20vw;
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
   display: inline-block;
-  width: 30%;
+  width: 35%;
   vertical-align: top;
   margin-top: 11px;
 }
@@ -256,11 +256,10 @@ body {
   overflow-y: hidden;
 }
 .about_us .card_scroller .flex_columns {
-  width: 60%;
   position: relative;
-  padding-right: 170px;
+  padding-right: 120px;
   padding-left: 0;
-  width: 59%;
+  width: 46%;
 }
 .about_us .card_scroller .flex_columns:last-child {
   margin-right: 12px;
@@ -308,4 +307,167 @@ body {
 }
 .about_us .card_scroller::-ms-scrollbar {
   width: 0 !important;
+}
+
+.testimonials {
+  padding: 290px 0 300px;
+}
+.testimonials_holder {
+  width: 36%;
+  margin: auto;
+}
+.testimonials_holder_img {
+  display: inline-block;
+  margin-right: 55px;
+  width: 55px;
+  vertical-align: top;
+  margin-top: 9px;
+}
+.testimonials_holder_text {
+  display: inline-block;
+  font-size: 18px;
+  width: 70%;
+}
+.testimonials_holder_text_description {
+  margin-bottom: 20px;
+}
+
+.expertise {
+  background-color: #f3f3f3;
+}
+.expertise_holder {
+  margin-left: 72px;
+  margin-right: 72px;
+  padding: 56px 0;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.expertise_holder:first-child {
+  padding: 90px 0;
+}
+.expertise_holder:last-child {
+  border-bottom: unset;
+}
+.expertise_holder_number {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #a4a4a4;
+  font-size: 18px;
+  font-weight: 400;
+}
+.expertise_holder_number_main {
+  top: 70px;
+  width: 21vw;
+}
+.expertise_holder_title {
+  font-size: 30px;
+  color: #0011ff;
+  display: inline-block;
+  margin-left: 11vw;
+  font-weight: 600;
+}
+.expertise_holder_description {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  width: 30vw;
+  float: right;
+  margin-right: 90px;
+}
+.expertise_holder_description_main {
+  margin-top: -20px;
+}
+
+.challenges {
+  padding: 270px 0;
+}
+.challenges .holder {
+  margin-left: 174px;
+  margin-top: 220px;
+}
+.challenges .holder a {
+  all: unset;
+}
+.challenges_title {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.challenges_btn {
+  all: unset;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  background: #a3f34a 0% 0% no-repeat padding-box;
+  border: 1px solid #a3f34a;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 80px 0;
+  color: #a4a4a4;
+  background-color: #000;
+  position: relative;
+}
+.footer a {
+  all: unset;
+}
+.footer_list .sr {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.footer_list .sr.active {
+  display: inline-block;
+}
+.footer_list .en {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.footer_list .en.active {
+  display: inline-block;
+}
+.footer_list ul {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+}
+.footer_list ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 85px;
+  cursor: pointer;
+}
+.footer_list ul li a {
+  all: unset;
+}
+.footer_contact {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 76px;
+  margin-bottom: 150px;
+}
+.footer_btn {
+  all: unset;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  background: #a3f34a 0% 0% no-repeat padding-box;
+  border: 1px solid #a3f34a;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 78px;
+  right: 72px;
 }/*# sourceMappingURL=main.css.map */
