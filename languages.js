@@ -14,9 +14,15 @@ const jsonEN = {
   about_us_description_2: `Our strategic support empowers your operational efficiency, stay agile and make well-informed decisions. We're your go-to source for optimizing procurement, quality control, and supply chain management.`,
   about_us_title_3: 'Growth and Prosperity',
   about_us_description_3: `With a dedication to compliance, reliable management consulting and insightful financial guidance, we're here to drive your business's growth and profitability for a future of sustainable success.`,
-  what_we_do_title_1:'01 - Project Management',
-  what_we_do_title_2:'02 - Consulting Services',
-  what_we_do_title_3:'03 - Custom Manufacturing',
+  what_we_do_title_1: '01 - Project Management',
+  what_we_do_title_2: '02 - Consulting Services',
+  what_we_do_title_3: '03 - Custom Manufacturing',
+  what_we_do_small_title:'WHAT WE DO',
+  services_small_title:'Services',
+  option_holder_1_title_1: 'Industrial Project Management',
+  option_holder_1_title_2: 'Production Efficiency and Improvement',
+  option_holder_1_title_3: 'Quality Control',
+  option_holder_1_title_4: 'Financial Consulting and Investment Studies',
 };
 
 const jsonSR = {
@@ -37,9 +43,15 @@ const jsonSR = {
   about_us_title_3: 'Rast i prosperitet',
   about_us_description_3:
     'Sa posvećenošću usklađenosti, pouzdanim savetovanjem o menadžmentu i pronicljivim finansijskim uputstvima, mi smo tu da pokrenemo rast i profitabilnost vašeg poslovanja za budućnost održivog uspeha.',
-    what_we_do_title_1 :'01 - Upravljanje projektima',
-    what_we_do_title_2:'02 - Konsultantske usluge',
-    what_we_do_title_3:'03 - Izrada po meri',
+  what_we_do_title_1: '01 - Upravljanje projektima',
+  what_we_do_title_2: '02 - Konsultantske usluge',
+  what_we_do_title_3: '03 - Izrada po meri',
+  what_we_do_small_title:'ŠTA RADIMO',
+  services_small_title:'Usluge',
+  option_holder_1_title_1: 'Upravljanje industrijskim projektima',
+  option_holder_1_title_2: 'Efikasnost i poboljšanje proizvodnje',
+  option_holder_1_title_3: 'Kontrola kvaliteta',
+  option_holder_1_title_4: 'Finansijski konsalting i investicione studije',
 };
 
 $(document).on('click', '.en', function (event) {
@@ -76,7 +88,6 @@ $(document).ready(function () {
           element.textContent = jsonData[key];
         }
       }, 100);
-     
     }
   }
 });

@@ -141,33 +141,27 @@ $(document).ready(function () {
 
   //hover animation
 
-  $('.hover_1').hover(
+  $('.hover_animate_1_1').hover(
     function () {
       $(this).css({ cursor: 'url(/assets/white_arrow.png), default' });
-      $('.item_img_1').fadeIn(200);
+      $('.item_img_1_1').fadeIn(200);
+      $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
     },
     function () {
-      $('.item_img_1').fadeOut(200);
+      $('.item_img_1_1').fadeOut(200);
+      $('.background_helper').css('background-color', '#fff').fadeOut(100);
     },
   );
 
-  $('.hover_2').hover(
+  $('.hover_animate_1_2').hover(
     function () {
       $(this).css({ cursor: 'url(/assets/white_arrow.png), default' });
-      $('.item_img_2').fadeIn(200);
+      $('.item_img_1_2').fadeIn(200);
+      $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
     },
     function () {
-      $('.item_img_2').fadeOut(200);
-    },
-  );
-
-  $('.hover_3').hover(
-    function () {
-      $(this).css({ cursor: 'url(/assets/white_arrow.png), default' });
-      $('.item_img_3').fadeIn(200);
-    },
-    function () {
-      $('.item_img_3').fadeOut(200);
+      $('.item_img_1_2').fadeOut(200);
+      $('.background_helper').css('background-color', '#fff').fadeOut(100);
     },
   );
 });

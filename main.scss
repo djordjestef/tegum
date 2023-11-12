@@ -5,7 +5,7 @@ body {
 //accourdion
 
 .spacer {
-    height: 20vh;
+    height: 100px;
     background: #fff;
 }
 
@@ -16,52 +16,94 @@ body {
 .what_we_do {
     background: #a3f34a;
     padding: 150px 0;
-    // padding-bottom: 0;
+    position: relative;
+
+    &_small_title {
+        position: absolute;
+        top: 69px;
+        left: 72px;
+        font-size: 16px;
+    }
     .wrapper {
-        // height: 1300px!important;//possible to change
         .acc_container {
-            // height: 100vh;
             .container {
                 height: 100%;
                 background-color: #fff;
-                // margin-bottom: 40px;
             }
             .item {
-                // height: 1000px;
                 overflow: hidden;
                 margin-left: 72px;
                 margin-right: 72px;
-                // margin-bottom: 40px;
+
+                .services_small_title {
+                    position: absolute;
+                    top: 69px;
+                    left: 66px;
+                    font-size: 16px;
+                }
+
+                .padding_helper {
+                    padding: 150px 0 150px 130px;
+                    position: relative;
+                }
+
+                .option_holder {
+                    margin-bottom: 50px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &_number {
+                        color: #a4a4a4;
+                        display: inline-block;
+                        margin-right: 30px;
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+
+                    &_title {
+                        display: inline-block;
+                        color: #000;
+                        font-size: 28px;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: #0011ff;
+                            text-decoration: underline;
+                        }
+                    }
+                }
 
                 & img {
-                    width: 100%;
-                    height: auto;
-                    margin-left: 10vw;
+                    // width: 100%;
+                    // height: auto;
+                    // margin-left: 10vw;
+                    padding: 90px 0;
+                    transform: scale(0.8);
                 }
 
-                &_img_1 {
+                &_img_1_1 {
                     display: none;
                 }
 
-                .hover_1:hover &_img_1 {
-                    display: block;
-                }
+                // .hover_animate_1_1:hover &_img_1_1 {
+                //     display: block;
+                // }
 
-                &_img_2 {
+                &_img_1_2 {
                     display: none;
                 }
 
-                .hover_2:hover &_img_2 {
-                    display: block;
-                }
+                // .hover_animate_1_2:hover &_img_1_2 {
+                //     display: block;
+                // }
 
-                &_img_3 {
-                    display: none;
-                }
+                // &_img_3 {
+                //     display: none;
+                // }
 
-                .hover_3:hover &_img_3 {
-                    display: block;
-                }
+                // .hover_3:hover &_img_3 {
+                //     display: block;
+                // }
             }
 
             #pin1,
@@ -85,7 +127,7 @@ body {
 
                 .what_we_do_description {
                     display: inline-block;
-                    width: 40%;
+                    width: 30%;
                     vertical-align: top;
                     margin-top: 11px;
                 }
@@ -95,24 +137,6 @@ body {
                 // height: calc(100vh - 100px * 2);
                 height: 744px;
             }
-
-            // #pin2 {
-            //     h1 {
-            //         font-size: 40px;
-            //         font-weight: 600;
-
-            //         margin: 0;
-            //     }
-            // }
-
-            // #pin3 {
-            //     h1 {
-            //         font-size: 40px;
-            //         font-weight: 600;
-
-            //         margin: 0;
-            //     }
-            // }
         }
     }
 }

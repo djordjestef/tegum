@@ -3,13 +3,20 @@ body {
 }
 
 .spacer {
-  height: 20vh;
+  height: 100px;
   background: #fff;
 }
 
 .what_we_do {
   background: #a3f34a;
   padding: 150px 0;
+  position: relative;
+}
+.what_we_do_small_title {
+  position: absolute;
+  top: 69px;
+  left: 72px;
+  font-size: 16px;
 }
 .what_we_do .wrapper .acc_container .container {
   height: 100%;
@@ -20,28 +27,48 @@ body {
   margin-left: 72px;
   margin-right: 72px;
 }
+.what_we_do .wrapper .acc_container .item .services_small_title {
+  position: absolute;
+  top: 69px;
+  left: 66px;
+  font-size: 16px;
+}
+.what_we_do .wrapper .acc_container .item .padding_helper {
+  padding: 150px 0 150px 130px;
+  position: relative;
+}
+.what_we_do .wrapper .acc_container .item .option_holder {
+  margin-bottom: 50px;
+}
+.what_we_do .wrapper .acc_container .item .option_holder:last-child {
+  margin-bottom: 0;
+}
+.what_we_do .wrapper .acc_container .item .option_holder_number {
+  color: #a4a4a4;
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.what_we_do .wrapper .acc_container .item .option_holder_title {
+  display: inline-block;
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+}
+.what_we_do .wrapper .acc_container .item .option_holder_title:hover {
+  color: #0011ff;
+  text-decoration: underline;
+}
 .what_we_do .wrapper .acc_container .item img {
-  width: 100%;
-  height: auto;
-  margin-left: 10vw;
+  padding: 90px 0;
+  transform: scale(0.8);
 }
-.what_we_do .wrapper .acc_container .item_img_1 {
+.what_we_do .wrapper .acc_container .item_img_1_1 {
   display: none;
 }
-.hover_1:hover .what_we_do .wrapper .acc_container .item_img_1 {
-  display: block;
-}
-.what_we_do .wrapper .acc_container .item_img_2 {
+.what_we_do .wrapper .acc_container .item_img_1_2 {
   display: none;
-}
-.hover_2:hover .what_we_do .wrapper .acc_container .item_img_2 {
-  display: block;
-}
-.what_we_do .wrapper .acc_container .item_img_3 {
-  display: none;
-}
-.hover_3:hover .what_we_do .wrapper .acc_container .item_img_3 {
-  display: block;
 }
 .what_we_do .wrapper .acc_container .head_holder {
   background-color: #a3f34a;
@@ -57,7 +84,7 @@ body {
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
   display: inline-block;
-  width: 40%;
+  width: 30%;
   vertical-align: top;
   margin-top: 11px;
 }
