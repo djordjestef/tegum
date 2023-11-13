@@ -18,13 +18,13 @@ body {
   left: 72px;
   font-size: 16px;
 }
-.what_we_do .wrapper .acc_container .container {
+.what_we_do .wrapper .acc_container .container-fluid {
   background-color: #fff;
 }
 .what_we_do .wrapper .acc_container .item {
   overflow: hidden;
-  margin-left: 72px;
-  margin-right: 72px;
+  padding-right: 72px;
+  padding-left: 72px;
 }
 .what_we_do .wrapper .acc_container .item .services_small_title {
   position: absolute;
@@ -32,9 +32,20 @@ body {
   left: 66px;
   font-size: 16px;
 }
+@media only screen and (max-width: 1440px) {
+  .what_we_do .wrapper .acc_container .item .services_small_title {
+    top: 39px;
+    left: 46px;
+  }
+}
 .what_we_do .wrapper .acc_container .item .padding_helper {
   padding: 150px 0 150px 130px;
   position: relative;
+}
+@media only screen and (max-width: 1440px) {
+  .what_we_do .wrapper .acc_container .item .padding_helper {
+    padding: 90px 0 90px 80px;
+  }
 }
 .what_we_do .wrapper .acc_container .item .option_holder {
   margin-bottom: 50px;
@@ -49,11 +60,21 @@ body {
   font-size: 28px;
   font-weight: 400;
 }
+@media only screen and (max-width: 1440px) {
+  .what_we_do .wrapper .acc_container .item .option_holder_number {
+    font-size: 24px;
+  }
+}
 .what_we_do .wrapper .acc_container .item .option_holder_title {
   display: inline-block;
   color: #000;
   font-size: 28px;
   font-weight: 600;
+}
+@media only screen and (max-width: 1440px) {
+  .what_we_do .wrapper .acc_container .item .option_holder_title {
+    font-size: 24px;
+  }
 }
 .what_we_do .wrapper .acc_container .item .option_holder_title:hover {
   color: #0011ff;
@@ -71,15 +92,21 @@ body {
 }
 .what_we_do .wrapper .acc_container .head_holder {
   background-color: #a3f34a;
-  padding: 60px 0;
+  padding: 5vh 0;
   border-top: 1px solid #000;
+  position: relative;
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   display: inline-block;
   margin: 0;
-  margin-right: 20vw;
+  margin-right: 11vw;
+}
+@media only screen and (max-width: 1400px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
+    font-size: 30px;
+  }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
   display: inline-block;
@@ -87,12 +114,127 @@ body {
   vertical-align: top;
   margin-top: 11px;
 }
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
+  position: absolute;
+  right: 0;
+  top: 71px;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 42px;
+  background: none;
+  border: none;
+  color: #0011ff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn span {
+  display: block;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 42px;
+  border: none;
+  color: #0011ff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional span {
+  display: block;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #0011ff;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #0011ff;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn span::after {
+  content: "";
+  width: 2px;
+  height: 40px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #0011ff;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover::after {
+  width: 100%;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional.hovered::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional.hovered::after {
+  width: 150px;
+  right: 0;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover span::after {
+  height: 100%;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6::before {
+  left: -9px;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6::after {
+  left: -9px;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-7::before {
+  right: -9px;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-7::after {
+  right: -9px;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6 span::before {
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6 span::after {
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover::after {
+  left: 0;
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover span::after {
+  top: 0;
+}
 .what_we_do .wrapper .acc_container #pin1 {
-  height: 900px;
+  height: 100vh;
 }
 .what_we_do .wrapper .acc_container #pin2,
 .what_we_do .wrapper .acc_container #pin3 {
-  height: 900px;
+  height: 100vh;
 }
 
 .plus-minus-toggle {
@@ -473,132 +615,4 @@ body {
   position: absolute;
   top: 78px;
   right: 72px;
-}
-
-.btn {
-  display: inline-block;
-  position: relative;
-  width: 150px;
-  height: 42px;
-  background: none;
-  border: none;
-  color: #0011ff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 20px 30px;
-  background: rgba(0, 0, 0, 0.09);
-}
-.btn span {
-  display: block;
-}
-
-.additional {
-  display: inline-block;
-  position: relative;
-  width: 150px;
-  height: 42px;
-  border: none;
-  color: #0011ff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 20px 30px;
-  background: rgba(0, 0, 0, 0.09);
-  position: absolute;
-}
-.additional span {
-  display: block;
-}
-
-.additional::before,
-.additional::after {
-  content: "";
-  width: 20px;
-  height: 2px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #0011ff;
-}
-
-.btn::before,
-.btn::after {
-  content: "";
-  width: 20px;
-  height: 2px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #0011ff;
-}
-
-span::before,
-span::after {
-  content: "";
-  width: 2px;
-  height: 40px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #0011ff;
-}
-
-.btn:hover::before,
-.btn:hover::after {
-  width: 100%;
-}
-
-.additional.hovered::before,
-.additional.hovered::after {
-  width: 150px;
-  right: 0;
-}
-
-.btn:hover span::before,
-.btn:hover span::after {
-  height: 100%;
-}
-
-.btn-6::before {
-  left: -9px;
-  top: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-6::after {
-  left: -9px;
-  bottom: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-7::before {
-  right: -9px;
-  top: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-7::after {
-  right: -9px;
-  bottom: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-6 span::before {
-  left: 0;
-  top: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-6 span::after {
-  right: 0;
-  top: 0;
-  transition-duration: 0.4s;
-}
-
-.btn-6:hover::before,
-.btn-6:hover::after {
-  left: 0;
-}
-
-.btn-6:hover span::before,
-.btn-6:hover span::after {
-  top: 0;
 }/*# sourceMappingURL=main.css.map */

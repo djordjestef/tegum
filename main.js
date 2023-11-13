@@ -5,6 +5,7 @@ $(document).ready(function () {
     gsap.registerPlugin(ScrollTrigger);
 
     console.log('window.innerHeight',window.innerHeight)
+    console.log('window.',window.innerWidth)
 
     const accordion = gsap.timeline({
       defaults: {
@@ -28,16 +29,9 @@ $(document).ready(function () {
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
     accordion.to('#pin3', { height: 0 }, 2);
 
-    gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight + 1020) });
-    // gsap.to('.spacer.bot', {
-    //   marginTop: `-=${window.innerHeight + 1050}`,
-    //   scrollTrigger: {
-    //     trigger: '.acc_container',
-    //     start: 'top top',
-    //     end: '+=250%', // Adjust this value based on your needs
-    //     scrub: 1, // Adjust the scrub value to control the scroll speed
-    //   },
-    // });
+    gsap.set('.spacer.bot', { marginTop: '-=' + ( window.innerHeight <760 ? window.innerHeight + 1020 : window.innerHeight + 2220) });
+    // gsap.set('.spacer.bot', { marginTop: '-=120%' });
+ 
   }, 200);
 
   //end of accordion
@@ -155,7 +149,7 @@ $(document).ready(function () {
 
   $('.hover_animate_1_1').hover(
     function () {
-      $(this).css({ cursor: 'url(/assets/white_arrow.png), default' });
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
       $('.item_img_1_1').fadeIn(200);
       $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
     },
@@ -167,7 +161,7 @@ $(document).ready(function () {
 
   $('.hover_animate_1_2').hover(
     function () {
-      $(this).css({ cursor: 'url(/assets/white_arrow.png), default' });
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
       $('.item_img_1_2').fadeIn(200);
       $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
     },
