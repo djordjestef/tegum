@@ -4,6 +4,8 @@ $(document).ready(function () {
   setTimeout(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    console.log('window.innerHeight',window.innerHeight)
+
     const accordion = gsap.timeline({
       defaults: {
         ease: 'none',
@@ -21,21 +23,21 @@ $(document).ready(function () {
     });
 
     accordion.to('#pin1', { height: 0 }, 0);
-    accordion.to('#pin2', { height: window.innerHeight - 10 }, 0); //-10
+    // accordion.to('#pin2', { height: window.innerHeight -100 }, 0); //-10
     accordion.to('#pin2', { height: 0 }, 1);
-    accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
+    // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
     accordion.to('#pin3', { height: 0 }, 2);
 
-    // gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight + 320) });
-    gsap.to('.spacer.bot', {
-      marginTop: `-=${window.innerHeight + 650}`,
-      scrollTrigger: {
-        trigger: '.acc_container',
-        start: 'top top',
-        end: '+=250%', // Adjust this value based on your needs
-        scrub: 1, // Adjust the scrub value to control the scroll speed
-      },
-    });
+    gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight + 1020) });
+    // gsap.to('.spacer.bot', {
+    //   marginTop: `-=${window.innerHeight + 1050}`,
+    //   scrollTrigger: {
+    //     trigger: '.acc_container',
+    //     start: 'top top',
+    //     end: '+=250%', // Adjust this value based on your needs
+    //     scrub: 1, // Adjust the scrub value to control the scroll speed
+    //   },
+    // });
   }, 200);
 
   //end of accordion
@@ -140,6 +142,16 @@ $(document).ready(function () {
   });
 
   //hover animation
+
+
+  $('.btn-6').hover(
+    function() {
+      $('.additional').addClass('hovered');
+    },
+    function() {
+      $('.additional').removeClass('hovered');
+    }
+  );
 
   $('.hover_animate_1_1').hover(
     function () {
