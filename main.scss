@@ -632,7 +632,7 @@ body {
             font-size: 30px;
             color: #0011ff;
             display: inline-block;
-            margin-left: 11vw;
+            margin-left: 15%;
             font-weight: 600;
         }
 
@@ -659,7 +659,8 @@ body {
     }
 
     .holder {
-        margin-left: 174px;
+        // margin-left: 174px;
+        width: 60%;
         margin-top: 220px;
 
         a {

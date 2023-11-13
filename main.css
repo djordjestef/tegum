@@ -509,7 +509,7 @@ body {
   font-size: 30px;
   color: #0011ff;
   display: inline-block;
-  margin-left: 11vw;
+  margin-left: 15%;
   font-weight: 600;
 }
 .expertise_holder_description {
@@ -528,7 +528,7 @@ body {
   padding: 270px 0;
 }
 .challenges .holder {
-  margin-left: 174px;
+  width: 60%;
   margin-top: 220px;
 }
 .challenges .holder a {
