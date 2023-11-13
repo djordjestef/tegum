@@ -389,27 +389,40 @@ body {
   padding: 200px 0;
   position: relative;
 }
+.about_us .sticky-parent {
+  height: 700vh;
+}
+.about_us .sticky {
+  position: sticky;
+  top: 0px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.about_us .dim {
+  display: block;
+  min-width: 50vw;
+  height: 100vh;
+}
+.about_us .horizontal {
+  display: flex;
+}
 .about_us_title {
   position: absolute;
   top: 50px;
   left: 72px;
   font-size: 16px;
 }
-.about_us .card_scroller {
-  flex-wrap: inherit !important;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-.about_us .card_scroller .flex_columns {
+.about_us .flex_columns {
   position: relative;
   padding-right: 120px;
   padding-left: 0;
   width: 46%;
 }
-.about_us .card_scroller .flex_columns:last-child {
+.about_us .flex_columns:last-child {
   margin-right: 12px;
 }
-.about_us .card_scroller .flex_columns_plus {
+.about_us .flex_columns_plus {
   position: absolute !important;
   top: 12px;
   display: inline-block;
@@ -418,7 +431,7 @@ body {
   position: relative;
   width: 20px;
 }
-.about_us .card_scroller .flex_columns_plus:before, .about_us .card_scroller .flex_columns_plus:after {
+.about_us .flex_columns_plus:before, .about_us .flex_columns_plus:after {
   background: #000;
   content: "";
   height: 2px;
@@ -428,22 +441,22 @@ body {
   width: 20px;
   transition: transform 300ms ease;
 }
-.about_us .card_scroller .flex_columns_plus:after {
+.about_us .flex_columns_plus:after {
   transform-origin: center;
 }
-.about_us .card_scroller .flex_columns_plus.collapsed:after {
+.about_us .flex_columns_plus.collapsed:after {
   transform: rotate(90deg);
 }
-.about_us .card_scroller .flex_columns_plus.collapsed:before {
+.about_us .flex_columns_plus.collapsed:before {
   transform: rotate(180deg);
 }
-.about_us .card_scroller .flex_columns_title {
+.about_us .flex_columns_title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 14px;
   padding-left: 40px;
 }
-.about_us .card_scroller .flex_columns_description {
+.about_us .flex_columns_description {
   font-size: 16px;
   padding-left: 40px;
 }
@@ -533,6 +546,9 @@ body {
 }
 .challenges .holder a {
   all: unset;
+}
+.challenges_img {
+  width: 100%;
 }
 .challenges_title {
   font-size: 46px;

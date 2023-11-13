@@ -45,8 +45,8 @@ body {
 
                     @media only screen and (max-width: 1440px) {
                         top: 39px;
-                    left: 46px;
-                     }
+                        left: 46px;
+                    }
                 }
 
                 .padding_helper {
@@ -72,9 +72,8 @@ body {
                         font-weight: 400;
 
                         @media only screen and (max-width: 1440px) {
-                           font-size: 24px;
+                            font-size: 24px;
                         }
-
                     }
 
                     &_title {
@@ -85,7 +84,7 @@ body {
 
                         @media only screen and (max-width: 1440px) {
                             font-size: 24px;
-                         }
+                        }
 
                         &:hover {
                             color: #0011ff;
@@ -270,7 +269,7 @@ body {
             }
 
             #pin1 {
-                height: calc(100vh );
+                height: calc(100vh);
                 // height: 900px;
             }
 
@@ -486,72 +485,85 @@ body {
     padding: 200px 0;
     position: relative;
 
+    .sticky-parent {
+        height: 700vh;
+    }
+    .sticky {
+        position: sticky;
+        top: 0px;
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .dim {
+        display: block;
+        min-width: 50vw;
+        height: 100vh;
+    }
+    .horizontal {
+        display: flex;
+    }
+
     &_title {
         position: absolute;
         top: 50px;
         left: 72px;
         font-size: 16px;
     }
-    .card_scroller {
-        flex-wrap: inherit !important;
 
-        overflow-x: scroll;
-        overflow-y: hidden;
+    .flex_columns {
+        position: relative;
+        padding-right: 120px;
+        padding-left: 0;
+        width: 46%;
 
-        .flex_columns {
+        &:last-child {
+            margin-right: 12px;
+        }
+
+        &_plus {
+            position: absolute !important;
+            top: 12px;
+            display: inline-block;
+            cursor: pointer;
+            height: 7px;
             position: relative;
-            padding-right: 120px;
-            padding-left: 0;
-            width: 46%;
-
-            &:last-child {
-                margin-right: 12px;
-            }
-
-            &_plus {
-                position: absolute !important;
-                top: 12px;
-                display: inline-block;
-                cursor: pointer;
-                height: 7px;
-                position: relative;
+            width: 20px;
+            &:before,
+            &:after {
+                background: #000;
+                content: "";
+                height: 2px;
+                left: 0;
+                position: absolute;
+                top: 0;
                 width: 20px;
-                &:before,
+                transition: transform 300ms ease;
+            }
+
+            &:after {
+                transform-origin: center;
+            }
+            &.collapsed {
                 &:after {
-                    background: #000;
-                    content: "";
-                    height: 2px;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 20px;
-                    transition: transform 300ms ease;
+                    transform: rotate(90deg);
                 }
-
-                &:after {
-                    transform-origin: center;
-                }
-                &.collapsed {
-                    &:after {
-                        transform: rotate(90deg);
-                    }
-                    &:before {
-                        transform: rotate(180deg);
-                    }
+                &:before {
+                    transform: rotate(180deg);
                 }
             }
+        }
 
-            &_title {
-                font-size: 18px;
-                font-weight: 600;
-                margin-bottom: 14px;
-                padding-left: 40px;
-            }
+        &_title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            padding-left: 40px;
+        }
 
-            &_description {
-                font-size: 16px;
-                padding-left: 40px;
-            }
+        &_description {
+            font-size: 16px;
+            padding-left: 40px;
         }
     }
 
@@ -666,6 +678,10 @@ body {
         a {
             all: unset;
         }
+    }
+
+    &_img {
+        width: 100%;
     }
     &_title {
         font-size: 46px;
