@@ -4,9 +4,6 @@ $(document).ready(function () {
   setTimeout(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    console.log('window.innerHeight',window.innerHeight)
-    console.log('window.',window.innerWidth)
-
     const accordion = gsap.timeline({
       defaults: {
         ease: 'none',
@@ -29,9 +26,10 @@ $(document).ready(function () {
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
     accordion.to('#pin3', { height: 0 }, 2);
 
-    gsap.set('.spacer.bot', { marginTop: '-=' + ( window.innerHeight <760 ? window.innerHeight + 1020 : window.innerHeight + 2220) });
-    // gsap.set('.spacer.bot', { marginTop: '-=120%' });
- 
+    gsap.set('.spacer.bot', {
+      marginTop:
+        '-=' + (window.innerHeight < 760 ? window.innerHeight + 1020 : window.innerHeight + 2220),
+    });
   }, 200);
 
   //end of accordion
@@ -82,6 +80,8 @@ $(document).ready(function () {
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('.main-navigation').outerHeight();
+    var aboutUsSection = $('.about_us');
+    var aboutUsHeight = aboutUsSection.height();
 
     $(window).scroll(function (e) {
       didScroll = true;
@@ -96,6 +96,16 @@ $(document).ready(function () {
 
     function hasScrolled() {
       var st = $(this).scrollTop();
+      // var isInsideAboutUs = st >= aboutUsSection.offset().top && st <= aboutUsSection.offset().top + aboutUsHeight;
+
+      // if (isInsideAboutUs) {
+      //   // The user is inside the .about_us section
+      //   console.log('Inside About Us section');
+      // } else {
+      //   // The user is outside the .about_us section
+      //   console.log('Outside About Us section');
+      // }
+
       var navbarHeight = $('.main-navigation').outerHeight();
 
       if (Math.abs(lastScrollTop - st) <= delta) return;
@@ -137,14 +147,22 @@ $(document).ready(function () {
 
   //hover animation
 
-
-  $('.btn-6').hover(
-    function() {
-      $('.additional').addClass('hovered');
+  $('.btn_1').hover(
+    function () {
+      $('.additional_1').addClass('hovered_btn_1');
     },
-    function() {
-      $('.additional').removeClass('hovered');
-    }
+    function () {
+      $('.additional_1').removeClass('hovered_btn_1');
+    },
+  );
+
+  $('.btn_2').hover(
+    function () {
+      $('.additional_2').addClass('hovered_btn_2');
+    },
+    function () {
+      $('.additional_2').removeClass('hovered_btn_2');
+    },
   );
 
   $('.hover_animate_1_1').hover(
@@ -171,28 +189,26 @@ $(document).ready(function () {
     },
   );
 
+  //horizontal scroll
+  document.addEventListener('scroll', horizontalScroll);
 
-  // Adding scroll event listener
-document.addEventListener('scroll', horizontalScroll);
+  let sticky = document.querySelector('.sticky');
+  let stickyParent = document.querySelector('.sticky-parent');
 
-//Selecting Elements
-let sticky = document.querySelector('.sticky');
-let stickyParent = document.querySelector('.sticky-parent');
+  let scrollWidth = sticky.scrollWidth;
+  let verticalScrollHeight =
+    stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
-let scrollWidth = sticky.scrollWidth;
-let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
-
-//Scroll function 
-function horizontalScroll(){
-
+  //Scroll function
+  function horizontalScroll() {
     //Checking whether the sticky element has entered into view or not
     let stickyPosition = sticky.getBoundingClientRect().top;
-    if(stickyPosition > 1){
-        return;
-    }else{
-        let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-        sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
-    
+    if (stickyPosition > 1000) {
+      return;
+    } else {
+      let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+      sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.66;
     }
-}
+  }
+  //horizontal scroll
 });

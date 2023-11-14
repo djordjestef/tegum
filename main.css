@@ -18,13 +18,23 @@ body {
   left: 72px;
   font-size: 16px;
 }
-.what_we_do .wrapper .acc_container .container-fluid {
-  background-color: #fff;
+.what_we_do .wrapper .acc_container #pin1 {
+  height: 100vh;
+}
+.what_we_do .wrapper .acc_container #pin2,
+.what_we_do .wrapper .acc_container #pin3 {
+  height: 100vh;
 }
 .what_we_do .wrapper .acc_container .item {
-  overflow: hidden;
   padding-right: 72px;
   padding-left: 72px;
+  overflow: hidden; /* Hide content that overflows the fixed height */
+  height: 100vh;
+}
+.what_we_do .wrapper .acc_container .item .container-fluid {
+  overflow: auto; /* Enable scrolling for overflow content */
+  height: 100%; /* Occupy the full height of the .item */
+  background-color: #fff;
 }
 .what_we_do .wrapper .acc_container .item .services_small_title {
   position: absolute;
@@ -93,7 +103,6 @@ body {
 .what_we_do .wrapper .acc_container .head_holder {
   background-color: #a3f34a;
   padding: 5vh 0;
-  border-top: 1px solid #000;
   position: relative;
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
@@ -135,7 +144,8 @@ body {
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn span {
   display: block;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2 {
   display: inline-block;
   position: relative;
   width: 150px;
@@ -148,11 +158,14 @@ body {
   background: transparent;
   position: absolute;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional span {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1 span,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2 span {
   display: block;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional::before,
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2::after {
   content: "";
   width: 20px;
   height: 2px;
@@ -182,8 +195,10 @@ body {
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover::after {
   width: 100%;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional.hovered::before,
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional.hovered::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1.hovered_btn_1::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_1.hovered_btn_1::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2.hovered_btn_2::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_2.hovered_btn_2::after {
   width: 150px;
   right: 0;
 }
@@ -191,50 +206,53 @@ body {
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn:hover span::after {
   height: 100%;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6::before {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2::before {
   left: -9px;
   top: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2::after {
   left: -9px;
   bottom: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-7::before {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_btn_1::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_btn_2::before {
   right: -9px;
   top: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-7::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_btn_1::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .additional_btn_2::after {
   right: -9px;
   bottom: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6 span::before {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1 span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2 span::before {
   left: 0;
   top: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6 span::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1 span::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2 span::after {
   right: 0;
   top: 0;
   transition-duration: 0.4s;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover::before,
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1:hover::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1:hover::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2:hover::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2:hover::after {
   left: 0;
 }
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover span::before,
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn-6:hover span::after {
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1:hover span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_1:hover span::after,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2:hover span::before,
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_2:hover span::after {
   top: 0;
-}
-.what_we_do .wrapper .acc_container #pin1 {
-  height: 100vh;
-}
-.what_we_do .wrapper .acc_container #pin2,
-.what_we_do .wrapper .acc_container #pin3 {
-  height: 100vh;
 }
 
 .plus-minus-toggle {
@@ -386,26 +404,29 @@ body {
 }
 
 .about_us {
-  padding: 200px 0;
+  margin-bottom: 200px;
   position: relative;
 }
 .about_us .sticky-parent {
-  height: 700vh;
+  height: 400px;
 }
 .about_us .sticky {
   position: sticky;
   top: 0px;
-  max-height: 100vh;
+  max-height: 50vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 .about_us .dim {
   display: block;
-  min-width: 50vw;
-  height: 100vh;
+  min-width: 40vw;
+}
+.about_us .dim:first-child {
+  margin-left: 9%;
 }
 .about_us .horizontal {
   display: flex;
+  padding-top: 200px;
 }
 .about_us_title {
   position: absolute;
@@ -415,9 +436,8 @@ body {
 }
 .about_us .flex_columns {
   position: relative;
-  padding-right: 120px;
+  padding-right: 270px;
   padding-left: 0;
-  width: 46%;
 }
 .about_us .flex_columns:last-child {
   margin-right: 12px;

@@ -26,16 +26,29 @@ body {
     }
     .wrapper {
         .acc_container {
-            .container-fluid {
-                // height: 100%;
-                background-color: #fff;
+            #pin1 {
+                height: 100vh;
+
+                // height: 900px;
+            }
+
+            #pin2,
+            #pin3 {
+                height: 100vh;
+                // height: 900px;
             }
             .item {
-                overflow: hidden;
-                // margin-left: 72px;
-                // margin-right: 72px;
+                // overflow: scroll;
                 padding-right: 72px;
                 padding-left: 72px;
+                overflow: hidden; /* Hide content that overflows the fixed height */
+                height: 100vh;
+
+                .container-fluid {
+                    overflow: auto; /* Enable scrolling for overflow content */
+                    height: 100%; /* Occupy the full height of the .item */
+                    background-color: #fff;
+                }
 
                 .services_small_title {
                     position: absolute;
@@ -114,8 +127,7 @@ body {
             .head_holder {
                 background-color: #a3f34a;
                 padding: 5vh 0;
-                // border-bottom: 1px solid #000;
-                border-top: 1px solid #000;
+                // border-top: 1px solid #000;
                 position: relative;
 
                 @media only screen and (max-width: 1400px) {
@@ -164,7 +176,8 @@ body {
                             display: block;
                         }
                     }
-                    .additional {
+                    .additional_1,
+                    .additional_2 {
                         display: inline-block;
                         position: relative;
                         width: 150px;
@@ -182,8 +195,10 @@ body {
                         }
                     }
 
-                    .additional::before,
-                    .additional::after {
+                    .additional_1::before,
+                    .additional_1::after,
+                    .additional_2::before,
+                    .additional_2::after {
                         content: "";
                         width: 20px;
                         height: 2px;
@@ -217,8 +232,10 @@ body {
                         width: 100%;
                     }
 
-                    .additional.hovered::before,
-                    .additional.hovered::after {
+                    .additional_1.hovered_btn_1::before,
+                    .additional_1.hovered_btn_1::after,
+                    .additional_2.hovered_btn_2::before,
+                    .additional_2.hovered_btn_2::after {
                         width: 150px;
                         right: 0;
                     }
@@ -226,57 +243,56 @@ body {
                     .btn:hover span::after {
                         height: 100%;
                     }
-                    .btn-6::before {
+                    .btn_1::before,
+                    .btn_2::before {
                         left: -9px;
                         top: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-6::after {
+                    .btn_1::after,
+                    .btn_2::after {
                         left: -9px;
                         bottom: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-7::before {
+                    .additional_btn_1::before,
+                    .additional_btn_2::before {
                         right: -9px;
                         top: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-7::after {
+                    .additional_btn_1::after,
+                    .additional_btn_2::after {
                         right: -9px;
                         bottom: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-6 span::before {
+                    .btn_1 span::before,
+                    .btn_2 span::before {
                         left: 0;
                         top: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-6 span::after {
+                    .btn_1 span::after,
+                    .btn_2 span::after {
                         right: 0;
                         top: 0;
                         transition-duration: 0.4s;
                     }
-                    .btn-6:hover::before,
-                    .btn-6:hover::after {
+                    .btn_1:hover::before,
+                    .btn_1:hover::after,
+                    .btn_2:hover::before,
+                    .btn_2:hover::after {
                         left: 0;
                     }
 
-                    .btn-6:hover span::before,
-                    .btn-6:hover span::after {
+                    .btn_1:hover span::before,
+                    .btn_1:hover span::after,
+                    .btn_2:hover span::before,
+                    .btn_2:hover span::after {
                         top: 0;
                     }
                 }
-            }
-
-            #pin1 {
-                height: calc(100vh);
-                // height: 900px;
-            }
-
-            #pin2,
-            #pin3 {
-                height: calc(100vh);
-                // height: 900px;
             }
         }
     }
@@ -482,26 +498,35 @@ body {
 }
 
 .about_us {
-    padding: 200px 0;
+    // padding-bottom: 320px;
+    margin-bottom: 200px;
+    // padding-top: 200px;
     position: relative;
 
     .sticky-parent {
-        height: 700vh;
+        height: 400px;
     }
     .sticky {
         position: sticky;
         top: 0px;
-        max-height: 100vh;
+        max-height: 50vh;
         overflow-x: hidden;
         overflow-y: hidden;
+        // margin-bottom: 200px;
     }
     .dim {
         display: block;
-        min-width: 50vw;
-        height: 100vh;
+        min-width: 40vw;
+
+        &:first-child {
+            margin-left: 9%;
+        }
+
+        // height: 20vh;
     }
     .horizontal {
         display: flex;
+        padding-top: 200px;
     }
 
     &_title {
@@ -513,9 +538,9 @@ body {
 
     .flex_columns {
         position: relative;
-        padding-right: 120px;
+        padding-right: 270px;
         padding-left: 0;
-        width: 46%;
+        // width: 46%;
 
         &:last-child {
             margin-right: 12px;
