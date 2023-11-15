@@ -13,7 +13,7 @@ $(document).ready(function () {
         trigger: '.acc_container',
         start: 'top top',
         // end: '+=' + (window.innerHeight * 3 - 900),
-        end: '+=200%',
+        end: '+=500%',
         scrub: true,
         // markers: true,
         pin: '.acc_container',
@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     accordion.to('#pin1', { height: 0 }, 0);
-    // accordion.to('#pin2', { height: window.innerHeight -100 }, 0); //-10
+
     accordion.to('#pin2', { height: 0 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
     accordion.to('#pin3', { height: 0 }, 2);
@@ -194,20 +194,24 @@ $(document).ready(function () {
 
   let sticky = document.querySelector('.sticky');
   let stickyParent = document.querySelector('.sticky-parent');
+  let startPosition = document.querySelector('.main_section_img')
+
 
   let scrollWidth = sticky.scrollWidth;
   let verticalScrollHeight =
     stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
-  //Scroll function
   function horizontalScroll() {
-    //Checking whether the sticky element has entered into view or not
     let stickyPosition = sticky.getBoundingClientRect().top;
-    if (stickyPosition > 1000) {
-      return;
+
+    if (stickyPosition < 1) {
+      return
+      
     } else {
-      let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-      sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.66;
+      let scrolled = startPosition.getBoundingClientRect().top+300; 
+      console.log('scrolled',scrolled)
+      
+      sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.16;
     }
   }
   //horizontal scroll
