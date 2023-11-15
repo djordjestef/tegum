@@ -194,8 +194,10 @@ $(document).ready(function () {
 
   let sticky = document.querySelector('.sticky');
   let stickyParent = document.querySelector('.sticky-parent');
-  let startPosition = document.querySelector('.main_section_img')
+  let startPosition = document.querySelector('.main_section_img');
 
+  const width = window.innerWidth;
+  console.log('width', width);
 
   let scrollWidth = sticky.scrollWidth;
   let verticalScrollHeight =
@@ -203,15 +205,17 @@ $(document).ready(function () {
 
   function horizontalScroll() {
     let stickyPosition = sticky.getBoundingClientRect().top;
-    console.log('stickyPosition',stickyPosition)
+    console.log('stickyPosition', stickyPosition);
     if (stickyPosition < 1) {
       // return
-      
     } else {
-      let scrolled = startPosition.getBoundingClientRect().top+300; 
-      console.log('scrolled',scrolled)
-      
-      sticky.scrollLeft = (scrollWidth / verticalScrollHeight +20) * -scrolled * 0.06;
+      let scrolled = startPosition.getBoundingClientRect().top + 300;
+      console.log('scrolled', scrolled);
+
+      sticky.scrollLeft =
+        width < 1400
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.16
+          : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
     }
   }
   //horizontal scroll
