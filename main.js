@@ -214,9 +214,9 @@ $(document).ready(function () {
       console.log('scrolled', scrolled);
 
       sticky.scrollLeft =
-        width < 1441
-          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
-          : width < 1200
+        width < 1200
+          ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
+          : width < 1440
           ? (scrollWidth / verticalScrollHeight) * -scrolled * 1.66
           : (scrollWidth / verticalScrollHeight ) * -scrolled * 0.06;
     }

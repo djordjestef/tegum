@@ -590,7 +590,7 @@ body {
 }
 @media only screen and (max-width: 1400px) {
   .about_us .dim {
-    min-width: 35vw;
+    min-width: 43vw;
   }
 }
 .about_us .dim:first-child {
