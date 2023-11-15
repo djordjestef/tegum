@@ -203,15 +203,15 @@ $(document).ready(function () {
 
   function horizontalScroll() {
     let stickyPosition = sticky.getBoundingClientRect().top;
-
+    console.log('stickyPosition',stickyPosition)
     if (stickyPosition < 1) {
-      return
+      // return
       
     } else {
       let scrolled = startPosition.getBoundingClientRect().top+300; 
       console.log('scrolled',scrolled)
       
-      sticky.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.16;
+      sticky.scrollLeft = (scrollWidth / verticalScrollHeight +20) * -scrolled * 0.06;
     }
   }
   //horizontal scroll
