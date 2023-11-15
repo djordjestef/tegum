@@ -213,11 +213,19 @@ $(document).ready(function () {
       let scrolled = startPosition.getBoundingClientRect().top + 300;
       console.log('scrolled', scrolled);
 
+      // if(width<1200 ){
+      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
+      // } else if (width<1441){
+      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight + 20) * -scrolled * 1.66
+      // }else {
+      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.06
+      // }
+
       sticky.scrollLeft =
         width < 1200
           ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
-          : width < 1440
-          ? (scrollWidth / verticalScrollHeight) * -scrolled * 1.66
+          : width < 1441
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * .066
           : (scrollWidth / verticalScrollHeight ) * -scrolled * 0.06;
     }
   }
