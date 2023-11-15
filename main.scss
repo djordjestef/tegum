@@ -172,6 +172,30 @@ body {
                 &_img_1_2 {
                     display: none;
                 }
+
+                &_img_2_1 {
+                    display: none;
+                }
+
+                // .hover_animate_1_1:hover &_img_1_1 {
+                //     display: block;
+                // }
+
+                &_img_2_2 {
+                    display: none;
+                }
+
+                &_img_3_1 {
+                    display: none;
+                }
+
+                // .hover_animate_1_1:hover &_img_1_1 {
+                //     display: block;
+                // }
+
+                &_img_3_2 {
+                    display: none;
+                }
             }
 
             .head_holder {
@@ -644,7 +668,7 @@ body {
         min-width: 40vw;
 
         @media only screen and (max-width: 1400px) {
-            min-width: 43vw;
+            min-width: 35vw;
         }
 
         &:first-child {

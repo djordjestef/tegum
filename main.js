@@ -169,11 +169,11 @@ $(document).ready(function () {
     function () {
       $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
       $('.item_img_1_1').fadeIn(200);
-      $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
     },
     function () {
       $('.item_img_1_1').fadeOut(200);
-      $('.background_helper').css('background-color', '#fff').fadeOut(100);
+      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
     },
   );
 
@@ -181,11 +181,11 @@ $(document).ready(function () {
     function () {
       $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
       $('.item_img_1_2').fadeIn(200);
-      $('.background_helper').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
     },
     function () {
       $('.item_img_1_2').fadeOut(200);
-      $('.background_helper').css('background-color', '#fff').fadeOut(100);
+      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
     },
   );
 
@@ -199,7 +199,8 @@ $(document).ready(function () {
   const width = window.innerWidth;
   console.log('width', width);
 
-  let scrollWidth = sticky.scrollWidth;
+  let scrollWidth = sticky.scrollWidth ;
+  console.log('scrollWidth',scrollWidth)
   let verticalScrollHeight =
     stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
@@ -213,9 +214,11 @@ $(document).ready(function () {
       console.log('scrolled', scrolled);
 
       sticky.scrollLeft =
-        width < 1400
-          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.16
-          : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
+        width < 1441
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
+          : width < 1200
+          ? (scrollWidth / verticalScrollHeight) * -scrolled * 1.66
+          : (scrollWidth / verticalScrollHeight ) * -scrolled * 0.06;
     }
   }
   //horizontal scroll

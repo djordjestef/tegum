@@ -162,6 +162,18 @@ body {
 .what_we_do .wrapper .acc_container .item_img_1_2 {
   display: none;
 }
+.what_we_do .wrapper .acc_container .item_img_2_1 {
+  display: none;
+}
+.what_we_do .wrapper .acc_container .item_img_2_2 {
+  display: none;
+}
+.what_we_do .wrapper .acc_container .item_img_3_1 {
+  display: none;
+}
+.what_we_do .wrapper .acc_container .item_img_3_2 {
+  display: none;
+}
 .what_we_do .wrapper .acc_container .head_holder {
   background-color: #a3f34a;
   padding: 5vh 0;
@@ -578,7 +590,7 @@ body {
 }
 @media only screen and (max-width: 1400px) {
   .about_us .dim {
-    min-width: 43vw;
+    min-width: 35vw;
   }
 }
 .about_us .dim:first-child {
