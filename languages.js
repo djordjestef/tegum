@@ -191,7 +191,7 @@ const jsonSR = {
   get_started_fcis_btn: 'Počni',
   main_section_contact_holder_title: 'Hajde da ispunimo vaše jedinstvene poslovne potrebe.',
   form_name: 'Ime',
-  form_email: 'Email',
+  form_email: 'Email (obavezno)',
   form_subject: '+ Tema',
   form_comment: 'Poruka',
 };
