@@ -1039,9 +1039,9 @@ body {
     }
 }
 
-//Financial consulting and investment studies page
+//Financial consulting and investment fcis page
 
-.main_section_studies {
+.main_section_fcis {
     .padding_helper {
         padding: 0 72px;
     }
@@ -1081,7 +1081,7 @@ body {
     }
 }
 
-.tegum_services_studies {
+.tegum_services_fcis {
     position: relative;
 
     .padding_helper {
@@ -1089,6 +1089,10 @@ body {
     }
     .margin_helper {
         margin-top: 152px;
+    }
+
+    .border_helper {
+        border-left: 2px solid #0011ff;
     }
     &_small_title {
         position: absolute;
@@ -1134,9 +1138,14 @@ body {
             font-weight: 400;
         }
 
+        &_description_2_1 {
+            margin-top: 30px;
+        }
+
         &_options {
             margin-top: 44px;
             padding-left: 56px;
+            
 
             &_title {
                 margin-bottom: 10px;
@@ -1149,5 +1158,44 @@ body {
                 font-size: 16px;
             }
         }
+    }
+}
+
+.get_started_fcis {
+    position: relative;
+    padding: 114px 0;
+    background-color: #a3f34a;
+    &_small_title {
+        position: absolute;
+        top: 57px;
+        left: 72px;
+        font-size: 16px;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+
+    &_title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 28px;
+    }
+
+    a {
+        all: unset;
+    }
+
+    &_btn {
+        all: unset;
+        width: 150px;
+        height: 42px;
+        text-align: center;
+        background: #000000;
+        border: 1px solid #a3f34a;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
     }
 }

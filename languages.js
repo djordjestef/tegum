@@ -58,29 +58,33 @@ const jsonEN = {
   footer_contact_address: 'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
   footer_contact_phone: 'Phone:',
   footer_btn: 'Get started',
-  main_section_studies_holder_title: 'Financial consulting and investment studies',
-  main_section_studies_holder_description: `Navigate the financial landscape of FMCG production with confidence. Our seasoned experts provide in-depth financial consulting services, guiding you through strategic decisions, cost optimization, and investment planning. Whether you're looking to enhance production capacity or streamline costs, our financial consultancy ensures your objectives align seamlessly with your financial goals.`,
-  tegum_services_studies_small_title: 'TEGUM Services',
-  tegum_services_studies_title: 'Comprehensive Solutions for Strategic Growth',
-  tegum_services_studies_holder_title_1: 'Financial Consulting',
-  tegum_services_studies_holder_description_1:
+  main_section_fcis_holder_title: 'Financial consulting and investment studies',
+  main_section_fcis_holder_description: `Navigate the financial landscape of FMCG production with confidence. Our seasoned experts provide in-depth financial consulting services, guiding you through strategic decisions, cost optimization, and investment planning. Whether you're looking to enhance production capacity or streamline costs, our financial consultancy ensures your objectives align seamlessly with your financial goals.`,
+  tegum_services_fcis_small_title: 'TEGUM Services',
+  tegum_services_fcis_title: 'Comprehensive Solutions for Strategic Growth',
+  tegum_services_fcis_holder_title_1: 'Financial Consulting',
+  tegum_services_fcis_holder_description_1:
     ' Our industry and production financial consulting services are crafted to empower businesses with strategic financial management. Our seasoned consultants work closely with you to understand the nuances of your industry and production processes. From budget optimization and cost-effective resource allocation to risk mitigation strategies, we provide tailored financial guidance that aligns with your unique business goals. Whether you are aiming to streamline operations, enhance profitability, or navigate financial challenges, our consulting services are your key to sustainable financial success.',
-  tegum_services_studies_holder_options_1_title: 'Needs Assessment:',
-  tegum_services_studies_holder_options_1_description:
+  tegum_services_fcis_holder_options_1_title: 'Needs Assessment:',
+  tegum_services_fcis_holder_options_1_description:
     ' Thorough evaluation of your industry and production financial landscape. Identification of specific financial challenges and opportunities unique to your business.',
-  tegum_services_studies_holder_options_2_title: 'Customized Financial Strategies:',
-  tegum_services_studies_holder_options_2_description:
+  tegum_services_fcis_holder_options_2_title: 'Customized Financial Strategies:',
+  tegum_services_fcis_holder_options_2_description:
     ' Tailoring financial strategies to align with your business objectives. Implementing cost optimization measures and resource allocation plans.',
-  tegum_services_studies_holder_options_3_title: 'Risk Mitigation:',
-  tegum_services_studies_holder_options_3_description:
+  tegum_services_fcis_holder_options_3_title: 'Risk Mitigation:',
+  tegum_services_fcis_holder_options_3_description:
     'Comprehensive risk analysis to anticipate and mitigate potential financial challenges. Development of risk management strategies for enhanced financial resilience. ',
 
-  tegum_services_studies_holder_options_4_title: 'Operational Efficiency Enhancement:',
-  tegum_services_studies_holder_options_4_description:
+  tegum_services_fcis_holder_options_4_title: 'Operational Efficiency Enhancement:',
+  tegum_services_fcis_holder_options_4_description:
     'Streamlining operational processes to improve efficiency. Identifying areas for cost-effective resource utilization.',
-  tegum_services_studies_holder_title_2: 'Investment Studies',
-  tegum_services_studies_holder_description_2:
-    'In the dynamic landscape of industry and production, informed decision-making is crucial. Our investment studies offer a detailed analysis that goes beyond traditional financial evaluations. We delve into market trends, potential risks, and growth opportunities specific to your industry. Whether you are considering expanding your production capabilities, introducing new technologies, or venturing into new markets, our studies provide a strategic roadmap. Backed by data-driven insights, we equip you with the knowledge needed to make confident and impactful investment decisions. Our goal is to ensure that your investments not only align with your current business objectives but also pave the way for long-term success and growth in the industry and production sector.',
+  tegum_services_fcis_holder_title_2: 'Investment Studies',
+  tegum_services_fcis_holder_description_2:
+    `In the dynamic landscape of industry and production, informed decision-making is crucial. Our investment studies offer a detailed analysis that goes beyond traditional financial evaluations. `,
+    tegum_services_fcis_holder_description_2_1:'We delve into market trends, potential risks, and growth opportunities specific to your industry. Whether you are considering expanding your production capabilities, introducing new technologies, or venturing into new markets, our studies provide a strategic roadmap. Backed by data-driven insights, we equip you with the knowledge needed to make confident and impactful investment decisions. Our goal is to ensure that your investments not only align with your current business objectives but also pave the way for long-term success and growth in the industry and production sector.',
+    get_started_fcis_small_title:'GET STARTED',
+    get_started_fcis_title:'Tackle complex challenges in industrial project management, production efficiency, and process improvement.',
+    get_started_fcis_btn:'Get started',
 };
 
 const jsonSR = {
@@ -145,27 +149,32 @@ const jsonSR = {
   footer_contact_address: 'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
   footer_contact_phone: 'Telefon:',
   footer_btn: 'Počni',
-  main_section_studies_holder_title: 'Finansijski konsalting i investicione studije',
-  main_section_studies_holder_description: `Snalaženje u finansijskom pejzažu proizvodnje robe široke potrošnje sa sigurnošću. Naši iskusni stručnjaci pružaju duboke finansijske konsultantske usluge, vodeći vas kroz strateške odluke, optimizaciju troškova i planiranje investicija. Bez obzira da li želite unaprediti kapacitet proizvodnje ili optimizovati troškove, naša finansijska konsultantska usluga osigurava da se vaši ciljevi besprekorno usklađuju sa vašim finansijskim ciljevima.`,
-  tegum_services_studies_small_title: 'TEGUM Usluge',
-  tegum_services_studies_title: 'Sveobuhvatna rešenja za strateški rast',
-  tegum_services_studies_holder_title_1: 'Finansijski Konsalting',
-  tegum_services_studies_holder_description_1:
+  main_section_fcis_holder_title: 'Finansijski konsalting i investicione studije',
+  main_section_fcis_holder_description: `Snalaženje u finansijskom pejzažu proizvodnje robe široke potrošnje sa sigurnošću. Naši iskusni stručnjaci pružaju duboke finansijske konsultantske usluge, vodeći vas kroz strateške odluke, optimizaciju troškova i planiranje investicija. Bez obzira da li želite unaprediti kapacitet proizvodnje ili optimizovati troškove, naša finansijska konsultantska usluga osigurava da se vaši ciljevi besprekorno usklađuju sa vašim finansijskim ciljevima.`,
+  tegum_services_fcis_small_title: 'TEGUM Usluge',
+  tegum_services_fcis_title: 'Sveobuhvatna rešenja za strateški rast',
+  tegum_services_fcis_holder_title_1: 'Finansijski Konsalting',
+  tegum_services_fcis_holder_description_1:
     'Naše usluge finansijskog konsaltinga u industriji i proizvodnji su napravljene da osnaže preduzeća sa strateškim finansijskim upravljanjem. Naši iskusni konsultanti blisko sarađuju sa vama kako bi razumeli nijanse vaše industrije i proizvodnih procesa. Od optimizacije budžeta i isplative alokacije resursa do strategija za smanjenje rizika, pružamo prilagođene finansijske smernice koje su u skladu sa vašim jedinstvenim poslovnim ciljevima. Bez obzira da li želite da pojednostavite poslovanje, povećate profitabilnost ili se nosite sa finansijskim izazovima, naše konsultantske usluge su vaš ključ za održivi finansijski uspeh.',
-  tegum_services_studies_holder_options_1_title: 'Procena potreba:',
-  tegum_services_studies_holder_options_1_description:
+  tegum_services_fcis_holder_options_1_title: 'Procena potreba:',
+  tegum_services_fcis_holder_options_1_description:
     'Detaljna procena finansijske situacije vaše industrije i proizvodnje. Identifikacija specifičnih finansijskih izazova i prilika jedinstvenih za vaše poslovanje.',
-  tegum_services_studies_holder_options_2_title: 'Prilagođene finansijske strategije:',
-  tegum_services_studies_holder_options_2_description:
+  tegum_services_fcis_holder_options_2_title: 'Prilagođene finansijske strategije:',
+  tegum_services_fcis_holder_options_2_description:
     'Prilagođavanje finansijskih strategija u skladu sa vašim poslovnim ciljevima. Sprovođenje mera optimizacije troškova i planova raspodele resursa.',
-  tegum_services_studies_holder_options_3_title: 'Ublažavanje rizika:',
-  tegum_services_studies_holder_options_3_description:
+  tegum_services_fcis_holder_options_3_title: 'Ublažavanje rizika:',
+  tegum_services_fcis_holder_options_3_description:
     'Sveobuhvatna analiza rizika za predviđanje i ublažavanje potencijalnih finansijskih izazova. Razvoj strategija upravljanja rizicima za povećanu finansijsku otpornost.',
-  tegum_services_studies_holder_options_4_title: 'Poboljšanje operativne efikasnosti:',
-  tegum_services_studies_holder_options_4_description:
+  tegum_services_fcis_holder_options_4_title: 'Poboljšanje operativne efikasnosti:',
+  tegum_services_fcis_holder_options_4_description:
     'Racionalizacija operativnih procesa radi poboljšanja efikasnosti. Identifikovanje oblasti za isplativo korišćenje resursa.',
-  tegum_services_studies_holder_title_2: 'Investicione studije',
-  tegum_services_studies_holder_description_2: 'U dinamičnom pejzažu industrije i proizvodnje, informisano donošenje odluka je ključno. Naše investicione studije nude detaljnu analizu koja prevazilazi tradicionalne finansijske procene. Prolazimo u tržišne trendove, potencijalne rizike i mogućnosti rasta specifične za vašu industriju. Bez obzira da li razmišljate o proširenju svojih proizvodnih mogućnosti, uvođenju novih tehnologija ili ulasku na nova tržišta, naše studije pružaju stratešku mapu puta. Podržani uvidima zasnovanim na podacima, mi vas opremimo znanjem potrebnim za donošenje sigurnih i uticajnih odluka o ulaganju. Naš cilj je da obezbedimo da vaše investicije ne samo da budu u skladu sa vašim trenutnim poslovnim ciljevima, već i da utiru put za dugoročni uspeh i rast u industriji i proizvodnom sektoru.',
+  tegum_services_fcis_holder_title_2: 'Investicione studije',
+  tegum_services_fcis_holder_description_2: 'U dinamičnom pejzažu industrije i proizvodnje, informisano donošenje odluka je ključno. Naše investicione studije nude detaljnu analizu koja prevazilazi tradicionalne finansijske procene.',
+  tegum_services_fcis_holder_description_2_1:'Udubljujemo se u tržišne trendove, potencijalne rizike i mogućnosti rasta specifične za vašu industriju. Bez obzira da li razmišljate o proširenju svojih proizvodnih mogućnosti, uvođenju novih tehnologija ili ulasku na nova tržišta, naše studije pružaju stratešku mapu puta. Podržani uvidima zasnovanim na podacima, mi vas opremimo znanjem potrebnim za donošenje sigurnih i uticajnih odluka o ulaganju. Naš cilj je da obezbedimo da vaše investicije ne samo da budu u skladu sa vašim trenutnim poslovnim ciljevima, već i da utre put za dugoročni uspeh i rast u industriji i proizvodnom sektoru.',
+  get_started_fcis_small_title:'POČNI',
+  get_started_fcis_title:'Riješite se složenih izazova u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
+  get_started_fcis_btn:'Počni',
+
 };
 
 $(document).on('click', '.en', function (event) {
