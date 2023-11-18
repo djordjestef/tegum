@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
     <section class="main_section_contact">
       <div class="container-fluid padding_helper">
         <div class="row">
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-5 col-12">
             <div class="main_section_contact_holder">
               <h1 class="main_section_contact_holder_title"></h1>
               <div class="page_contact">
@@ -37,15 +37,62 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-12"></div>
+          <div class="col-lg-1 col-12"></div>
           <div class="col-lg-4 col-12">
-            contact form
+
+
+            <div class="form">
+                <fieldset class="form-fieldset">
+                  <form id="form" onsubmit="getFormData();return false">
+                    <div class="form-element form-input">
+                      <input
+                        class="form-element-field"
+                        placeholder=" "
+                        type="input"
+                        required
+                        name="name"
+                      />
+                      <div class="form-element-bar"></div>
+                      <label class="form-element-label form_name"></label>
+                    </div>
+                    <div class="form-element form-input">
+                      <input
+                        class="form-element-field"
+                        placeholder=" "
+                        type="email"
+                        name="email"
+                        required
+                      />
+                      <div class="form-element-bar"></div>
+                      <label class="form-element-label form_email"></label>
+                    </div>
+                    <div class="form-element form-input">
+                      <input class="form-element-field" type="text" required name="subject" />
+                      <div class="form-element-bar"></div>
+                      <label class="form-element-label form_subject"></label>
+                    </div>
+                    <div class="form-element form-textarea">
+                      <textarea
+                        class="form-element-field"
+                        placeholder=" "
+                        name="comment"
+                      ></textarea>
+                      <div class="form-element-bar"></div>
+                      <label class="form-element-label"
+                        ><span class="form_comment"></span>
+                     
+                      </label>
+                    </div>
+                    
+                    <input type="submit" value="" class="form_btn form_btn_lang" />
+                  </form>
+                </fieldset>
+              </div>
           </div>
           <div class="col-lg-2 col-12"></div>
-
-          <img src="assets/main_page.png" alt="" class="main_section_contact_img" />
         </div>
       </div>
+      <img src="assets/contact.png" alt="" class="main_section_contact_img" />
     </section>
 
     <section class="footer">

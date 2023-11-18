@@ -4,7 +4,7 @@ const jsonEN = {
   main_nav_3: 'Company',
   sub_nav_1_1: 'About',
   sub_nav_1_2: 'Financial consulting and investment studies',
-  sub_nav_1_3:'Contact',
+  sub_nav_1_3: 'Contact',
   nav_btn: 'Inquire',
   main_section_holder_title: 'Maximizing Efficiency, Minimizing Costs.',
   about_us_title: 'ABOUT US',
@@ -82,23 +82,19 @@ const jsonEN = {
   tegum_services_fcis_holder_options_4_description:
     'Streamlining operational processes to improve efficiency. Identifying areas for cost-effective resource utilization.',
   tegum_services_fcis_holder_title_2: 'Investment Studies',
-  tegum_services_fcis_holder_description_2:
-    `In the dynamic landscape of industry and production, informed decision-making is crucial. Our investment studies offer a detailed analysis that goes beyond traditional financial evaluations. `,
-    tegum_services_fcis_holder_description_2_1:'We delve into market trends, potential risks, and growth opportunities specific to your industry. Whether you are considering expanding your production capabilities, introducing new technologies, or venturing into new markets, our studies provide a strategic roadmap. Backed by data-driven insights, we equip you with the knowledge needed to make confident and impactful investment decisions. Our goal is to ensure that your investments not only align with your current business objectives but also pave the way for long-term success and growth in the industry and production sector.',
-    get_started_fcis_small_title:'GET STARTED',
-    get_started_fcis_title:'Tackle complex challenges in industrial project management, production efficiency, and process improvement.',
-    get_started_fcis_btn:'Get started',
-    main_section_contact_holder_title:`Let's meet your unique business needs.`,
+  tegum_services_fcis_holder_description_2: `In the dynamic landscape of industry and production, informed decision-making is crucial. Our investment studies offer a detailed analysis that goes beyond traditional financial evaluations. `,
+  tegum_services_fcis_holder_description_2_1:
+    'We delve into market trends, potential risks, and growth opportunities specific to your industry. Whether you are considering expanding your production capabilities, introducing new technologies, or venturing into new markets, our studies provide a strategic roadmap. Backed by data-driven insights, we equip you with the knowledge needed to make confident and impactful investment decisions. Our goal is to ensure that your investments not only align with your current business objectives but also pave the way for long-term success and growth in the industry and production sector.',
+  get_started_fcis_small_title: 'GET STARTED',
+  get_started_fcis_title:
+    'Tackle complex challenges in industrial project management, production efficiency, and process improvement.',
+  get_started_fcis_btn: 'Get started',
+  main_section_contact_holder_title: `Let's meet your unique business needs.`,
+  form_name: 'Your Name',
+  form_email: 'Email (required)',
+  form_subject: '+ Subject',
+  form_comment: 'Message',
 };
-
-
-
-
-
-
-
-
-
 
 const jsonSR = {
   main_nav_1: 'Usluge',
@@ -106,7 +102,7 @@ const jsonSR = {
   main_nav_3: 'Kompanija',
   sub_nav_1_1: 'O nama',
   sub_nav_1_2: 'Finansijski konsalting i investicione studije',
-  sub_nav_1_3:'Kontakt',
+  sub_nav_1_3: 'Kontakt',
   nav_btn: 'Raspitaj se',
   main_section_holder_title: 'Maksimiziranje efikasnosti, minimiziranje troškova',
   about_us_title: 'O NAMA',
@@ -185,13 +181,19 @@ const jsonSR = {
   tegum_services_fcis_holder_options_4_description:
     'Racionalizacija operativnih procesa radi poboljšanja efikasnosti. Identifikovanje oblasti za isplativo korišćenje resursa.',
   tegum_services_fcis_holder_title_2: 'Investicione studije',
-  tegum_services_fcis_holder_description_2: 'U dinamičnom pejzažu industrije i proizvodnje, informisano donošenje odluka je ključno. Naše investicione studije nude detaljnu analizu koja prevazilazi tradicionalne finansijske procene.',
-  tegum_services_fcis_holder_description_2_1:'Udubljujemo se u tržišne trendove, potencijalne rizike i mogućnosti rasta specifične za vašu industriju. Bez obzira da li razmišljate o proširenju svojih proizvodnih mogućnosti, uvođenju novih tehnologija ili ulasku na nova tržišta, naše studije pružaju stratešku mapu puta. Podržani uvidima zasnovanim na podacima, mi vas opremimo znanjem potrebnim za donošenje sigurnih i uticajnih odluka o ulaganju. Naš cilj je da obezbedimo da vaše investicije ne samo da budu u skladu sa vašim trenutnim poslovnim ciljevima, već i da utre put za dugoročni uspeh i rast u industriji i proizvodnom sektoru.',
-  get_started_fcis_small_title:'POČNI',
-  get_started_fcis_title:'Riješite se složenih izazova u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
-  get_started_fcis_btn:'Počni',
-  main_section_contact_holder_title:'Hajde da ispunimo vaše jedinstvene poslovne potrebe.',
-
+  tegum_services_fcis_holder_description_2:
+    'U dinamičnom pejzažu industrije i proizvodnje, informisano donošenje odluka je ključno. Naše investicione studije nude detaljnu analizu koja prevazilazi tradicionalne finansijske procene.',
+  tegum_services_fcis_holder_description_2_1:
+    'Udubljujemo se u tržišne trendove, potencijalne rizike i mogućnosti rasta specifične za vašu industriju. Bez obzira da li razmišljate o proširenju svojih proizvodnih mogućnosti, uvođenju novih tehnologija ili ulasku na nova tržišta, naše studije pružaju stratešku mapu puta. Podržani uvidima zasnovanim na podacima, mi vas opremimo znanjem potrebnim za donošenje sigurnih i uticajnih odluka o ulaganju. Naš cilj je da obezbedimo da vaše investicije ne samo da budu u skladu sa vašim trenutnim poslovnim ciljevima, već i da utre put za dugoročni uspeh i rast u industriji i proizvodnom sektoru.',
+  get_started_fcis_small_title: 'POČNI',
+  get_started_fcis_title:
+    'Riješite se složenih izazova u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
+  get_started_fcis_btn: 'Počni',
+  main_section_contact_holder_title: 'Hajde da ispunimo vaše jedinstvene poslovne potrebe.',
+  form_name: 'Ime',
+  form_email: 'Email',
+  form_subject: '+ Tema',
+  form_comment: 'Poruka',
 };
 
 $(document).on('click', '.en', function (event) {
@@ -224,6 +226,11 @@ $(document).ready(function () {
     for (let key in jsonData) {
       setTimeout(() => {
         const element = document.querySelector('.' + key);
+        if (lang === 'sr') {
+          $('.form_btn_lang').attr('value', 'Pošalji');
+        } else {
+          $('.form_btn_lang').attr('value', 'Send');
+        }
         if (element) {
           element.textContent = jsonData[key];
         }

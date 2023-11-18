@@ -199,8 +199,8 @@ $(document).ready(function () {
   const width = window.innerWidth;
   console.log('width', width);
 
-  let scrollWidth = sticky.scrollWidth ;
-  console.log('scrollWidth',scrollWidth)
+  let scrollWidth = sticky.scrollWidth;
+  console.log('scrollWidth', scrollWidth);
   let verticalScrollHeight =
     stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 
@@ -225,9 +225,27 @@ $(document).ready(function () {
         width < 1200
           ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
           : width < 1441
-          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * .066
-          : (scrollWidth / verticalScrollHeight ) * -scrolled * 0.06;
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.066
+          : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
     }
   }
   //horizontal scroll
 });
+
+//contact form
+
+document.addEventListener('change', function (event) {
+  let element = event.target;
+  if (element && element.matches('.form-element-field')) {
+    element.classList[element.value ? 'add' : 'remove']('-hasvalue');
+  }
+});
+
+function getFormData() {
+  const data = $('form').serializeArray();
+  var obj = {};
+  for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
+  console.log('obj',obj)
+
+  return false;
+}
