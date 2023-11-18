@@ -1069,6 +1069,7 @@ body {
 
         &_description {
             font-size: 16px;
+            margin-bottom: 84px;
 
             @media only screen and (max-width: 1400px) {
                 // font-size: 18px;
@@ -1192,10 +1193,54 @@ body {
         height: 42px;
         text-align: center;
         background: #000000;
-        border: 1px solid #a3f34a;
+        border: 2px solid #000;
         color: #ffffff;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
+    }
+}
+
+//contact page
+
+
+.main_section_contact {
+    .padding_helper {
+        padding: 0 72px;
+    }
+    margin-top: 225px;
+
+    &_holder {
+        width: 80%;
+        margin-bottom: 113px;
+        @media only screen and (max-width: 1440px) {
+            width: 110%;
+        }
+
+        @media only screen and (max-width: 1400px) {
+            width: 130%;
+        }
+        &_title {
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: 1400px) {
+                font-size: 44px;
+            }
+        }
+
+       
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    .page_contact {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 76px;
+        margin-bottom: 150px;
     }
 }

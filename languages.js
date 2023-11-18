@@ -4,6 +4,7 @@ const jsonEN = {
   main_nav_3: 'Company',
   sub_nav_1_1: 'About',
   sub_nav_1_2: 'Financial consulting and investment studies',
+  sub_nav_1_3:'Contact',
   nav_btn: 'Inquire',
   main_section_holder_title: 'Maximizing Efficiency, Minimizing Costs.',
   about_us_title: 'ABOUT US',
@@ -57,6 +58,8 @@ const jsonEN = {
   footer_nav_3: 'Company',
   footer_contact_address: 'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
   footer_contact_phone: 'Phone:',
+  page_contact_address: 'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
+  page_contact_phone: 'Phone:',
   footer_btn: 'Get started',
   main_section_fcis_holder_title: 'Financial consulting and investment studies',
   main_section_fcis_holder_description: `Navigate the financial landscape of FMCG production with confidence. Our seasoned experts provide in-depth financial consulting services, guiding you through strategic decisions, cost optimization, and investment planning. Whether you're looking to enhance production capacity or streamline costs, our financial consultancy ensures your objectives align seamlessly with your financial goals.`,
@@ -85,7 +88,17 @@ const jsonEN = {
     get_started_fcis_small_title:'GET STARTED',
     get_started_fcis_title:'Tackle complex challenges in industrial project management, production efficiency, and process improvement.',
     get_started_fcis_btn:'Get started',
+    main_section_contact_holder_title:`Let's meet your unique business needs.`,
 };
+
+
+
+
+
+
+
+
+
 
 const jsonSR = {
   main_nav_1: 'Usluge',
@@ -93,6 +106,7 @@ const jsonSR = {
   main_nav_3: 'Kompanija',
   sub_nav_1_1: 'O nama',
   sub_nav_1_2: 'Finansijski konsalting i investicione studije',
+  sub_nav_1_3:'Kontakt',
   nav_btn: 'Raspitaj se',
   main_section_holder_title: 'Maksimiziranje efikasnosti, minimiziranje troškova',
   about_us_title: 'O NAMA',
@@ -148,6 +162,8 @@ const jsonSR = {
   footer_nav_3: 'Kompanija',
   footer_contact_address: 'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
   footer_contact_phone: 'Telefon:',
+  page_contact_address: 'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
+  page_contact_phone: 'Telefon:',
   footer_btn: 'Počni',
   main_section_fcis_holder_title: 'Finansijski konsalting i investicione studije',
   main_section_fcis_holder_description: `Snalaženje u finansijskom pejzažu proizvodnje robe široke potrošnje sa sigurnošću. Naši iskusni stručnjaci pružaju duboke finansijske konsultantske usluge, vodeći vas kroz strateške odluke, optimizaciju troškova i planiranje investicija. Bez obzira da li želite unaprediti kapacitet proizvodnje ili optimizovati troškove, naša finansijska konsultantska usluga osigurava da se vaši ciljevi besprekorno usklađuju sa vašim finansijskim ciljevima.`,
@@ -174,6 +190,7 @@ const jsonSR = {
   get_started_fcis_small_title:'POČNI',
   get_started_fcis_title:'Riješite se složenih izazova u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
   get_started_fcis_btn:'Počni',
+  main_section_contact_holder_title:'Hajde da ispunimo vaše jedinstvene poslovne potrebe.',
 
 };
 

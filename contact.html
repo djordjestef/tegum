@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <section class="main_section_contact">
+      <div class="container-fluid padding_helper">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="main_section_contact_holder">
+              <h1 class="main_section_contact_holder_title"></h1>
+              <div class="page_contact">
+                <div class="page_contact_address"></div>
+                <span class="page_contact_phone"></span
+                ><a href="tel:+381 62 365 745"> +381 62 365 745</a>
+                <div class="page_contact_email">Email: info@tegum.rs</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12"></div>
+          <div class="col-lg-4 col-12">
+            contact form
+          </div>
+          <div class="col-lg-2 col-12"></div>
+
+          <img src="assets/main_page.png" alt="" class="main_section_contact_img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-10">
+            <div class="footer_list">
+              <ul>
+                <li><a href="about.html" class="footer_nav footer_nav_1"></a></li>
+                <li><a href="" class="footer_nav footer_nav_2"></a></li>
+                <li><a href="" class="footer_nav footer_nav_3"></a></li>
+                <li>
+                  <button class="en">^ English</button>
+
+                  <button class="sr">^ Serbian</button>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_contact">
+              <div class="footer_contact_address"></div>
+              <span class="footer_contact_phone"></span
+              ><a href="tel:+381 62 365 745"> +381 62 365 745</a>
+              <div class="footer_contact_email">Email: info@tegum.rs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="about.html">
+        <button class="footer_btn"></button>
+      </a>
+    </section>
+    <script>
+      $.get('navigation.html', function (data) {
+        $('#nav-placeholder').replaceWith(data);
+      });
+    </script>
+
+    <script src="main.js"></script>
+    <script src="languages.js"></script>
+  </body>
+</html>

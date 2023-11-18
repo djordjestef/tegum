@@ -957,6 +957,7 @@ body {
 }
 .main_section_fcis_holder_description {
   font-size: 16px;
+  margin-bottom: 84px;
 }
 .main_section_fcis_img {
   width: 100%;
@@ -1059,9 +1060,49 @@ body {
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 1px solid #a3f34a;
+  border: 2px solid #000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.main_section_contact {
+  margin-top: 225px;
+}
+.main_section_contact .padding_helper {
+  padding: 0 72px;
+}
+.main_section_contact_holder {
+  width: 80%;
+  margin-bottom: 113px;
+}
+@media only screen and (max-width: 1440px) {
+  .main_section_contact_holder {
+    width: 110%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .main_section_contact_holder {
+    width: 130%;
+  }
+}
+.main_section_contact_holder_title {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1400px) {
+  .main_section_contact_holder_title {
+    font-size: 44px;
+  }
+}
+.main_section_contact_img {
+  width: 100%;
+}
+.main_section_contact .page_contact {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 76px;
+  margin-bottom: 150px;
 }/*# sourceMappingURL=main.css.map */
