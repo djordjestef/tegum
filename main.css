@@ -923,4 +923,102 @@ body {
   position: absolute;
   top: 78px;
   right: 72px;
+}
+
+.main_section_studies {
+  margin-top: 225px;
+}
+.main_section_studies .padding_helper {
+  padding: 0 72px;
+}
+.main_section_studies_holder {
+  width: 80%;
+  margin-bottom: 113px;
+}
+@media only screen and (max-width: 1440px) {
+  .main_section_studies_holder {
+    width: 110%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .main_section_studies_holder {
+    width: 130%;
+  }
+}
+.main_section_studies_holder_title {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1400px) {
+  .main_section_studies_holder_title {
+    font-size: 44px;
+  }
+}
+.main_section_studies_holder_description {
+  font-size: 16px;
+}
+.main_section_studies_img {
+  width: 100%;
+}
+
+.tegum_services_studies {
+  position: relative;
+}
+.tegum_services_studies .padding_helper {
+  padding: 0 72px;
+}
+.tegum_services_studies .margin_helper {
+  margin-top: 152px;
+}
+.tegum_services_studies_small_title {
+  position: absolute;
+  top: 66px;
+  left: 72px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1200px) {
+  .tegum_services_studies_small_title {
+    font-size: 14px;
+  }
+}
+.tegum_services_studies_title {
+  margin-top: 152px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.tegum_services_studies_holder {
+  margin-top: 132px;
+}
+.tegum_services_studies_holder:first-child {
+  margin-top: 0;
+}
+.tegum_services_studies_holder:last-child {
+  margin-bottom: 400px;
+}
+.tegum_services_studies_holder_title {
+  font-size: 22px;
+  margin-bottom: 34px;
+}
+@media only screen and (max-width: 1400px) {
+  .tegum_services_studies_holder_title {
+    font-size: 18px;
+  }
+}
+.tegum_services_studies_holder_description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.tegum_services_studies_holder_options {
+  margin-top: 44px;
+  padding-left: 56px;
+}
+.tegum_services_studies_holder_options_title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tegum_services_studies_holder_options_description {
+  font-weight: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

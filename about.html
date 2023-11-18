@@ -22,14 +22,15 @@
   </head>
   <body>
     <div id="nav-placeholder"></div>
+    <section style="height: 100vh;">
+      <h1 style="padding-top: 100px" class="about_lang"></h1>
+    </section>
     <script>
       $.get('navigation.html', function (data) {
         $('#nav-placeholder').replaceWith(data);
       });
     </script>
-    <section style="height: 100vh;">
-      <h1 style="padding-top: 100px" class="about_lang"></h1>
-    </section>
+    
     <script src="main.js"></script>
     <script src="languages.js"></script>
   </body>
