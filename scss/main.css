@@ -919,6 +919,11 @@ body {
     width: 130%;
   }
 }
+@media only screen and (max-width: 991px) {
+  .main_section_holder {
+    width: 100%;
+  }
+}
 .main_section_holder_title {
   font-size: 52px;
   font-weight: 800;
@@ -967,6 +972,11 @@ body {
 @media only screen and (max-width: 1400px) {
   .about_us .dim {
     min-width: 43vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .about_us .dim {
+    min-width: 63vw;
   }
 }
 .about_us .dim:first-child {

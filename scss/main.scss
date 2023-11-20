@@ -620,6 +620,10 @@ body {
         @media only screen and (max-width: 1400px) {
             width: 130%;
         }
+
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
         &_title {
             font-size: 52px;
             font-weight: 800;
@@ -672,6 +676,11 @@ body {
 
         @media only screen and (max-width: 1400px) {
             min-width: 43vw;
+            // min-width: 35vw;
+        }
+
+        @media only screen and (max-width: 991px) {
+            min-width: 63vw;
             // min-width: 35vw;
         }
 

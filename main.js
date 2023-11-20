@@ -206,27 +206,37 @@ $(document).ready(function () {
 
   function horizontalScroll() {
     let stickyPosition = sticky.getBoundingClientRect().top;
-    console.log('stickyPosition', stickyPosition);
     if (stickyPosition < 1) {
       // return
     } else {
-      let scrolled = startPosition.getBoundingClientRect().top + 300;
-      console.log('scrolled', scrolled);
+      let scrolled =
+        width < 576
+          ? startPosition.getBoundingClientRect().top - 200
+          : width < 768
+          ? startPosition.getBoundingClientRect().top - 400
+          : width < 992
+          ? startPosition.getBoundingClientRect().top - 200
+          : startPosition.getBoundingClientRect().top + 250;
 
-      // if(width<1200 ){
-      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
-      // } else if (width<1441){
-      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight + 20) * -scrolled * 1.66
+      // if(width<992){
+      //   console.log('< 992')
+      // }else if(width<1200){
+      //   console.log('<1200')
+      // }else if(width<1441){
+      //   console.log('<1441')
       // }else {
-      //   sticky?.scrollLeft = (scrollWidth / verticalScrollHeight) * -scrolled * 0.06
+      //   console.log('')
       // }
 
-      sticky.scrollLeft =
-        width < 1200
-          ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
-          : width < 1441
-          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.066
-          : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
+      sticky.scrollLeft = (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
+      // width < 992
+      //   ? (scrollWidth / verticalScrollHeight) * -scrolled
+      //   :
+      //   width < 1200
+      //   ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
+      //   : width < 1441
+      //   ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.066
+      //   : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
     }
   }
   //horizontal scroll
@@ -245,7 +255,7 @@ function getFormData() {
   const data = $('form').serializeArray();
   var obj = {};
   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
-  console.log('obj',obj)
+  console.log('obj', obj);
 
   return false;
 }
