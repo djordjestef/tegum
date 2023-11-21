@@ -4,6 +4,7 @@
 body,
 html {
     font-family: "Inter", sans-serif;
+    color: #000;
 }
 
 //accourdion
@@ -52,7 +53,9 @@ html {
             .item {
                 // overflow: scroll;
                 padding-right: 72px;
-                padding-left: 72px;
+                // padding-left: 72px;
+                margin-left: 72px;
+                border-top: 1px solid #000;
                 overflow: hidden; /* Hide content that overflows the fixed height */
                 // height: 100vh;
 
@@ -214,7 +217,7 @@ html {
 
             .head_holder {
                 background-color: #a3f34a;
-                padding: 5vh 0;
+                padding: 50px 0;
                 // border-top: 1px solid #000;
                 position: relative;
 
@@ -227,7 +230,7 @@ html {
                 }
 
                 .what_we_do_title {
-                    font-size: 48px;
+                    font-size: 40px;
                     font-weight: 600;
                     display: inline-block;
                     margin: 0;
@@ -290,9 +293,15 @@ html {
                         span {
                             display: block;
                         }
+
+                        &:hover {
+                            background: #0011ff;
+                            color: #fff;
+                        }
                     }
                     .additional_1,
-                    .additional_2 {
+                    .additional_2,
+                    .additional_3 {
                         display: inline-block;
                         position: relative;
                         width: 150px;
@@ -313,7 +322,9 @@ html {
                     .additional_1::before,
                     .additional_1::after,
                     .additional_2::before,
-                    .additional_2::after {
+                    .additional_2::after,
+                    .additional_3::before,
+                    .additional_3::after {
                         content: "";
                         width: 20px;
                         height: 2px;
@@ -350,7 +361,9 @@ html {
                     .additional_1.hovered_btn_1::before,
                     .additional_1.hovered_btn_1::after,
                     .additional_2.hovered_btn_2::before,
-                    .additional_2.hovered_btn_2::after {
+                    .additional_2.hovered_btn_2::after,
+                    .additional_3.hovered_btn_3::before,
+                    .additional_3.hovered_btn_3::after {
                         width: 150px;
                         right: 0;
                     }
@@ -359,37 +372,43 @@ html {
                         height: 100%;
                     }
                     .btn_1::before,
-                    .btn_2::before {
+                    .btn_2::before,
+                    .btn_3::before {
                         left: -9px;
                         top: 0;
                         transition-duration: 0.4s;
                     }
                     .btn_1::after,
-                    .btn_2::after {
+                    .btn_2::after,
+                    .btn_3::after {
                         left: -9px;
                         bottom: 0;
                         transition-duration: 0.4s;
                     }
                     .additional_btn_1::before,
-                    .additional_btn_2::before {
+                    .additional_btn_2::before,
+                    .additional_btn_3::before {
                         right: -9px;
                         top: 0;
                         transition-duration: 0.4s;
                     }
                     .additional_btn_1::after,
-                    .additional_btn_2::after {
+                    .additional_btn_2::after,
+                    .additional_btn_3::after {
                         right: -9px;
                         bottom: 0;
                         transition-duration: 0.4s;
                     }
                     .btn_1 span::before,
-                    .btn_2 span::before {
+                    .btn_2 span::before,
+                    .btn_3 span::before {
                         left: 0;
                         top: 0;
                         transition-duration: 0.4s;
                     }
                     .btn_1 span::after,
-                    .btn_2 span::after {
+                    .btn_2 span::after,
+                    .btn_3 span::after {
                         right: 0;
                         top: 0;
                         transition-duration: 0.4s;
@@ -397,14 +416,18 @@ html {
                     .btn_1:hover::before,
                     .btn_1:hover::after,
                     .btn_2:hover::before,
-                    .btn_2:hover::after {
+                    .btn_2:hover::after,
+                    .btn_3:hover::before,
+                    .btn_3:hover::after {
                         left: 0;
                     }
 
                     .btn_1:hover span::before,
                     .btn_1:hover span::after,
                     .btn_2:hover span::before,
-                    .btn_2:hover span::after {
+                    .btn_2:hover span::after,
+                    .btn_3:hover span::before,
+                    .btn_3:hover span::after {
                         top: 0;
                     }
                 }
@@ -571,7 +594,7 @@ html {
         & li a {
             display: block;
             color: #000;
-            padding: 40px 35px;
+            padding: 48px 35px;
             text-decoration: none;
 
             @media only screen and (max-width: 1200px) {
