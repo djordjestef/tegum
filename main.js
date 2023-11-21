@@ -20,15 +20,16 @@ $(document).ready(function () {
       },
     });
 
-    accordion.to('#pin1', { height: 148 }, 0);
+    accordion.to('#pin1', { height: 114 }, 0);
+    console.log('window.innerHeight',window.innerHeight)
 
-    accordion.to('#pin2', { height: 148}, 1);
+    accordion.to('#pin2', { height: 114}, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    accordion.to('#pin3', { height: 148 }, 2);
+    accordion.to('#pin3', { height: 114 }, 2);
 
     gsap.set('.spacer.bot', {
       marginTop:
-        '-=' + (window.innerHeight < 760 ? window.innerHeight + 1020 : window.innerHeight + 1220),//height of spacer//podesi za sve visine
+        '-=' + (window.innerHeight < 760 ? window.innerHeight + 560 : window.innerHeight + 560),//height of spacer//podesi za sve visine
     });
   }, 200);
 

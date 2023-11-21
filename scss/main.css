@@ -416,7 +416,6 @@ html {
 .what_we_do .wrapper .acc_container .item {
   padding-right: 72px;
   margin-left: 72px;
-  border-top: 1px solid #000;
   overflow: hidden; /* Hide content that overflows the fixed height */
 }
 .what_we_do .wrapper .acc_container .item .container-fluid {
@@ -559,7 +558,6 @@ html {
   font-weight: 600;
   display: inline-block;
   margin: 0;
-  margin-right: 11vw;
 }
 @media only screen and (max-width: 1440px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
@@ -569,25 +567,51 @@ html {
 @media only screen and (max-width: 1400px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 34px;
-    margin-right: 9vw;
   }
 }
 @media only screen and (max-width: 1200px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 32px;
-    margin-right: 5vw;
+  }
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
+  margin-right: 11vw;
+}
+@media only screen and (max-width: 1400px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
+    margin-right: 8vw;
+  }
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
+  margin-right: 11.2vw;
+}
+@media only screen and (max-width: 1400px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
+    margin-right: 8vw;
+  }
+}
+.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
+  margin-right: 9vw;
+}
+@media only screen and (max-width: 1400px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
+    margin-right: 8vw;
   }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
   display: inline-block;
-  width: 35%;
+  width: 40vw;
   vertical-align: top;
   margin-top: 11px;
 }
 @media only screen and (max-width: 1440px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
-    width: 25%;
-    margin-top: 6px;
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
+    width: 28vw;
   }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
@@ -935,28 +959,13 @@ html {
   margin-top: 225px;
 }
 .main_section_holder {
-  width: 80%;
   margin-bottom: 156px;
-}
-@media only screen and (max-width: 1440px) {
-  .main_section_holder {
-    width: 110%;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .main_section_holder {
-    width: 130%;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .main_section_holder {
-    width: 100%;
-  }
 }
 .main_section_holder_title {
   font-size: 52px;
   font-weight: 800;
   margin-bottom: 20px;
+  width: 60%;
 }
 @media only screen and (max-width: 1400px) {
   .main_section_holder_title {
@@ -965,6 +974,7 @@ html {
 }
 .main_section_holder_description {
   font-size: 22px;
+  width: 85%;
 }
 @media only screen and (max-width: 1400px) {
   .main_section_holder_description {
@@ -1088,7 +1098,7 @@ html {
   padding: 290px 0 300px;
 }
 .testimonials_holder {
-  width: 30%;
+  width: 35%;
   margin: auto;
 }
 @media only screen and (max-width: 1440px) {
@@ -1226,18 +1236,17 @@ html {
   padding: 270px 0;
 }
 .challenges .holder {
-  width: 50%;
+  width: 90%;
   margin-top: 30%;
 }
 @media only screen and (max-width: 1440px) {
   .challenges .holder {
-    width: 80%;
+    width: 100%;
     margin-top: 24%;
   }
 }
 @media only screen and (max-width: 1400px) {
   .challenges .holder {
-    width: 90%;
     margin-top: 19%;
   }
 }

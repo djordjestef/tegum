@@ -55,7 +55,7 @@ html {
                 padding-right: 72px;
                 // padding-left: 72px;
                 margin-left: 72px;
-                border-top: 1px solid #000;
+                // border-top: 1px solid #000;
                 overflow: hidden; /* Hide content that overflows the fixed height */
                 // height: 100vh;
 
@@ -234,7 +234,7 @@ html {
                     font-weight: 600;
                     display: inline-block;
                     margin: 0;
-                    margin-right: 11vw;
+                    // margin-right: 11vw;
 
                     @media only screen and (max-width: 1440px) {
                         font-size: 38px;
@@ -242,24 +242,48 @@ html {
 
                     @media only screen and (max-width: 1400px) {
                         font-size: 34px;
-                        margin-right: 9vw;
+                        // margin-right: 9vw;
                     }
 
                     @media only screen and (max-width: 1200px) {
                         font-size: 32px;
-                        margin-right: 5vw;
+                        // margin-right: 5vw;
+                    }
+                }
+
+                .what_we_do_title_1 {
+                    margin-right: 11vw;
+                    @media only screen and (max-width: 1400px) {
+                        margin-right: 8vw;
+                    }
+                }
+                .what_we_do_title_2 {
+                    margin-right: 11.2vw;
+                     @media only screen and (max-width: 1400px) {
+                        margin-right: 8vw;
+                    }
+                }
+                .what_we_do_title_3 {
+                    margin-right: 9vw;
+                    @media only screen and (max-width: 1400px) {
+                        margin-right: 8vw;
                     }
                 }
 
                 .what_we_do_description {
                     display: inline-block;
-                    width: 35%;
+                    width: 40vw;
+                    
                     vertical-align: top;
                     margin-top: 11px;
 
                     @media only screen and (max-width: 1440px) {
-                        width: 25%;
-                        margin-top: 6px;
+                        width: 35vw;
+                        // margin-top: 6px;
+                    }
+
+                    @media only screen and (max-width: 1400px) {
+                        width: 28vw;
                     }
                 }
 
@@ -660,23 +684,24 @@ html {
     margin-top: 225px;
 
     &_holder {
-        width: 80%;
+        // width: 80%;
         margin-bottom: 156px;
-        @media only screen and (max-width: 1440px) {
-            width: 110%;
-        }
+        // @media only screen and (max-width: 1440px) {
+        //     width: 110%;
+        // }
 
-        @media only screen and (max-width: 1400px) {
-            width: 130%;
-        }
+        // @media only screen and (max-width: 1400px) {
+        //     width: 130%;
+        // }
 
-        @media only screen and (max-width: 991px) {
-            width: 100%;
-        }
+        // @media only screen and (max-width: 991px) {
+        //     width: 100%;
+        // }
         &_title {
             font-size: 52px;
             font-weight: 800;
             margin-bottom: 20px;
+            width: 60%;
 
             @media only screen and (max-width: 1400px) {
                 font-size: 44px;
@@ -685,6 +710,7 @@ html {
 
         &_description {
             font-size: 22px;
+            width: 85%;
 
             @media only screen and (max-width: 1400px) {
                 font-size: 18px;
@@ -834,7 +860,7 @@ html {
     // text-align: center;
 
     &_holder {
-        width: 30%;
+        width: 35%;
         margin: auto;
 
         @media only screen and (max-width: 1440px) {
@@ -975,16 +1001,15 @@ html {
 
     .holder {
         // margin-left: 174px;
-        width: 50%;
+        width: 90%;
         margin-top: 30%;
 
         @media only screen and (max-width: 1440px) {
-            width: 80%;
+            width: 100%;
             margin-top: 24%;
         }
 
         @media only screen and (max-width: 1400px) {
-            width: 90%;
             margin-top: 19%;
         }
 
