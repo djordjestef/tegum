@@ -13,7 +13,7 @@ $(document).ready(function () {
         trigger: '.acc_container',
         start: 'top top',
         // end: '+=' + (window.innerHeight * 3 - 900),
-        end: '+=300%',//500, possible height of end
+        end: '+=300%', //500, possible height of end
         scrub: true,
         // markers: true,
         pin: '.acc_container',
@@ -197,10 +197,9 @@ $(document).ready(function () {
   let startPosition = document.querySelector('.main_section_img');
 
   const width = window.innerWidth;
-  console.log('width', width);
 
   let scrollWidth = sticky.scrollWidth;
-  console.log('scrollWidth', scrollWidth);
+
   let verticalScrollHeight =
     stickyParent.getBoundingClientRect().height - sticky.getBoundingClientRect().height;
 

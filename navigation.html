@@ -76,6 +76,7 @@
       $(function () {
         var current = location.pathname.substring(1);
         $('#site-navigation a').removeClass('active');
+        console.log('current',current)
         $('#site-navigation a[href="' + current + '"]').addClass('active');
       });
     </script>
