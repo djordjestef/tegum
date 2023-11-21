@@ -420,7 +420,6 @@ html {
 .what_we_do .wrapper .acc_container .item .container-fluid {
   height: auto;
   background-color: #fff;
-  padding-bottom: 100px;
 }
 .what_we_do .wrapper .acc_container .item .container-fluid::-webkit-scrollbar {
   width: 0; /* Hide scrollbar for WebKit browsers */
@@ -443,7 +442,7 @@ html {
   }
 }
 .what_we_do .wrapper .acc_container .item .padding_helper {
-  padding: 150px 0 150px 130px;
+  padding: 150px 0 180px 130px;
   position: relative;
 }
 @media only screen and (max-width: 1440px) {
@@ -515,21 +514,15 @@ html {
   color: #0011ff;
   text-decoration: underline;
 }
+.what_we_do .wrapper .acc_container .item .position_helper {
+  position: relative;
+}
 .what_we_do .wrapper .acc_container .item img {
-  padding: 150px;
   margin: auto;
-  width: 100%;
-}
-@media only screen and (max-width: 1440px) {
-  .what_we_do .wrapper .acc_container .item img {
-    padding: 50px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .what_we_do .wrapper .acc_container .item img {
-    padding: 0;
-    transform: scale(0.7);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .what_we_do .wrapper .acc_container .item_img_1_1 {
   display: none;

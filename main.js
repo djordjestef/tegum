@@ -13,7 +13,7 @@ $(document).ready(function () {
         trigger: '.acc_container',
         start: 'top top',
         // end: '+=' + (window.innerHeight * 3 - 900),
-        end: '+=500%',
+        end: '+=300%',//500, possible height of end
         scrub: true,
         // markers: true,
         pin: '.acc_container',

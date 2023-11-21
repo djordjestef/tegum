@@ -61,7 +61,7 @@ html {
                     // height: 100%; /* Occupy the full height of the .item */
                     height: auto;
                     background-color: #fff;
-                    padding-bottom: 100px;
+                    // padding-bottom: 100px;
                     &::-webkit-scrollbar {
                         width: 0; /* Hide scrollbar for WebKit browsers */
                     }
@@ -85,7 +85,7 @@ html {
 
                 .padding_helper {
                     // padding: 17vh 0 17vh 13vh;
-                    padding: 150px 0 150px 130px;
+                    padding: 150px 0 180px 130px;
                     position: relative;
 
                     @media only screen and (max-width: 1440px) {
@@ -152,17 +152,26 @@ html {
                     }
                 }
 
+                .position_helper {
+                    position: relative;
+                }
+
                 & img {
-                    padding: 150px;
+                    // padding: 150px;
+                    // transform: scale(.6);
                     margin: auto;
-                    width: 100%;
+                    // width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     @media only screen and (max-width: 1440px) {
-                        padding: 50px;
+                        // padding: 50px;
                     }
 
                     @media only screen and (max-width: 1400px) {
-                        padding: 0;
-                        transform: scale(0.7);
+                        // padding: 0;
+                        // transform: scale(0.7);
                     }
                 }
 
