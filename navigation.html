@@ -74,9 +74,9 @@
     </nav>
     <script>
       $(function () {
-        var current = location.pathname.substring(1);
+        var current = location.pathname.split('/').pop(); // Get the last part of the path
         $('#site-navigation a').removeClass('active');
-        console.log('current',current)
+        console.log('current', current);
         $('#site-navigation a[href="' + current + '"]').addClass('active');
       });
     </script>
