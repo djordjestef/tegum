@@ -1,7 +1,9 @@
 $(document).ready(function () {
   //accordion
-
+  
   setTimeout(() => {
+    const width = window.innerWidth;
+    console.log('width',width)
     gsap.registerPlugin(ScrollTrigger);
 
     const accordion = gsap.timeline({
@@ -20,12 +22,12 @@ $(document).ready(function () {
       },
     });
 
-    accordion.to('#pin1', { height: 114 }, 0);
+     accordion.to('#pin1', { height:width<1400 ? 106 : 114 }, 0);
     console.log('window.innerHeight',window.innerHeight)
 
-    accordion.to('#pin2', { height: 114}, 1);
+    accordion.to('#pin2', { height:width<1400 ? 106 : 114 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    accordion.to('#pin3', { height: 114 }, 2);
+    accordion.to('#pin3', { height:width<1400 ? 106 : 114 }, 2);
 
     gsap.set('.spacer.bot', {
       marginTop:
@@ -225,7 +227,7 @@ $(document).ready(function () {
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
           ? startPosition.getBoundingClientRect().top - 200
-          : startPosition.getBoundingClientRect().top + 250;
+          : startPosition.getBoundingClientRect().top + 130;
 
       // if(width<992){
       //   console.log('< 992')
@@ -237,7 +239,7 @@ $(document).ready(function () {
       //   console.log('')
       // }
 
-      sticky.scrollLeft = (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
+      sticky.scrollLeft =width<1400 ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.06 :(scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
       // width < 992
       //   ? (scrollWidth / verticalScrollHeight) * -scrolled
       //   :
