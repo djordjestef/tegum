@@ -3,7 +3,9 @@ $(document).ready(function () {
 
   setTimeout(() => {
     const width = window.innerWidth;
-    console.log('width', width);
+    // const visina = window.innerHeight;
+    // console.log('visina',visina)
+    // console.log('width', width);
     gsap.registerPlugin(ScrollTrigger);
 
     const accordion = gsap.timeline({
@@ -356,6 +358,8 @@ $(document).ready(function () {
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
           ? startPosition.getBoundingClientRect().top - 200
+          : width < 1441
+          ? startPosition.getBoundingClientRect().top +180
           : startPosition.getBoundingClientRect().top + 260;
 
       // if(width<992){
