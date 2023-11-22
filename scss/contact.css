@@ -2,18 +2,8 @@
   margin-top: 225px;
 }
 .main_section_contact_holder {
-  width: 80%;
+  width: 100%;
   margin-bottom: 113px;
-}
-@media only screen and (max-width: 1440px) {
-  .main_section_contact_holder {
-    width: 110%;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .main_section_contact_holder {
-    width: 130%;
-  }
 }
 .main_section_contact_holder_title {
   font-size: 52px;

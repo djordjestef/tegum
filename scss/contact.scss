@@ -4,15 +4,15 @@
     margin-top: 225px;
 
     &_holder {
-        width: 80%;
+        width: 100%;
         margin-bottom: 113px;
-        @media only screen and (max-width: 1440px) {
-            width: 110%;
-        }
+        // @media only screen and (max-width: 1440px) {
+        //     width: 110%;
+        // }
 
-        @media only screen and (max-width: 1400px) {
-            width: 130%;
-        }
+        // @media only screen and (max-width: 1400px) {
+        //     width: 130%;
+        // }
         &_title {
             font-size: 52px;
             font-weight: 800;

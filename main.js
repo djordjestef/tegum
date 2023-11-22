@@ -227,7 +227,7 @@ $(document).ready(function () {
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
           ? startPosition.getBoundingClientRect().top - 200
-          : startPosition.getBoundingClientRect().top + 130;
+          : startPosition.getBoundingClientRect().top + 260;
 
       // if(width<992){
       //   console.log('< 992')
