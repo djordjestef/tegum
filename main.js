@@ -353,13 +353,13 @@ $(document).ready(function () {
     } else {
       let scrolled =
         width < 576
-          ? startPosition.getBoundingClientRect().top - 200
+          ? startPosition.getBoundingClientRect().top -20
           : width < 768
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
           ? startPosition.getBoundingClientRect().top - 200
           : width < 1441
-          ? startPosition.getBoundingClientRect().top +180
+          ? startPosition.getBoundingClientRect().top + 180
           : startPosition.getBoundingClientRect().top + 260;
 
       // if(width<992){
@@ -373,9 +373,17 @@ $(document).ready(function () {
       // }
 
       sticky.scrollLeft =
-        width < 1400
-          ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.06
-          : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
+      width < 576
+      ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.02:
+        width < 1200
+          ? (scrollWidth / verticalScrollHeight + 100) * -scrolled * 0.06
+          : width < 1400
+          ? (scrollWidth / verticalScrollHeight + 50) * -scrolled * 0.06
+          : width < 1441
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
+          : width < 1661
+          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
+          : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.04;
       // width < 992
       //   ? (scrollWidth / verticalScrollHeight) * -scrolled
       //   :

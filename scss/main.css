@@ -783,12 +783,17 @@ html {
 }
 @media only screen and (max-width: 1400px) {
   .about_us .sticky-parent {
-    height: 400px;
+    height: 337px;
   }
 }
 .about_us .width_helper {
   margin-left: 8.33%;
   padding-left: 72px;
+}
+@media only screen and (max-width: 576px) {
+  .about_us .width_helper {
+    margin-left: 0;
+  }
 }
 .about_us .sticky {
   position: sticky;
@@ -821,6 +826,11 @@ html {
   padding-left: 0;
   width: 575px;
   margin-right: 175px;
+}
+@media only screen and (max-width: 576px) {
+  .about_us .flex_columns {
+    width: 300px;
+  }
 }
 .about_us .flex_columns_plus {
   position: absolute !important;

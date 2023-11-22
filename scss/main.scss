@@ -68,13 +68,17 @@ html {
         height: 313px;
 
         @media only screen and (max-width: 1400px) {
-            height: 400px;
+            height: 337px;
         }
     }
 
     .width_helper {
         margin-left: 8.33%;
         padding-left: 72px;
+
+         @media only screen and (max-width: 576px) {
+            margin-left: 0;
+        }
     }
     .sticky {
         position: sticky;
@@ -138,6 +142,10 @@ html {
         // @media only screen and (max-width: 1440px) {
         //     padding-right: 100px;
         // }
+
+        @media only screen and (max-width: 576px) {
+           width: 300px;
+        }
 
         &_plus {
             position: absolute !important;
