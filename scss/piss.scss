@@ -1,6 +1,4 @@
-//Financial consulting and investment fcis page
-
-.main_section_fcis {
+.main_section_piss {
     margin-top: 225px;
     .padding_helper {
         padding: 0 72px;
@@ -36,12 +34,25 @@
         }
     }
 
-    &_img {
-        width: 100%;
+    // &_img {
+    //     width: 100%;
+    // }
+
+    &_img_holder {
+        height: 830px;
+        background: #f3f3f3;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
-.tegum_services_fcis {
+.tegum_services_piss {
     position: relative;
 
     // .padding_helper {
@@ -124,7 +135,7 @@
     }
 }
 
-.get_started_fcis {
+.get_started_piss {
     position: relative;
     padding: 114px 0;
     background-color: #a3f34a;

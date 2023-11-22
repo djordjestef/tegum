@@ -1,9 +1,9 @@
 $(document).ready(function () {
   //accordion
-  
+
   setTimeout(() => {
     const width = window.innerWidth;
-    console.log('width',width)
+    console.log('width', width);
     gsap.registerPlugin(ScrollTrigger);
 
     const accordion = gsap.timeline({
@@ -22,16 +22,16 @@ $(document).ready(function () {
       },
     });
 
-     accordion.to('#pin1', { height:width<1400 ? 106 : 114 }, 0);
-    console.log('window.innerHeight',window.innerHeight)
+    accordion.to('#pin1', { height: width < 1400 ? 106 : 114 }, 0);
+    console.log('window.innerHeight', window.innerHeight);
 
-    accordion.to('#pin2', { height:width<1400 ? 106 : 114 }, 1);
+    accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    accordion.to('#pin3', { height:width<1400 ? 106 : 114 }, 2);
+    accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
     gsap.set('.spacer.bot', {
       marginTop:
-        '-=' + (window.innerHeight < 760 ? window.innerHeight + 560 : window.innerHeight + 560),//height of spacer//podesi za sve visine
+        '-=' + (window.innerHeight < 760 ? window.innerHeight + 560 : window.innerHeight + 560), //height of spacer//podesi za sve visine
     });
   }, 200);
 
@@ -200,6 +200,135 @@ $(document).ready(function () {
       $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
     },
   );
+  $('.hover_animate_1_3').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_1_3').fadeIn(200);
+      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_1_3').fadeOut(200);
+      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_1_4').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_1_4').fadeIn(200);
+      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_1_4').fadeOut(200);
+      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+
+  //item 2 hovered
+
+  $('.hover_animate_2_1').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_2_1').fadeIn(200);
+      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_2_1').fadeOut(200);
+      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+
+  $('.hover_animate_2_2').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_2_2').fadeIn(200);
+      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_2_2').fadeOut(200);
+      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_2_3').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_2_3').fadeIn(200);
+      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_2_3').fadeOut(200);
+      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_2_4').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_2_4').fadeIn(200);
+      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_2_4').fadeOut(200);
+      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+
+  //item 3 hovered
+
+  $('.hover_animate_3_1').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_3_1').fadeIn(200);
+      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_3_1').fadeOut(200);
+      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+
+  $('.hover_animate_3_2').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_3_2').fadeIn(200);
+      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_3_2').fadeOut(200);
+      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_3_3').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_3_3').fadeIn(200);
+      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_3_3').fadeOut(200);
+      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_3_4').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_3_4').fadeIn(200);
+      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_3_4').fadeOut(200);
+      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+    },
+  );
+  $('.hover_animate_3_5').hover(
+    function () {
+      $(this).css({ cursor: 'url(/assets/blue_arrow.png), default' });
+      $('.item_img_3_5').fadeIn(200);
+      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+    },
+    function () {
+      $('.item_img_3_5').fadeOut(200);
+      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+    },
+  );
 
   //horizontal scroll
   document.addEventListener('scroll', horizontalScroll);
@@ -239,7 +368,10 @@ $(document).ready(function () {
       //   console.log('')
       // }
 
-      sticky.scrollLeft =width<1400 ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.06 :(scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
+      sticky.scrollLeft =
+        width < 1400
+          ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.06
+          : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06;
       // width < 992
       //   ? (scrollWidth / verticalScrollHeight) * -scrolled
       //   :

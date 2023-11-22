@@ -1,7 +1,8 @@
 @import "navigation";
 @import "contact";
 @import "fcis";
-@import 'about-us';
+@import "about-us";
+@import "piss";
 
 body,
 html {
@@ -373,11 +374,14 @@ html {
                     display: none;
                 }
 
-                // .hover_animate_1_1:hover &_img_1_1 {
-                //     display: block;
-                // }
-
                 &_img_1_2 {
+                    display: none;
+                }
+                &_img_1_3 {
+                    display: none;
+                }
+
+                &_img_1_4 {
                     display: none;
                 }
 
@@ -385,11 +389,14 @@ html {
                     display: none;
                 }
 
-                // .hover_animate_1_1:hover &_img_1_1 {
-                //     display: block;
-                // }
-
                 &_img_2_2 {
+                    display: none;
+                }
+                &_img_2_3 {
+                    display: none;
+                }
+
+                &_img_2_4 {
                     display: none;
                 }
 
@@ -397,11 +404,18 @@ html {
                     display: none;
                 }
 
-                // .hover_animate_1_1:hover &_img_1_1 {
-                //     display: block;
-                // }
-
                 &_img_3_2 {
+                    display: none;
+                }
+                &_img_3_3 {
+                    display: none;
+                }
+
+                &_img_3_4 {
+                    display: none;
+                }
+
+                &_img_3_5 {
                     display: none;
                 }
             }
@@ -454,7 +468,6 @@ html {
                     @media only screen and (max-width: 1200px) {
                         font-size: 24px;
                         margin-right: 23px;
-                     
                     }
                 }
 
@@ -477,7 +490,6 @@ html {
                 //     @media only screen and (max-width: 1660px) {
                 //         margin-right: 170px;
                 //     }
-
 
                 //     @media only screen and (max-width: 1440px) {
                 //         margin-right: 140px;

@@ -3,8 +3,9 @@ const jsonEN = {
   main_nav_2: 'Products',
   main_nav_3: 'Company',
   sub_nav_1_1: 'About',
-  sub_nav_1_2: 'Financial consulting and investment studies',
+  sub_nav_1_2: 'Financial Consulting and Investment Studies',
   sub_nav_1_3: 'Contact',
+  sub_nav_1_4: 'Process Improvement and Strategy Support',
   nav_btn: 'Inquire',
   main_section_holder_title: 'Maximizing Efficiency, Minimizing Costs.',
   about_us_title: 'ABOUT US',
@@ -112,10 +113,21 @@ const jsonEN = {
   form_comment: 'Message',
   main_section_about_us_holder_title:
     'Tegum was founded in 2002, focusing initially on mechanical engineering within the chemical and process industries.',
-    history_subtitle:'As Tegum grew, it expanded its services into the design and execution of thermo-technical installations and equipment for various industrial sectors.',
-    history_title:'20 Years of Expertise',
-    history_description_1:'With over two decades of experience, we established ourselves as an expert in the industry, particularly in the food and beverage sector, while maintaining its core competency in thermo-technical installations.',
-    history_description_2:'Industry 4.0 Integration: Tegum embraces the possibilities of the Industry 4.0 revolution, integrating its diverse knowledge and expertise to ensure continuous growth and provide top-quality consulting services to its clients.',
+  history_subtitle:
+    'As Tegum grew, it expanded its services into the design and execution of thermo-technical installations and equipment for various industrial sectors.',
+  history_title: '20 Years of Expertise',
+  history_description_1:
+    'With over two decades of experience, we established ourselves as an expert in the industry, particularly in the food and beverage sector, while maintaining its core competency in thermo-technical installations.',
+  history_description_2:
+    'Industry 4.0 Integration: Tegum embraces the possibilities of the Industry 4.0 revolution, integrating its diverse knowledge and expertise to ensure continuous growth and provide top-quality consulting services to its clients.',
+  main_section_piss_holder_title: 'Process improvement and strategy support',
+  main_section_piss_holder_description: `Our strategic support empowers you to enhance operational efficiency, stay agile, and make well-informed decisions. We're your go-to source for optimizing procurement, quality control, and supply chain management.`,
+  tegum_services_piss_small_title: 'TEGUM Services',
+  tegum_services_piss_title: 'Relying less on the Financial consulting and grid',
+  get_started_piss_small_title: 'GET STARTED',
+  get_started_piss_title:
+    'Tackle complex challenges in industrial project management, production efficiency, and process improvement.',
+  get_started_piss_btn: 'Get started',
 };
 
 const jsonSR = {
@@ -125,6 +137,7 @@ const jsonSR = {
   sub_nav_1_1: 'O nama',
   sub_nav_1_2: 'Finansijski konsalting i investicione studije',
   sub_nav_1_3: 'Kontakt',
+  sub_nav_1_4: 'Poboljšanje procesa i podrška strategije',
   nav_btn: 'Raspitaj se',
   main_section_holder_title: 'Maksimiziranje efikasnosti, minimiziranje troškova',
   about_us_title: 'O NAMA',
@@ -234,10 +247,21 @@ const jsonSR = {
   form_comment: 'Poruka',
   main_section_about_us_holder_title:
     'Tegum je osnovan 2002. godine, u početku se fokusirajući na mašinstvo u okviru hemijske i procesne industrije.',
-    history_subtitle:'Kako je Tegum rastao, proširio je svoje usluge na projektovanje i izvođenje termotehničkih instalacija i opreme za različite industrijske sektore.',
-    history_title:'20 godina stručnosti',
-    history_description_1:'Sa više od dve decenije iskustva, etablirali smo se kao ekspert u industriji, posebno u sektoru hrane i pića, zadržavajući svoju osnovnu kompetenciju u termotehničkim instalacijama.',
-    history_description_2:'Integracija industrije 4.0: Tegum prihvata mogućnosti revolucije industrije 4.0, integrišući svoje raznovrsno znanje i stručnost kako bi osigurao kontinuirani rast i pružio vrhunske konsultantske usluge svojim klijentima.',
+  history_subtitle:
+    'Kako je Tegum rastao, proširio je svoje usluge na projektovanje i izvođenje termotehničkih instalacija i opreme za različite industrijske sektore.',
+  history_title: '20 godina stručnosti',
+  history_description_1:
+    'Sa više od dve decenije iskustva, etablirali smo se kao ekspert u industriji, posebno u sektoru hrane i pića, zadržavajući svoju osnovnu kompetenciju u termotehničkim instalacijama.',
+  history_description_2:
+    'Integracija industrije 4.0: Tegum prihvata mogućnosti revolucije industrije 4.0, integrišući svoje raznovrsno znanje i stručnost kako bi osigurao kontinuirani rast i pružio vrhunske konsultantske usluge svojim klijentima.',
+  main_section_piss_holder_title: 'Poboljšanje procesa i podrška strategije',
+  main_section_piss_holder_description: `Naša strateška podrška vam omogućava da poboljšate operativnu efikasnost, ostanete agilni i donosite odluke na osnovu informacija. Mi smo vaš glavni izvor za optimizaciju nabavke, kontrole kvaliteta i upravljanja lancem snabdevanja.`,
+  tegum_services_piss_small_title: 'TEGUM usluge',
+  tegum_services_piss_title: 'Manje oslanjanje na finansijski konsalting i mrežu',
+  get_started_piss_small_title: 'POČNI',
+  get_started_piss_title:
+    'Riješite se složenih izazova u upravljanju industrijskim projektima, efikasnosti proizvodnje i poboljšanju procesa.',
+  get_started_piss_btn: 'Počni',
 };
 
 $(document).on('click', '.en', function (event) {
