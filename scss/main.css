@@ -893,73 +893,30 @@ html {
   font-weight: 600;
   display: inline-block;
   margin: 0;
+  min-width: 540px;
+  margin-right: 190px;
+}
+@media only screen and (max-width: 1660px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
+    margin-right: 113px;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 38px;
+    margin-right: 83px;
+    min-width: 510px;
   }
 }
 @media only screen and (max-width: 1400px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 30px;
+    min-width: 420px;
   }
 }
 @media only screen and (max-width: 1200px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 24px;
-  }
-}
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
-  margin-right: 240px;
-}
-@media only screen and (max-width: 1660px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
-    margin-right: 160px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
-    margin-right: 130px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_1 {
-    margin-right: 58px;
-  }
-}
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
-  margin-right: 248px;
-}
-@media only screen and (max-width: 1660px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
-    margin-right: 170px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
-    margin-right: 140px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_2 {
-    margin-right: 65px;
-  }
-}
-.what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
-  margin-right: 190px;
-}
-@media only screen and (max-width: 1660px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
-    margin-right: 113px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
-    margin-right: 83px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title_3 {
     margin-right: 23px;
   }
 }
