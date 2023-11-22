@@ -17,7 +17,7 @@ $(document).ready(function () {
         trigger: '.acc_container',
         start: 'top top',
         // end: '+=' + (window.innerHeight * 3 - 900),
-        end: '+=500%', //500, possible height of end
+        end: '+=300%', //500, possible height of end
         scrub: true,
         // markers: true,
         pin: '.acc_container',
@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
+    // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
     gsap.set('.spacer.bot', {
       marginTop:
