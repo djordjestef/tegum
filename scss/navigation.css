@@ -64,6 +64,9 @@
     top: 32px;
   }
 }
+.main-navigation .language_holder a {
+  all: unset;
+}
 .main-navigation .language_holder .inquire_btn {
   all: unset;
   width: 150px;

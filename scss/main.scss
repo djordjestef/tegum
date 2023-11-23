@@ -40,6 +40,11 @@ html {
             @media only screen and (max-width: 1400px) {
                 font-size: 44px;
             }
+
+            @media only screen and (min-width: 1921px) {
+                width: 70%;
+            }
+
         }
 
         &_description {
