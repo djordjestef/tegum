@@ -301,6 +301,7 @@ html {
 
                 .option_holder {
                     margin-bottom: 50px;
+                    
 
                     @media only screen and (max-width: 1400px) {
                         margin-bottom: 40px;
@@ -311,6 +312,10 @@ html {
                     }
                     &:last-child {
                         margin-bottom: 0;
+                    }
+
+                    a {
+                        cursor:none;
                     }
                     &_number {
                         color: #a4a4a4;

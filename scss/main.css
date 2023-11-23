@@ -856,6 +856,9 @@ html {
 .what_we_do .wrapper .acc_container .item .option_holder:last-child {
   margin-bottom: 0;
 }
+.what_we_do .wrapper .acc_container .item .option_holder a {
+  cursor: none;
+}
 .what_we_do .wrapper .acc_container .item .option_holder_number {
   color: #a4a4a4;
   display: inline-block;
