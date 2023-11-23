@@ -288,7 +288,7 @@ const jsonEN = {
   get_started_smp_small_title: '',
   get_started_smp_title:'',
   get_started_smp_btn: 'Get started',
-  main_section_ihsa_holder_title: 'Industrial hardware and software spplications',
+  main_section_ihsa_holder_title: 'Industrial hardware and software applications',
   main_section_ihsa_holder_description: ``,
   tegum_services_ihsa_small_title: '',
   tegum_services_ihsa_title: '',
