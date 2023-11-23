@@ -1,8 +1,7 @@
 @import "navigation";
 @import "contact";
-@import "fcis";
+@import "what_we_do_page";
 @import "about-us";
-@import "piss";
 
 body,
 html {
@@ -76,7 +75,7 @@ html {
         margin-left: 8.33%;
         padding-left: 72px;
 
-         @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: 576px) {
             margin-left: 0;
         }
     }
@@ -144,7 +143,7 @@ html {
         // }
 
         @media only screen and (max-width: 576px) {
-           width: 300px;
+            width: 300px;
         }
 
         &_plus {
