@@ -68,6 +68,7 @@ $(document).ready(function () {
       );
     }
     $(this).parent('li').toggleClass('opened');
+    console.log("$(this).parent('li')", $(this).parent('li'));
     $(this).parent().siblings().find('ul').hide(1);
     $(this).parent().siblings('li').removeClass('opened');
     $(this).siblings().find('li').removeClass('opened');
@@ -80,6 +81,7 @@ $(document).ready(function () {
     }
     event.preventDefault();
   });
+
   var pageScroll = function (e) {
     var didScroll;
     var lastScrollTop = 0;
@@ -353,7 +355,7 @@ $(document).ready(function () {
     } else {
       let scrolled =
         width < 576
-          ? startPosition.getBoundingClientRect().top -20
+          ? startPosition.getBoundingClientRect().top - 20
           : width < 768
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
@@ -373,9 +375,9 @@ $(document).ready(function () {
       // }
 
       sticky.scrollLeft =
-      width < 576
-      ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.02:
-        width < 1200
+        width < 576
+          ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.02
+          : width < 1200
           ? (scrollWidth / verticalScrollHeight + 100) * -scrolled * 0.06
           : width < 1400
           ? (scrollWidth / verticalScrollHeight + 50) * -scrolled * 0.06

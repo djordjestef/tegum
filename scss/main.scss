@@ -14,6 +14,22 @@ html {
     padding-right: 72px;
 }
 
+.only_desktop {
+    display: block;
+
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.only_mobile {
+    display: none;
+
+    @media only screen and (max-width: 991px) {
+        display: block;
+    }
+}
+
 .main_section {
     margin-top: 225px;
 
