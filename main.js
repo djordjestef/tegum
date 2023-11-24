@@ -3,9 +3,6 @@ $(document).ready(function () {
 
   setTimeout(() => {
     const width = window.innerWidth;
-    // const visina = window.innerHeight;
-    // console.log('visina',visina)
-    // console.log('width', width);
     gsap.registerPlugin(ScrollTrigger);
 
     const accordion = gsap.timeline({
@@ -399,19 +396,17 @@ $(document).ready(function () {
 
 //subject contact form
 
-$('.btn_1').on('click', () => {
-   const lang = localStorage.getItem('lang');
-   if (lang==='en'){
-    var subject = $('.btn_1').attr('attrEN');
+$(document).on('click', '.subject_btn', function (event) {
+  const lang = localStorage.getItem('lang');
+  let subject;
+  if (lang === 'en') {
+    subject = $(this).attr('attrEN');
     localStorage.setItem('subject', subject);
-   }else {
-    var subject = $('.btn_1').attr('attrSR');
+  } else {
+    subject = $(this).attr('attrSR');
     localStorage.setItem('subject', subject);
-   }
- 
+  }
 });
-
-
 
 //contact form
 
@@ -427,6 +422,8 @@ function getFormData() {
   var obj = {};
   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
   console.log('obj', obj);
+  $('form')[0].reset();
+  $('.form-element-field').removeClass('-hasvalue');
 
   return false;
 }
