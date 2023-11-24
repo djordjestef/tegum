@@ -211,41 +211,10 @@
         pointer-events: auto;
     }
 
-    .form-has-error .form-element-label.form-element-label,
-    .form-has-error .form-element-hint {
-        color: #d9534f;
-    }
-
-    .form-has-error .form-element-bar,
-    .form-has-error .form-element-bar::after {
-        background: #d9534f;
-    }
-
-    .form-is-success .form-element-label.form-element-label,
-    .form-is-success .form-element-hint {
-        color: #259337;
-    }
-
-    .form-is-success .form-element-bar::after {
-        background: #259337;
-    }
-
     input.form-element-field:not(:placeholder-shown),
     textarea.form-element-field:not(:placeholder-shown) {
         opacity: 1;
     }
-
-    // input.form-element-field:not(:placeholder-shown) ~ .form-element-label,
-    // textarea.form-element-field:not(:placeholder-shown) ~ .form-element-label {
-    //     transform: translateY(-100%) translateY(-0.5em) translateY(-2px) scale(0.9);
-    //     cursor: pointer;
-    //     pointer-events: auto;
-    // }
-
-    // textarea.form-element-field {
-    //     height: auto;
-    //     min-height: 3rem;
-    // }
 
     select.form-element-field {
         -webkit-appearance: none;

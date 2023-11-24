@@ -111,7 +111,7 @@
 
         <button class="sr">^ Serbian</button>
         <a href="contact.html">
-          <button class="inquire_btn nav_btn"></button>
+          <button attr="" class="inquire_btn nav_btn"></button>
         </a>
       </div>
     </nav>
@@ -121,7 +121,7 @@
       <input type="checkbox" name="" id="checkbox" class="check only_mobile" />
 
       <ul class="menu-items">
-        <img src="assets/torobox-logo-white.svg" class="menu_white_logo" alt="" />
+        <!-- <img src="assets/torobox-logo-white.svg" class="menu_white_logo" alt="" /> -->
         <li class="dropdown">
           <a class="main_nav_mobile">
             <span class="main_nav_mobile_1"></span>
@@ -175,17 +175,24 @@
           ></a>
           <ul class="dropdown-menu main-navigation-list">
             <li><a href="conveying-systems.html" class="sub_nav_mobile sub_nav_mobile_2_1"></a></li>
-                  <li>
-                    <a href="special-machines-and-parts.html" class="sub_nav_mobile sub_nav_mobile_2_2"></a>
-                  </li>
-                  <li>
-                    <a
-                      href="industrial-hardware-and-software-applications.html"
-                      class="sub_nav_mobile sub_nav_mobile_2_3"
-                    ></a>
-                  </li>
-                  <li><a href="CNC-and-3D-services.html" class="sub_nav_mobile sub_nav_mobile_2_4"></a></li>
-                  <li><a href="processing-equipment.html" class="sub_nav_mobile sub_nav_mobile_2_5"></a></li>
+            <li>
+              <a
+                href="special-machines-and-parts.html"
+                class="sub_nav_mobile sub_nav_mobile_2_2"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="industrial-hardware-and-software-applications.html"
+                class="sub_nav_mobile sub_nav_mobile_2_3"
+              ></a>
+            </li>
+            <li>
+              <a href="CNC-and-3D-services.html" class="sub_nav_mobile sub_nav_mobile_2_4"></a>
+            </li>
+            <li>
+              <a href="processing-equipment.html" class="sub_nav_mobile sub_nav_mobile_2_5"></a>
+            </li>
           </ul>
         </li>
         <li>
@@ -216,8 +223,12 @@
       $(function () {
         var current = location.pathname.split('/').pop(); // Get the last part of the path
         $('#site-navigation a').removeClass('active');
-        console.log('current', current);
         $('#site-navigation a[href="' + current + '"]').addClass('active');
+
+        $('.inquire_btn').on('click', () => {
+          var subject = $('.inquire_btn').attr('attr');
+          localStorage.setItem('subject', subject);
+        });
       });
     </script>
   </body>

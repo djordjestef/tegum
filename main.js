@@ -25,7 +25,6 @@ $(document).ready(function () {
     });
 
     accordion.to('#pin1', { height: width < 1400 ? 106 : 114 }, 0);
-    console.log('window.innerHeight', window.innerHeight);
 
     accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
@@ -68,7 +67,6 @@ $(document).ready(function () {
       );
     }
     $(this).parent('li').toggleClass('opened');
-    console.log("$(this).parent('li')", $(this).parent('li'));
     $(this).parent().siblings().find('ul').hide(1);
     $(this).parent().siblings('li').removeClass('opened');
     $(this).siblings().find('li').removeClass('opened');
@@ -398,6 +396,22 @@ $(document).ready(function () {
   }
   //horizontal scroll
 });
+
+//subject contact form
+
+$('.btn_1').on('click', () => {
+   const lang = localStorage.getItem('lang');
+   if (lang==='en'){
+    var subject = $('.btn_1').attr('attrEN');
+    localStorage.setItem('subject', subject);
+   }else {
+    var subject = $('.btn_1').attr('attrSR');
+    localStorage.setItem('subject', subject);
+   }
+ 
+});
+
+
 
 //contact form
 
