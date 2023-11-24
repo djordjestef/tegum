@@ -382,37 +382,14 @@
   height: 2.4rem;
   width: 3rem;
   position: fixed;
-  right: 34px;
-  top: 35px;
+  right: 8px;
+  top: 8px;
   padding: 0.5rem;
   z-index: 99;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 0.25em;
-  display: none;
-}
-@media only screen and (max-width: 991px) {
-  .ham-menu {
-    display: flex;
-    top: 0;
-    right: 8px;
-    animation: ham_animate 2s ease-out forwards;
-    -webkit-animation: ham_animate 2s ease-out forwards;
-  }
-  @keyframes ham_animate {
-    0% {
-      top: 0;
-      opacity: 0;
-    }
-    50% {
-      top: 8px;
-      opacity: 1;
-    }
-    100% {
-      top: 8px;
-      opacity: 1;
-    }
-  }
+  display: flex;
 }
 
 .ham-menu .line {
@@ -974,6 +951,7 @@ html {
 @media only screen and (max-width: 576px) {
   .about_us .width_helper {
     margin-left: 0;
+    padding-left: 0;
   }
 }
 .about_us .sticky {
@@ -986,6 +964,11 @@ html {
 .about_us .dim {
   display: block;
   width: 750px;
+}
+@media only screen and (max-width: 576px) {
+  .about_us .dim {
+    min-width: 300px;
+  }
 }
 .about_us .horizontal {
   display: flex;
@@ -1050,6 +1033,11 @@ html {
 .about_us .flex_columns_description {
   font-size: 16px;
   padding-left: 40px;
+}
+@media only screen and (max-width: 576px) {
+  .about_us .flex_columns_description {
+    font-size: 14px;
+  }
 }
 .about_us .card_scroller::-webkit-scrollbar {
   width: 0 !important;

@@ -98,6 +98,7 @@ html {
 
         @media only screen and (max-width: 576px) {
             margin-left: 0;
+            padding-left: 0;
         }
     }
     .sticky {
@@ -120,10 +121,9 @@ html {
         //     // min-width: 35vw;
         // }
 
-        // @media only screen and (max-width: 991px) {
-        //     min-width: 63vw;
-        //     // min-width: 35vw;
-        // }
+        @media only screen and (max-width: 576px) {
+            min-width: 300px;
+        }
 
         // &:first-child {
         //     margin-left: 9%;
@@ -162,6 +162,8 @@ html {
         // @media only screen and (max-width: 1440px) {
         //     padding-right: 100px;
         // }
+
+      
 
         @media only screen and (max-width: 576px) {
             width: 300px;
@@ -210,6 +212,10 @@ html {
         &_description {
             font-size: 16px;
             padding-left: 40px;
+            @media only screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+            
         }
     }
 

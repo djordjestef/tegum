@@ -488,8 +488,8 @@
     height: 2.4rem;
     width: 3rem;
     position: fixed;
-    right: 34px;
-    top: 35px;
+    right: 8px;
+    top: 8px;
     padding: 0.5rem;
     z-index: 99;
     // display: flex;
@@ -497,31 +497,31 @@
     justify-content: space-around;
     // background-color: white;
     border-radius: 0.25em;
-    display: none;
+    display: flex;
 
-    @media only screen and (max-width: 991px) {
-        display: flex;
-        top: 0;
-        right: 8px;
-        animation: ham_animate 2s ease-out forwards;
-        -webkit-animation: ham_animate 2s ease-out forwards;
+    // @media only screen and (max-width: 991px) {
+    //     display: flex;
+    //     top: 0;
+    //     right: 8px;
+    //     animation: ham_animate 2s ease-out forwards;
+    //     -webkit-animation: ham_animate 2s ease-out forwards;
 
-        @keyframes ham_animate {
-            0% {
-                top: 0;
-                opacity: 0;
-            }
+    //     @keyframes ham_animate {
+    //         0% {
+    //             top: 0;
+    //             opacity: 0;
+    //         }
 
-            50% {
-                top: 8px;
-                opacity: 1;
-            }
-            100% {
-                top: 8px;
-                opacity: 1;
-            }
-        }
-    }
+    //         50% {
+    //             top: 8px;
+    //             opacity: 1;
+    //         }
+    //         100% {
+    //             top: 8px;
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
 }
 
 .ham-menu .line {
