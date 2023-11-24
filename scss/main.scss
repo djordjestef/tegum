@@ -60,7 +60,6 @@ html {
             @media only screen and (min-width: 1921px) {
                 width: 70%;
             }
-
         }
 
         &_description {
@@ -163,8 +162,6 @@ html {
         //     padding-right: 100px;
         // }
 
-      
-
         @media only screen and (max-width: 576px) {
             width: 300px;
         }
@@ -215,7 +212,6 @@ html {
             @media only screen and (max-width: 576px) {
                 font-size: 14px;
             }
-            
         }
     }
 
@@ -318,17 +314,16 @@ html {
 
                 .padding_helper {
                     // padding: 17vh 0 17vh 13vh;
-                    padding: 150px 0 180px 130px;
+                    padding: 130px 0 130px 130px;
                     position: relative;
 
                     @media only screen and (max-width: 1440px) {
-                        padding: 90px 0 90px 80px;
+                        padding: 80px 0 80px 80px;
                     }
                 }
 
                 .option_holder {
                     margin-bottom: 50px;
-                    
 
                     @media only screen and (max-width: 1400px) {
                         margin-bottom: 40px;
@@ -342,7 +337,7 @@ html {
                     }
 
                     a {
-                        cursor:none;
+                        cursor: none;
                     }
                     &_number {
                         color: #a4a4a4;

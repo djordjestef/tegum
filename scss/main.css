@@ -1109,12 +1109,12 @@ html {
   }
 }
 .what_we_do .wrapper .acc_container .item .padding_helper {
-  padding: 150px 0 180px 130px;
+  padding: 130px 0 130px 130px;
   position: relative;
 }
 @media only screen and (max-width: 1440px) {
   .what_we_do .wrapper .acc_container .item .padding_helper {
-    padding: 90px 0 90px 80px;
+    padding: 80px 0 80px 80px;
   }
 }
 .what_we_do .wrapper .acc_container .item .option_holder {
