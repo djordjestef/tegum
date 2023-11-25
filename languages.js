@@ -134,7 +134,7 @@ const jsonEN = {
   main_section_contact_holder_title: `Let's meet your unique business needs.`,
   form_name: 'Your Name',
   form_email: 'Email (required)',
-  form_subject: '+ Subject',
+  form_subject: 'Subject',
   form_comment: 'Message',
   main_section_about_us_holder_title:
     'Tegum was founded in 2002, focusing initially on mechanical engineering within the chemical and process industries.',
@@ -514,7 +514,7 @@ const jsonSR = {
   main_section_contact_holder_title: 'Hajde da ispunimo vaše jedinstvene poslovne potrebe.',
   form_name: 'Ime',
   form_email: 'Email (obavezno)',
-  form_subject: '+ Tema',
+  form_subject: 'Tema',
   form_comment: 'Poruka',
   main_section_about_us_holder_title:
     'Tegum je osnovan 2002. godine, u početku se fokusirajući na mašinstvo u okviru hemijske i procesne industrije.',
