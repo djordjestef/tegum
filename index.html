@@ -397,6 +397,7 @@
     </section>
     <script>
       $.get('navigation.html', function (data) {
+        console.log('nav')
         //ovo mora pre petlje language da se ucita!!!!
         $('#nav-placeholder').replaceWith(data);
       });
