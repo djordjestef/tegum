@@ -864,6 +864,20 @@ html {
   padding-right: 72px;
 }
 
+.notification {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+.notification.active {
+  display: block;
+}
+
+.notifyjs-bootstrap-success {
+  color: #000 !important;
+}
+
 .only_desktop {
   display: block;
 }

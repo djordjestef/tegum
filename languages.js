@@ -785,8 +785,6 @@ $(document).ready(function () {
 
     for (let key in jsonData) {
       setTimeout(() => {
-
-        console.log('language')
         const element = document.querySelector('.' + key);
         if (lang === 'sr') {
           $('.form_btn_lang').attr('value', 'Pošalji');

@@ -31,7 +31,7 @@ $(document).ready(function () {
       marginTop:
         '-=' + (window.innerHeight < 760 ? window.innerHeight + 560 : window.innerHeight + 560), //height of spacer//podesi za sve visine
     });
-  }, 200);
+  }, 500);
 
   //end of accordion
 
