@@ -12,6 +12,11 @@ html {
 .container_helper {
     padding-left: 72px;
     padding-right: 72px;
+
+    @media only screen and (max-width: 991px) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
 .notification {
@@ -26,8 +31,7 @@ html {
 }
 
 .notifyjs-bootstrap-success {
-    color: #000!important;
-
+    color: #000 !important;
 }
 
 .only_desktop {
@@ -49,9 +53,17 @@ html {
 .main_section {
     margin-top: 225px;
 
+    @media only screen and (max-width: 991px) {
+        margin-top: 145px;
+    }
+
     &_holder {
         // width: 80%;
         margin-bottom: 156px;
+
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 80px;
+        }
         // @media only screen and (max-width: 1440px) {
         //     width: 110%;
         // }
@@ -73,6 +85,10 @@ html {
                 font-size: 44px;
             }
 
+            @media only screen and (max-width: 991px) {
+                font-size: 30px;
+            }
+
             @media only screen and (min-width: 1921px) {
                 width: 70%;
             }
@@ -84,6 +100,10 @@ html {
 
             @media only screen and (max-width: 1400px) {
                 font-size: 18px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 14px;
             }
         }
     }
@@ -111,8 +131,8 @@ html {
         margin-left: 8.33%;
         padding-left: 72px;
 
-        @media only screen and (max-width: 576px) {
-            margin-left: 0;
+        @media only screen and (max-width: 991px) {
+            margin-left: 12px;
             padding-left: 0;
         }
     }
@@ -160,6 +180,10 @@ html {
         @media only screen and (max-width: 1200px) {
             font-size: 14px;
         }
+
+        @media only screen and (max-width: 991px) {
+            left: 12px;
+        }
     }
 
     .flex_columns {
@@ -190,6 +214,10 @@ html {
             height: 7px;
             position: relative;
             width: 20px;
+
+            @media only screen and (max-width: 991px) {
+                top: 9px;
+            }
             &:before,
             &:after {
                 background: #000;
@@ -200,6 +228,10 @@ html {
                 top: 0;
                 width: 20px;
                 transition: transform 300ms ease;
+
+                @media only screen and (max-width: 991px) {
+                    width: 14px;
+                }
             }
 
             &:after {
@@ -220,13 +252,19 @@ html {
             font-weight: 600;
             margin-bottom: 14px;
             padding-left: 40px;
+
+            @media only screen and (max-width: 991px) {
+                font-size: 14px;
+                padding-left: 30px;
+            }
         }
 
         &_description {
             font-size: 16px;
             padding-left: 40px;
-            @media only screen and (max-width: 576px) {
-                font-size: 14px;
+            @media only screen and (max-width: 991px) {
+                font-size: 12px;
+                padding-left: 30px;
             }
         }
     }
@@ -274,6 +312,10 @@ html {
         @media only screen and (max-width: 1200px) {
             font-size: 14px;
         }
+
+        @media only screen and (max-width: 991px) {
+            left: 12px;
+        }
     }
     .wrapper {
         .acc_container {
@@ -300,6 +342,11 @@ html {
                 // border-top: 1px solid #000;
                 overflow: hidden; /* Hide content that overflows the fixed height */
                 // height: 100vh;
+
+                @media only screen and (max-width: 991px) {
+                    margin-left: 12px;
+                    margin-right: 12px;
+                }
 
                 .container-fluid {
                     // overflow: auto; /* Enable scrolling for overflow content */
@@ -374,6 +421,10 @@ html {
                             font-size: 18px;
                             margin-right: 14px;
                         }
+
+                        // @media only screen and (max-width: 991px) {
+                        //     font-size: 14px
+                        // }
                     }
 
                     &_title {
@@ -393,6 +444,10 @@ html {
                         @media only screen and (max-width: 1200px) {
                             font-size: 18px;
                         }
+
+                        // @media only screen and (max-width: 991px) {
+                        //     font-size: 14px
+                        // }
 
                         &:hover {
                             color: #0011ff;
@@ -761,6 +816,10 @@ html {
 
 .testimonials {
     padding: 290px 0 300px;
+
+    @media only screen and (max-width: 991px) {
+        padding: 120px 0 100px;
+    }
     // text-align: center;
 
     &_holder {
@@ -769,6 +828,11 @@ html {
 
         @media only screen and (max-width: 1440px) {
             width: 47%;
+        }
+
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+            padding-left: 12px;
         }
 
         &_img {
@@ -786,6 +850,10 @@ html {
 
             @media only screen and (max-width: 1400px) {
                 font-size: 16px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 14px;
             }
 
             &_description {
@@ -806,6 +874,12 @@ html {
 
         @media only screen and (max-width: 1440px) {
             padding: 46px 0;
+        }
+
+        @media only screen and (max-width: 991px) {
+            margin-left: 12px;
+            margin-right: 12px;
+            padding: 46px 0 76px;
         }
 
         &:first-child {
@@ -831,6 +905,10 @@ html {
             @media only screen and (max-width: 1440px) {
                 font-size: 16px;
             }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 14px;
+            }
         }
 
         &_number_main {
@@ -843,6 +921,10 @@ html {
 
             @media only screen and (max-width: 1400px) {
                 width: 27%;
+            }
+
+            @media only screen and (max-width: 991px) {
+                width: 57%;
             }
         }
 
@@ -866,6 +948,12 @@ html {
             @media only screen and (max-width: 1200px) {
                 font-size: 20px;
             }
+
+            @media only screen and (max-width: 991px) {
+                width: 100%;
+                margin: auto;
+                // text-align: center;
+            }
         }
 
         &_description {
@@ -884,6 +972,12 @@ html {
             @media only screen and (max-width: 1200px) {
                 margin-right: 0;
             }
+
+            @media only screen and (max-width: 991px) {
+                width: 100%;
+                margin: auto;
+                // text-align: center;
+            }
         }
 
         &_description_main {
@@ -892,12 +986,20 @@ html {
             @media only screen and (max-width: 1440px) {
                 margin-top: -10px;
             }
+
+            @media only screen and (max-width: 991px) {
+                width: unset;
+            }
         }
     }
 }
 
 .challenges {
     padding: 270px 0;
+
+    @media only screen and (max-width: 991px) {
+        padding: 130px 0;
+    }
 
     .margin_helper {
         // margin-left: 14vw;
@@ -932,6 +1034,10 @@ html {
 
         @media only screen and (max-width: 1400px) {
             font-size: 38px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            font-size: 24px;
         }
     }
 

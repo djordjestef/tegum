@@ -3,6 +3,10 @@
 .main_section_contact {
     margin-top: 225px;
 
+    @media only screen and (max-width: 991px) {
+        margin-top: 145px;
+    }
+
     &_holder {
         width: 100%;
         margin-bottom: 113px;
@@ -20,6 +24,10 @@
 
             @media only screen and (max-width: 1400px) {
                 font-size: 44px;
+            }
+
+            @media only screen and (max-width: 991px) {
+                font-size: 30px;
             }
         }
     }

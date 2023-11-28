@@ -1,6 +1,11 @@
 .main_section_about_us {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_about_us {
+    margin-top: 145px;
+  }
+}
 .main_section_about_us .padding_helper {
   padding: 0 72px;
 }
@@ -16,6 +21,11 @@
 @media only screen and (max-width: 1400px) {
   .main_section_about_us_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_about_us_holder_title {
+    font-size: 30px;
   }
 }
 .main_section_about_us_img {
@@ -35,6 +45,11 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .history_subtitle {
+    font-size: 14px;
+  }
+}
 .history_title {
   font-size: 52px;
   font-weight: 600;
@@ -42,6 +57,11 @@
 @media only screen and (max-width: 1400px) {
   .history_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .history_title {
+    font-size: 30px;
   }
 }
 .history_description {

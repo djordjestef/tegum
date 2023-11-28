@@ -185,6 +185,12 @@
   top: -132px;
 }
 
+.nav_logo_mobile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 .menu-items {
   position: fixed;
   overflow: scroll;

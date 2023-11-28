@@ -1,6 +1,11 @@
 .main_section_what_we_do_page {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_what_we_do_page {
+    margin-top: 145px;
+  }
+}
 .main_section_what_we_do_page .padding_helper {
   padding: 0 72px;
 }
@@ -16,6 +21,11 @@
 @media only screen and (max-width: 1400px) {
   .main_section_what_we_do_page_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_what_we_do_page_holder_title {
+    font-size: 30px;
   }
 }
 .main_section_what_we_do_page_holder_description {
@@ -90,6 +100,11 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .tegum_services_page_title {
+    font-size: 14px;
+  }
+}
 .tegum_services_page_holder {
   margin-top: 132px;
 }
@@ -106,6 +121,11 @@
 @media only screen and (max-width: 1400px) {
   .tegum_services_page_holder_title {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tegum_services_page_holder_title {
+    font-size: 14px;
   }
 }
 .tegum_services_page_holder_description {

@@ -185,6 +185,12 @@
   top: -132px;
 }
 
+.nav_logo_mobile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 .menu-items {
   position: fixed;
   overflow: scroll;
@@ -428,6 +434,11 @@
 .main_section_contact {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_contact {
+    margin-top: 145px;
+  }
+}
 .main_section_contact_holder {
   width: 100%;
   margin-bottom: 113px;
@@ -440,6 +451,11 @@
 @media only screen and (max-width: 1400px) {
   .main_section_contact_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_contact_holder_title {
+    font-size: 30px;
   }
 }
 .main_section_contact_img {
@@ -634,6 +650,11 @@
 .main_section_what_we_do_page {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_what_we_do_page {
+    margin-top: 145px;
+  }
+}
 .main_section_what_we_do_page .padding_helper {
   padding: 0 72px;
 }
@@ -649,6 +670,11 @@
 @media only screen and (max-width: 1400px) {
   .main_section_what_we_do_page_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_what_we_do_page_holder_title {
+    font-size: 30px;
   }
 }
 .main_section_what_we_do_page_holder_description {
@@ -723,6 +749,11 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .tegum_services_page_title {
+    font-size: 14px;
+  }
+}
 .tegum_services_page_holder {
   margin-top: 132px;
 }
@@ -739,6 +770,11 @@
 @media only screen and (max-width: 1400px) {
   .tegum_services_page_holder_title {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tegum_services_page_holder_title {
+    font-size: 14px;
   }
 }
 .tegum_services_page_holder_description {
@@ -802,6 +838,11 @@
 .main_section_about_us {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_about_us {
+    margin-top: 145px;
+  }
+}
 .main_section_about_us .padding_helper {
   padding: 0 72px;
 }
@@ -817,6 +858,11 @@
 @media only screen and (max-width: 1400px) {
   .main_section_about_us_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_about_us_holder_title {
+    font-size: 30px;
   }
 }
 .main_section_about_us_img {
@@ -836,6 +882,11 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .history_subtitle {
+    font-size: 14px;
+  }
+}
 .history_title {
   font-size: 52px;
   font-weight: 600;
@@ -843,6 +894,11 @@
 @media only screen and (max-width: 1400px) {
   .history_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .history_title {
+    font-size: 30px;
   }
 }
 .history_description {
@@ -862,6 +918,12 @@ html {
 .container_helper {
   padding-left: 72px;
   padding-right: 72px;
+}
+@media only screen and (max-width: 991px) {
+  .container_helper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 .notification {
@@ -899,8 +961,18 @@ html {
 .main_section {
   margin-top: 225px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section {
+    margin-top: 145px;
+  }
+}
 .main_section_holder {
   margin-bottom: 156px;
+}
+@media only screen and (max-width: 991px) {
+  .main_section_holder {
+    margin-bottom: 80px;
+  }
 }
 .main_section_holder_title {
   font-size: 52px;
@@ -911,6 +983,11 @@ html {
 @media only screen and (max-width: 1400px) {
   .main_section_holder_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_holder_title {
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 1921px) {
@@ -925,6 +1002,11 @@ html {
 @media only screen and (max-width: 1400px) {
   .main_section_holder_description {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main_section_holder_description {
+    font-size: 14px;
   }
 }
 .main_section_img {
@@ -947,9 +1029,9 @@ html {
   margin-left: 8.33%;
   padding-left: 72px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .about_us .width_helper {
-    margin-left: 0;
+    margin-left: 12px;
     padding-left: 0;
   }
 }
@@ -984,6 +1066,11 @@ html {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .about_us_title {
+    left: 12px;
+  }
+}
 .about_us .flex_columns {
   position: relative;
   padding-left: 0;
@@ -1004,6 +1091,11 @@ html {
   position: relative;
   width: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .about_us .flex_columns_plus {
+    top: 9px;
+  }
+}
 .about_us .flex_columns_plus:before, .about_us .flex_columns_plus:after {
   background: #000;
   content: "";
@@ -1013,6 +1105,11 @@ html {
   top: 0;
   width: 20px;
   transition: transform 300ms ease;
+}
+@media only screen and (max-width: 991px) {
+  .about_us .flex_columns_plus:before, .about_us .flex_columns_plus:after {
+    width: 14px;
+  }
 }
 .about_us .flex_columns_plus:after {
   transform-origin: center;
@@ -1029,13 +1126,20 @@ html {
   margin-bottom: 14px;
   padding-left: 40px;
 }
+@media only screen and (max-width: 991px) {
+  .about_us .flex_columns_title {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+}
 .about_us .flex_columns_description {
   font-size: 16px;
   padding-left: 40px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .about_us .flex_columns_description {
-    font-size: 14px;
+    font-size: 12px;
+    padding-left: 30px;
   }
 }
 .about_us .card_scroller::-webkit-scrollbar {
@@ -1071,6 +1175,11 @@ html {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do_small_title {
+    left: 12px;
+  }
+}
 .what_we_do .wrapper .acc_container #pin1 {
   height: 100vh;
 }
@@ -1082,6 +1191,12 @@ html {
   padding-right: 72px;
   margin-left: 72px;
   overflow: hidden; /* Hide content that overflows the fixed height */
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
 .what_we_do .wrapper .acc_container .item .container-fluid {
   height: auto;
@@ -1460,6 +1575,11 @@ html {
 .testimonials {
   padding: 290px 0 300px;
 }
+@media only screen and (max-width: 991px) {
+  .testimonials {
+    padding: 120px 0 100px;
+  }
+}
 .testimonials_holder {
   width: 35%;
   margin: auto;
@@ -1467,6 +1587,12 @@ html {
 @media only screen and (max-width: 1440px) {
   .testimonials_holder {
     width: 47%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .testimonials_holder {
+    width: 100%;
+    padding-left: 12px;
   }
 }
 .testimonials_holder_img {
@@ -1486,6 +1612,11 @@ html {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .testimonials_holder_text {
+    font-size: 14px;
+  }
+}
 .testimonials_holder_text_description {
   margin-bottom: 20px;
 }
@@ -1503,6 +1634,13 @@ html {
 @media only screen and (max-width: 1440px) {
   .expertise_holder {
     padding: 46px 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .expertise_holder {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 46px 0 76px;
   }
 }
 .expertise_holder:first-child {
@@ -1529,6 +1667,11 @@ html {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_number {
+    font-size: 14px;
+  }
+}
 .expertise_holder_number_main {
   top: 70px;
   width: 14%;
@@ -1541,6 +1684,11 @@ html {
 @media only screen and (max-width: 1400px) {
   .expertise_holder_number_main {
     width: 27%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .expertise_holder_number_main {
+    width: 57%;
   }
 }
 .expertise_holder_title {
@@ -1567,6 +1715,12 @@ html {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_title {
+    width: 100%;
+    margin: auto;
+  }
+}
 .expertise_holder_description {
   font-size: 16px;
   font-weight: 400;
@@ -1586,6 +1740,12 @@ html {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_description {
+    width: 100%;
+    margin: auto;
+  }
+}
 .expertise_holder_description_main {
   margin-top: -20px;
 }
@@ -1594,9 +1754,19 @@ html {
     margin-top: -10px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_description_main {
+    width: unset;
+  }
+}
 
 .challenges {
   padding: 270px 0;
+}
+@media only screen and (max-width: 991px) {
+  .challenges {
+    padding: 130px 0;
+  }
 }
 .challenges .holder {
   width: 90%;
@@ -1627,6 +1797,11 @@ html {
 @media only screen and (max-width: 1400px) {
   .challenges_title {
     font-size: 38px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .challenges_title {
+    font-size: 24px;
   }
 }
 .challenges_btn {
