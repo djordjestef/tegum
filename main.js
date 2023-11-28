@@ -346,11 +346,11 @@ $(document).ready(function () {
   function horizontalScroll() {
     let stickyPosition = sticky.getBoundingClientRect().top;
     if (stickyPosition < 1) {
-      // return
+      return
     } else {
       let scrolled =
-        width < 576
-          ? startPosition.getBoundingClientRect().top - 20
+        width < 992
+          ? false
           : width < 768
           ? startPosition.getBoundingClientRect().top - 400
           : width < 992
@@ -359,19 +359,9 @@ $(document).ready(function () {
           ? startPosition.getBoundingClientRect().top + 180
           : startPosition.getBoundingClientRect().top + 260;
 
-      // if(width<992){
-      //   console.log('< 992')
-      // }else if(width<1200){
-      //   console.log('<1200')
-      // }else if(width<1441){
-      //   console.log('<1441')
-      // }else {
-      //   console.log('')
-      // }
-
       sticky.scrollLeft =
-        width < 576
-          ? (scrollWidth / verticalScrollHeight + 200) * -scrolled * 0.02
+        width < 992
+          ? false
           : width < 1200
           ? (scrollWidth / verticalScrollHeight + 100) * -scrolled * 0.06
           : width < 1400
@@ -381,14 +371,7 @@ $(document).ready(function () {
           : width < 1661
           ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
           : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.04;
-      // width < 992
-      //   ? (scrollWidth / verticalScrollHeight) * -scrolled
-      //   :
-      //   width < 1200
-      //   ? (scrollWidth / verticalScrollHeight + 2000) * -scrolled * 0.006
-      //   : width < 1441
-      //   ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.066
-      //   : (scrollWidth / verticalScrollHeight) * -scrolled * 0.06;
+      console.log('scrollLeft', sticky.scrollLeft);
     }
   }
   //horizontal scroll

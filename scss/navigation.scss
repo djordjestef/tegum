@@ -489,18 +489,18 @@
 }
 
 .ham-menu {
-    height: 2.4rem;
-    width: 3rem;
+    height: 33px;
+    width: 45px;
     position: fixed;
     right: 8px;
     top: 8px;
-    padding: 0.5rem;
+    padding:8px 10px;
+    background-color: #fff;
+    border-radius: 0;
     z-index: 99;
     // display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // background-color: white;
-    border-radius: 0.25em;
     display: flex;
     // display: none;
 
@@ -554,6 +554,7 @@
     top: 3px;
     right: 0;
     transform: scale(0.8);
+    background-color: #000;
 }
 
 .check:checked ~ .ham-menu .line1 {
