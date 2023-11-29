@@ -47,7 +47,7 @@
 }
 .main-navigation a.active,
 .main-navigation .sub_nav.active {
-  color: #0011ff;
+  font-weight: 600;
 }
 .main-navigation .opened {
   background: #fff;
@@ -477,6 +477,9 @@
     margin-top: 16px;
   }
 }
+.form .height_helper {
+  height: 100px !important;
+}
 .form_btn {
   all: unset;
   width: 150px;
@@ -491,17 +494,7 @@
 }
 .form .form-element {
   position: relative;
-  margin-bottom: 45px;
-}
-@media only screen and (max-width: 1660px) {
-  .form .form-element {
-    margin-bottom: 35px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .form .form-element {
-    margin-bottom: 28px;
-  }
+  margin-bottom: 31px;
 }
 .form .form-element-hint {
   font-weight: 400;
@@ -514,12 +507,7 @@
   height: 1px;
   background: #a4a4a4;
   display: block;
-  margin-top: 20px;
-}
-@media only screen and (max-width: 991px) {
-  .form .form-element-bar {
-    margin-top: 14px;
-  }
+  margin-top: 10px;
 }
 .form .form-element-bar::after {
   content: " ";
@@ -1296,11 +1284,8 @@ html {
   position: relative;
 }
 .what_we_do .wrapper .acc_container .item img {
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 130px 130px 0 0;
 }
 .what_we_do .wrapper .acc_container .item_img_1_1 {
   display: none;

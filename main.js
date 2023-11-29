@@ -179,46 +179,38 @@ $(document).ready(function () {
   $('.hover_animate_1_1').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_1_1').fadeIn(200);
-      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_1_1').fadeIn(50);
     },
     function () {
-      $('.item_img_1_1').fadeOut(200);
-      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_1_1').fadeOut(50);
     },
   );
 
   $('.hover_animate_1_2').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_1_2').fadeIn(200);
-      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_1_2').fadeIn(50);
     },
     function () {
-      $('.item_img_1_2').fadeOut(200);
-      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_1_2').fadeOut(50);
     },
   );
   $('.hover_animate_1_3').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_1_3').fadeIn(200);
-      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_1_3').fadeIn(50);
     },
     function () {
-      $('.item_img_1_3').fadeOut(200);
-      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_1_3').fadeOut(50);
     },
   );
   $('.hover_animate_1_4').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_1_4').fadeIn(200);
-      $('.background_helper_1').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_1_4').fadeIn(50);
     },
     function () {
-      $('.item_img_1_4').fadeOut(200);
-      $('.background_helper_1').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_1_4').fadeOut(50);
     },
   );
 
@@ -227,46 +219,38 @@ $(document).ready(function () {
   $('.hover_animate_2_1').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_2_1').fadeIn(200);
-      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_2_1').fadeIn(50);
     },
     function () {
-      $('.item_img_2_1').fadeOut(200);
-      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_2_1').fadeOut(50);
     },
   );
 
   $('.hover_animate_2_2').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_2_2').fadeIn(200);
-      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_2_2').fadeIn(50);
     },
     function () {
-      $('.item_img_2_2').fadeOut(200);
-      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_2_2').fadeOut(50);
     },
   );
   $('.hover_animate_2_3').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_2_3').fadeIn(200);
-      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_2_3').fadeIn(50);
     },
     function () {
-      $('.item_img_2_3').fadeOut(200);
-      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_2_3').fadeOut(50);
     },
   );
   $('.hover_animate_2_4').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_2_4').fadeIn(200);
-      $('.background_helper_2').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_2_4').fadeIn(50);
     },
     function () {
-      $('.item_img_2_4').fadeOut(200);
-      $('.background_helper_2').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_2_4').fadeOut(50);
     },
   );
 
@@ -275,57 +259,47 @@ $(document).ready(function () {
   $('.hover_animate_3_1').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_3_1').fadeIn(200);
-      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_3_1').fadeIn(50);
     },
     function () {
-      $('.item_img_3_1').fadeOut(200);
-      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_3_1').fadeOut(50);
     },
   );
 
   $('.hover_animate_3_2').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_3_2').fadeIn(200);
-      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_3_2').fadeIn(50);
     },
     function () {
-      $('.item_img_3_2').fadeOut(200);
-      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_3_2').fadeOut(50);
     },
   );
   $('.hover_animate_3_3').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_3_3').fadeIn(200);
-      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_3_3').fadeIn(50);
     },
     function () {
-      $('.item_img_3_3').fadeOut(200);
-      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_3_3').fadeOut(50);
     },
   );
   $('.hover_animate_3_4').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_3_4').fadeIn(200);
-      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_3_4').fadeIn(50);
     },
     function () {
-      $('.item_img_3_4').fadeOut(200);
-      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_3_4').fadeOut(50);
     },
   );
   $('.hover_animate_3_5').hover(
     function () {
       $(this).css({ cursor: 'url(assets/blue_arrow.png), default' });
-      $('.item_img_3_5').fadeIn(200);
-      $('.background_helper_3').css('background-color', '#f3f3f3').fadeIn(200);
+      $('.item_img_3_5').fadeIn(50);
     },
     function () {
-      $('.item_img_3_5').fadeOut(200);
-      $('.background_helper_3').css('background-color', '#fff').fadeOut(100);
+      $('.item_img_3_5').fadeOut(50);
     },
   );
 
@@ -346,7 +320,7 @@ $(document).ready(function () {
   function horizontalScroll() {
     let stickyPosition = sticky.getBoundingClientRect().top;
     if (stickyPosition < 1) {
-      return
+      return;
     } else {
       let scrolled =
         width < 992
