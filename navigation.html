@@ -224,13 +224,15 @@
     </div>
     <script>
       $(function () {
-        var current = location.pathname.split('/').pop(); // Get the last part of the path
+        var current = location.pathname.split('/').pop();
         $('#site-navigation a').removeClass('active');
         $('#site-navigation a[href="' + current + '"]').addClass('active');
 
         $('.inquire_btn').on('click', () => {
-          var subject = $('.inquire_btn').attr('attr');
-          localStorage.setItem('subject', subject);
+          var current = location.pathname.split('/').pop().replace('.html', '');
+          localStorage.setItem('subject', current);
+          // var subject = $('.inquire_btn').attr('attr');
+          // localStorage.setItem('subject', subject);
         });
       });
     </script>
