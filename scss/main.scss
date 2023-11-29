@@ -1035,6 +1035,12 @@ html {
         all: unset;
     }
 
+    &_logo {
+        position: absolute;
+        top: 59px;
+        left: 72px;
+    }
+
     &_list {
         .sr {
             all: unset;
