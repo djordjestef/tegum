@@ -365,6 +365,10 @@ $(document).on('click', '.subject_btn', function (event) {
   }
 });
 
+$('.footer_btn').click(() => {
+  localStorage.setItem('subject', '');
+});
+
 //contact form
 
 document.addEventListener('change', function (event) {

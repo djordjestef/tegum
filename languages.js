@@ -86,7 +86,7 @@ const jsonEN = {
   expertise_holder_description_2:
     'Comprehensive strategy support to enhance your operations and ensure a competitive edge in the market.',
   expertise_holder_description_3:
-    'Ooptimize sourcing, category management, and quality control to drive efficiency and quality.',
+    'Optimize sourcing, category management, and quality control to drive efficiency and quality.',
   expertise_holder_description_4:
     'Compliance with norms and standards guarantees the highest level of quality and safety in your processes.',
   expertise_holder_description_5:
@@ -102,7 +102,8 @@ const jsonEN = {
   footer_contact_phone: 'Phone:',
   page_contact_address: 'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
   page_contact_phone: 'Phone:',
-  footer_btn: 'Get started',
+  footer_btn: 'Contact us',
+  footer_rights_lang:'©2023. All rights reserved.',
   main_section_fcis_holder_title: 'Financial Consulting and Investment Studies',
   main_section_fcis_holder_description: 'Delve into the depth of financial expertise with our comprehensive suite of services, providing meticulous financial analysis and detailed investment studies. Our goal is to empower you, offering insights that go beyond numbers, guiding you to make informed decisions strategically aligned to maximize your return on investment and drive sustained financial growth.',
   tegum_services_fcis_small_title: 'TEGUM Services',
@@ -484,7 +485,8 @@ const jsonSR = {
   footer_contact_phone: 'Telefon:',
   page_contact_address: 'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
   page_contact_phone: 'Telefon:',
-  footer_btn: 'Počni',
+  footer_btn: 'Kontaktiraj nas',
+  footer_rights_lang:'©2023. Sva prava zadržana.',
   main_section_fcis_holder_title: 'Finansijski konsalting i investicione studije',
   main_section_fcis_holder_description: 'Uđite u dubinu finansijske ekspertize pomoću našeg sveobuhvatnog paketa usluga, pružajući preciznu finansijsku analizu i detaljne investicione studije. Naš cilj je da vas osnažimo, nudeći uvide koji prevazilaze brojke, vodeći vas da donosite informisane odluke koje su strateški usklađene kako biste maksimizirali povrat ulaganja i podstakli održivi finansijski rast.',
   tegum_services_fcis_small_title: 'TEGUM Usluge',

@@ -674,7 +674,7 @@
 }
 @media only screen and (min-width: 1921px) {
   .main_section_what_we_do_page_holder_title_helper {
-    width: 92%;
+    width: 89%;
   }
 }
 .main_section_what_we_do_page_holder_description {
@@ -1801,7 +1801,7 @@ html {
 }
 
 .footer {
-  padding: 80px 0;
+  padding: 66px 0 308px;
   color: #a4a4a4;
   background-color: #000;
   position: relative;
@@ -1833,6 +1833,7 @@ html {
   list-style: none;
   display: inline-block;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .footer_list ul li {
   display: inline-block;
@@ -1852,8 +1853,8 @@ html {
 .footer_contact {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 76px;
-  margin-bottom: 150px;
+  margin-top: 92px;
+  margin-bottom: 80px;
 }
 .footer_btn {
   all: unset;
@@ -1867,6 +1868,6 @@ html {
   cursor: pointer;
   color: #000;
   position: absolute;
-  top: 78px;
+  top: 57px;
   right: 72px;
 }/*# sourceMappingURL=main.css.map */
