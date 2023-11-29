@@ -416,7 +416,7 @@ const jsonSR = {
   about_us_title: 'O NAMA',
   main_section_holder_description:
     'TEGUM je vaš partner u upravljanju industrijskim projektima, unapređenju proizvodnje i strateškim inovacijama procesa. Oslanjamo se na višedecenijsko iskustvo u različitim industrijama da bismo pružili specijalizovana rešenja u stvarnom svetu.',
-  about_us_title_1: 'Industrial Ekpertise',
+  about_us_title_1: 'Industrijske Ekpertise',
   about_us_description_1:
     'TEGUM koristi duboku stručnost u industriji da bi se uhvatio u koštac sa složenim izazovima. Fokusiramo se na efikasnost proizvodnje i poboljšanje procesa kako bismo ponudili rešenja po meri koja će zadovoljiti vaše jedinstvene poslovne potrebe  ',
   about_us_title_2: 'Strateška izvrsnost',
