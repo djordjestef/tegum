@@ -650,7 +650,7 @@
 }
 
 .main_section_what_we_do_page {
-  margin-top: 225px;
+  margin-top: 210px;
 }
 @media only screen and (max-width: 991px) {
   .main_section_what_we_do_page {
@@ -662,12 +662,12 @@
 }
 .main_section_what_we_do_page_holder {
   width: 100%;
-  margin-bottom: 113px;
 }
 .main_section_what_we_do_page_holder_title {
   font-size: 52px;
   font-weight: 800;
-  margin-bottom: 20px;
+  height: 136px;
+  margin-bottom: 113px;
 }
 @media only screen and (max-width: 1400px) {
   .main_section_what_we_do_page_holder_title {
@@ -681,27 +681,7 @@
 }
 .main_section_what_we_do_page_holder_description {
   font-size: 16px;
-  margin-bottom: 84px;
-}
-.main_section_what_we_do_page_img {
-  width: 100%;
-}
-
-.main_section_piss_img_holder,
-.main_section_ipm_img_holder,
-.main_section_pei_img_holder,
-.main_section_qc_img_holder,
-.main_section_ps_img_holder,
-.main_section_mc_img_holder,
-.main_section_is_img_holder,
-.main_section_cs_img_holder,
-.main_section_smp_img_holder,
-.main_section_ihsa_img_holder,
-.main_section_cnc_img_holder,
-.main_section_pe_img_holder {
-  height: 830px;
-  background: #f3f3f3;
-  position: relative;
+  margin-top: 13px;
 }
 .main_section_piss_img_holder img,
 .main_section_ipm_img_holder img,
@@ -714,11 +694,9 @@
 .main_section_smp_img_holder img,
 .main_section_ihsa_img_holder img,
 .main_section_cnc_img_holder img,
-.main_section_pe_img_holder img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main_section_pe_img_holder img,
+.main_section_fcis_img_holder img {
+  width: 100%;
 }
 
 .tegum_services_page {
