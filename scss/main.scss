@@ -794,7 +794,7 @@ html {
     // text-align: center;
 
     &_holder {
-        width: 35%;
+        width:42%;
         margin: auto;
 
         @media only screen and (max-width: 1440px) {
@@ -804,6 +804,10 @@ html {
         @media only screen and (max-width: 991px) {
             width: 100%;
             padding-left: 12px;
+        }
+
+        @media only screen and (min-width: 1921px) {
+            width: 740px;
         }
 
         &_img {
@@ -836,6 +840,10 @@ html {
 
 .expertise {
     background-color: #f3f3f3;
+
+    .container_expertise_heleper {
+        padding: 0;
+    }
     &_holder {
         margin-left: 72px;
         margin-right: 72px;
@@ -870,12 +878,12 @@ html {
             top: 20px;
             left: 0;
             color: #a4a4a4;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
 
-            @media only screen and (max-width: 1440px) {
-                font-size: 16px;
-            }
+            // @media only screen and (max-width: 1440px) {
+            //     font-size: 16px;
+            // }
 
             @media only screen and (max-width: 991px) {
                 font-size: 14px;
@@ -903,36 +911,29 @@ html {
             font-size: 30px;
             color: #0011ff;
             display: inline-block;
-            margin-left: 17%;
             font-weight: 600;
 
             @media only screen and (max-width: 1440px) {
                 font-size: 27px;
-                margin-left: 13%;
             }
 
             @media only screen and (max-width: 1400px) {
                 font-size: 24px;
-                margin-left: 9%;
             }
 
             @media only screen and (max-width: 1200px) {
                 font-size: 20px;
             }
 
-            @media only screen and (max-width: 991px) {
-                width: 100%;
-                margin: auto;
-                // text-align: center;
-            }
+            // @media only screen and (max-width: 991px) {
+            //     width: 100%;
+            // }
         }
 
         &_description {
             font-size: 16px;
             font-weight: 400;
             display: inline-block;
-            width: 30vw;
-            float: right;
             margin-right: 90px;
 
             @media only screen and (max-width: 1440px) {
@@ -944,15 +945,16 @@ html {
                 margin-right: 0;
             }
 
-            @media only screen and (max-width: 991px) {
-                width: 100%;
-                margin: auto;
-                // text-align: center;
-            }
+            // @media only screen and (max-width: 991px) {
+            //     width: 100%;
+            //     margin: auto;
+            //     // text-align: center;
+            // }
         }
 
         &_description_main {
             margin-top: -20px;
+            margin-right: unset;
 
             @media only screen and (max-width: 1440px) {
                 margin-top: -10px;
@@ -1098,11 +1100,11 @@ html {
 
     &_btn {
         all: unset;
-        width: 150px;
-        height: 42px;
+        width: 152px;
+        height: 44px;
         text-align: center;
         background: #a3f34a 0% 0% no-repeat padding-box;
-        border: 1px solid #a3f34a;
+        // border: 1px solid #a3f34a;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;

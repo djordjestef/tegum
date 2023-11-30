@@ -92,7 +92,13 @@ const jsonEN = {
   expertise_holder_description_5:
     'Our management consulting and implementation support guarantee smooth objectives execution.',
   expertise_holder_description_6:
-    'Fnancial consulting and investment studies will help make informed decisions that maximize returns',
+    'Fnancial consulting and investment studies will help make informed decisions that maximize returns.',
+  expertise_holder_description_7:
+    'Crafting tailored industrial hardware and software applications to meet the unique needs of your operations.',
+  expertise_holder_description_8:
+    'Embark on informed financial decisions with our investment studies.',
+  expertise_holder_description_9:
+    'Revolutionize your manufacturing and warehouse facilities with our custom designes.',
   challenges_title: 'Tackle complex industrial challenges.',
   challenges_btn: 'Get started',
   footer_nav_1: 'Services',
@@ -103,9 +109,10 @@ const jsonEN = {
   page_contact_address: 'Address: Pop Lukina 2/II/15, 15000 Sabac, Serbia',
   page_contact_phone: 'Phone:',
   footer_btn: 'Contact us',
-  footer_rights_lang:'©2023. All rights reserved.',
+  footer_rights_lang: '©2023. All rights reserved.',
   main_section_fcis_holder_title: 'Financial Consulting and Investment Studies',
-  main_section_fcis_holder_description: 'Delve into the depth of financial expertise with our comprehensive suite of services, providing meticulous financial analysis and detailed investment studies. Our goal is to empower you, offering insights that go beyond numbers, guiding you to make informed decisions strategically aligned to maximize your return on investment and drive sustained financial growth.',
+  main_section_fcis_holder_description:
+    'Delve into the depth of financial expertise with our comprehensive suite of services, providing meticulous financial analysis and detailed investment studies. Our goal is to empower you, offering insights that go beyond numbers, guiding you to make informed decisions strategically aligned to maximize your return on investment and drive sustained financial growth.',
   tegum_services_fcis_small_title: 'TEGUM Services',
   tegum_services_fcis_title: 'Comprehensive Solutions for Strategic Growth',
   tegum_services_fcis_holder_title_1: 'Financial Consulting',
@@ -237,7 +244,8 @@ const jsonEN = {
   get_started_ps_title: '',
   get_started_ps_btn: 'Get started',
   main_section_mc_holder_title: 'Management Consulting',
-  main_section_mc_holder_description:'Cover a wide range of business areas, including process improvement, risk assessment, and innovation in daily operations. Focus on delivering sustainability in your operations.',
+  main_section_mc_holder_description:
+    'Cover a wide range of business areas, including process improvement, risk assessment, and innovation in daily operations. Focus on delivering sustainability in your operations.',
   tegum_services_mc_small_title: '',
   tegum_services_mc_title: '',
   tegum_services_mc_holder_title_1: '',
@@ -475,7 +483,13 @@ const jsonSR = {
   expertise_holder_description_5:
     'Naše savetovanje o menadžmentu i podrška implementaciji garantuju nesmetano izvršavanje ciljeva.',
   expertise_holder_description_6:
-    'Finansijski konsalting i investicione studije će pomoći u donošenju informisanih odluka koje maksimiziraju prinose',
+    'Finansijski konsalting i investicione studije će pomoći u donošenju informisanih odluka koje maksimiziraju prinose.',
+  expertise_holder_description_7:
+    'Izrada prilagođenih industrijskih hardverskih i softverskih aplikacija kako bi se zadovoljile jedinstvene potrebe vašeg poslovanja.',
+  expertise_holder_description_8:
+    'Započnite informisane finansijske odluke uz naše investicione studije.',
+  expertise_holder_description_9:
+    'Revolucionizujte vaše proizvodne i skladišne objekte uz naše prilagođene dizajne.',
   challenges_title: 'Rešite se složenih industrijskih izazova.',
   challenges_btn: 'Počni',
   footer_nav_1: 'Usluge',
@@ -486,9 +500,10 @@ const jsonSR = {
   page_contact_address: 'Adresa: Pop Lukina 2/II/15, 15000 Šabac, Srbija',
   page_contact_phone: 'Telefon:',
   footer_btn: 'Kontaktiraj nas',
-  footer_rights_lang:'©2023. Sva prava zadržana.',
+  footer_rights_lang: '©2023. Sva prava zadržana.',
   main_section_fcis_holder_title: 'Finansijski konsalting i investicione studije',
-  main_section_fcis_holder_description: 'Uđite u dubinu finansijske ekspertize pomoću našeg sveobuhvatnog paketa usluga, pružajući preciznu finansijsku analizu i detaljne investicione studije. Naš cilj je da vas osnažimo, nudeći uvide koji prevazilaze brojke, vodeći vas da donosite informisane odluke koje su strateški usklađene kako biste maksimizirali povrat ulaganja i podstakli održivi finansijski rast.',
+  main_section_fcis_holder_description:
+    'Uđite u dubinu finansijske ekspertize pomoću našeg sveobuhvatnog paketa usluga, pružajući preciznu finansijsku analizu i detaljne investicione studije. Naš cilj je da vas osnažimo, nudeći uvide koji prevazilaze brojke, vodeći vas da donosite informisane odluke koje su strateški usklađene kako biste maksimizirali povrat ulaganja i podstakli održivi finansijski rast.',
   tegum_services_fcis_small_title: 'TEGUM Usluge',
   tegum_services_fcis_title: 'Sveobuhvatna rešenja za strateški rast',
   tegum_services_fcis_holder_title_1: 'Finansijski Konsalting',
@@ -620,7 +635,8 @@ const jsonSR = {
   get_started_ps_title: '',
   get_started_ps_btn: 'Počni',
   main_section_mc_holder_title: 'Menadžment konsalting',
-  main_section_mc_holder_description:'Pokriva širok spektar poslovnih oblasti, uključujući poboljšanje procesa, procenu rizika i inovacije u svakodnevnim operacijama. Fokusirajte se na pružanje održivosti u vašim operacijama.',
+  main_section_mc_holder_description:
+    'Pokriva širok spektar poslovnih oblasti, uključujući poboljšanje procesa, procenu rizika i inovacije u svakodnevnim operacijama. Fokusirajte se na pružanje održivosti u vašim operacijama.',
   tegum_services_mc_small_title: '',
   tegum_services_mc_title: '',
   tegum_services_mc_holder_title_1: '',
