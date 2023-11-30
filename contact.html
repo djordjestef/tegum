@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@800&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="data:," />
@@ -54,7 +54,7 @@
             <div class="form">
               <fieldset class="form-fieldset">
                 <!-- <form id="form" action="https://lazarbulic.com/test.php" method="post"> -->
-                  <form id="form" action="mail.php" method="post">
+                <form id="form" action="mail.php" method="post">
                   <div class="form-element form-input">
                     <input
                       class="form-element-field"
@@ -95,7 +95,7 @@
                       required
                       name="message"
                     ></textarea>
-                    <div class="form-element-bar "></div>
+                    <div class="form-element-bar"></div>
                     <label class="form-element-label"><span class="form_comment"></span> </label>
                   </div>
 
@@ -155,18 +155,34 @@
         const urlParams = new URLSearchParams(queryString);
         const result = urlParams.get('result');
 
-        if (result === 'success') {
+        if (
+          localStorage.getItem('subject') !== '' &&
+          localStorage.getItem('subject') !== 'index' &&
+          localStorage.getItem('subject') !== 'contact'
+        ) {
+          console.log('FOCUS if');
+          $('#subject').focus();
+          $('#subject').addClass('-hasvalue');
+        }
+
+        if (
+          localStorage.getItem('subject') === 'index' ||
+          localStorage.getItem('subject') === 'contact'
+        ) {
+          console.log('JESTE INDEX ILI CONTACT');
           $('#subject').val('');
+        }
+
+        if (result === 'success') {
+          console.log('Success');
+          $('#subject').val('');
+          $('#subject').focus(false);
           $('.notification').addClass('active');
           $('.notification').notify('Email was sent successfully', 'success');
         } else if (result === 'error') {
           $('#subject').val('');
           $('.notification').addClass('active');
           $('.notification').notify('Something went wrong', 'error');
-        }
-        if (localStorage.getItem('subject') !== '') {
-          $('#subject').focus();
-          $('#subject').addClass('-hasvalue');
         }
       });
     </script>

@@ -108,21 +108,19 @@
 .main-navigation .language_holder .en.active {
   display: inline-block;
 }
+.main-navigation .main-navigation-list.dropdown-menu {
+  padding: unset;
+}
 .main-navigation-list {
   background-color: white;
   list-style: none;
   margin-bottom: 0;
   display: inline-block;
-  padding-left: 350px;
-}
-@media only screen and (max-width: 1400px) {
-  .main-navigation-list {
-    padding-left: 280px;
-  }
+  padding-left: 16.6666%;
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation-list {
-    padding-left: 220px;
+    padding-left: 20.666%;
   }
 }
 .main-navigation-list li a {
@@ -149,7 +147,7 @@
   display: none;
   position: fixed;
   min-width: 120px;
-  height: 60vh;
+  height: 550px;
   background-color: #000;
   width: 100%;
   left: 0;
@@ -169,15 +167,40 @@
 .main-navigation-list li.dropdown {
   position: relative;
 }
+.main-navigation-list li .sub_nav_title {
+  padding-left: 25px;
+  margin-top: 67px;
+  margin-bottom: 31px;
+  color: #fff;
+  opacity: 0.4;
+  font-weight: 300;
+}
+@media only screen and (max-width: 1400px) {
+  .main-navigation-list li .sub_nav_title {
+    padding-left: 23px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-navigation-list li .sub_nav_title {
+    padding-left: 59px;
+  }
+}
 .main-navigation-list li .sub_nav {
   display: block;
   color: #a4a4a4;
-  padding: 30px 35px;
+  margin-bottom: 31px;
+  padding: unset;
+  padding-left: 25px;
   text-decoration: none;
+}
+@media only screen and (max-width: 1400px) {
+  .main-navigation-list li .sub_nav {
+    padding-left: 23px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .main-navigation-list li .sub_nav {
-    padding: 40px 20px;
+    padding-left: 59px;
   }
 }
 
