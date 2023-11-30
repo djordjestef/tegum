@@ -62,6 +62,7 @@
                       type="input"
                       required
                       name="name"
+                      id="name"
                     />
                     <div class="form-element-bar"></div>
                     <label class="form-element-label form_name"></label>
@@ -160,7 +161,6 @@
           localStorage.getItem('subject') !== 'index' &&
           localStorage.getItem('subject') !== 'contact'
         ) {
-          console.log('FOCUS if');
           $('#subject').focus();
           $('#subject').addClass('-hasvalue');
         }
@@ -169,18 +169,22 @@
           localStorage.getItem('subject') === 'index' ||
           localStorage.getItem('subject') === 'contact'
         ) {
-          console.log('JESTE INDEX ILI CONTACT');
+          localStorage.setItem('subject', '');
           $('#subject').val('');
         }
 
         if (result === 'success') {
-          console.log('Success');
+          localStorage.setItem('subject', '');
+          $('#name').focus();
           $('#subject').val('');
-          $('#subject').focus(false);
+          $('#subject').removeClass('-hasvalue');
           $('.notification').addClass('active');
           $('.notification').notify('Email was sent successfully', 'success');
         } else if (result === 'error') {
+          localStorage.setItem('subject', '');
+          $('#name').focus();
           $('#subject').val('');
+          $('#subject').removeClass('-hasvalue');
           $('.notification').addClass('active');
           $('.notification').notify('Something went wrong', 'error');
         }
