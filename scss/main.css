@@ -1202,7 +1202,7 @@ html {
 .what_we_do .wrapper .acc_container .item {
   padding-right: 72px;
   margin-left: 72px;
-  overflow: hidden; /* Hide content that overflows the fixed height */
+  overflow: hidden;
 }
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper .acc_container .item {
@@ -1215,7 +1215,7 @@ html {
   background-color: #fff;
 }
 .what_we_do .wrapper .acc_container .item .container-fluid::-webkit-scrollbar {
-  width: 0; /* Hide scrollbar for WebKit browsers */
+  width: 0;
 }
 .what_we_do .wrapper .acc_container .item .services_small_title {
   position: absolute;

@@ -32,12 +32,16 @@
         <div class="row">
           <div class="col-lg-5 col-12">
             <div class="main_section_fcis_holder main_section_what_we_do_page_holder">
-              <h1 class="main_section_fcis_holder_title main_section_what_we_do_page_holder_title main_section_what_we_do_page_holder_title_helper"></h1>
+              <h1
+                class="main_section_fcis_holder_title main_section_what_we_do_page_holder_title main_section_what_we_do_page_holder_title_helper"
+              ></h1>
             </div>
           </div>
           <div class="col-lg-2 col-12"></div>
           <div class="col-lg-4 col-12">
-            <p class="main_section_fcis_holder_description main_section_what_we_do_page_holder_description"></p>
+            <p
+              class="main_section_fcis_holder_description main_section_what_we_do_page_holder_description"
+            ></p>
           </div>
           <div class="col-lg-1 col-12"></div>
 
@@ -56,7 +60,7 @@
           </div>
           <div class="col-lg-1 col-12"></div>
           <div class="col-lg-6 col-12 margin_helper">
-            <div class=" tegum_services_page_holder">
+            <div class="tegum_services_page_holder">
               <div
                 class="tegum_services_page_holder_title tegum_services_fcis_holder_title_1"
               ></div>
@@ -137,43 +141,14 @@
         </div>
       </div>
     </section>
-    <section class="footer">
-      <img src="assets/footer_logo.svg" class="footer_logo" alt="" />
-      <div class="container-fluid container_helper">
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-10">
-            <div class="footer_list">
-              <ul>
-                <li><a href="about.html" class="footer_nav footer_nav_1"></a></li>
-                <li><a href="" class="footer_nav footer_nav_2"></a></li>
-                <li><a href="" class="footer_nav footer_nav_3"></a></li>
-                <li>
-                  <button class="en">^ English</button>
-
-                  <button class="sr">^ Serbian</button>
-                </li>
-              </ul>
-            </div>
-            <div class="footer_contact">
-              <div class="footer_contact_address"></div>
-              <span class="footer_contact_phone"></span
-              ><a href="tel:+381 62 365 745"> +381 62 365 745</a>
-              <div class="footer_contact_email">Email: info@tegum.rs</div>
-            </div>
-            <div class="footer_rights">
-              <div class="footer_rights_lang">©2023. All rights reserved.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="contact.html">
-        <button class="footer_btn"></button>
-      </a>
-    </section>
+    <div id="footer"></div>
     <script>
       $.get('navigation.html', function (data) {
         $('#nav-placeholder').replaceWith(data);
+      });
+      $.get('footer.html', function (data) {
+        //this must be loaded before language
+        $('#footer').replaceWith(data);
       });
     </script>
 

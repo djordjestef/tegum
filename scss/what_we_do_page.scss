@@ -12,14 +12,7 @@
 
     &_holder {
         width: 100%;
-        // margin-bottom: 113px;
-        // @media only screen and (max-width: 1440px) {
-        //     width: 110%;
-        // }
 
-        // @media only screen and (max-width: 1400px) {
-        //     width: 130%;
-        // }
         &_title {
             font-size: 52px;
             font-weight: 800;
@@ -45,12 +38,9 @@
             }
         }
 
-        
-
         &_description {
             font-size: 16px;
             margin-top: 13px;
-            // margin-bottom: 84px;
 
             @media only screen and (max-width: 1400px) {
                 // font-size: 18px;
@@ -74,15 +64,7 @@
 .main_section_cnc_img_holder,
 .main_section_pe_img_holder,
 .main_section_fcis_img_holder {
-    // height: 830px;
-    // background: #f3f3f3;
-    // position: relative;
-
     img {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         width: 100%;
     }
 }
@@ -90,9 +72,6 @@
 .tegum_services_page {
     position: relative;
 
-    // .padding_helper {
-    //     padding: 0 72px;
-    // }
     .margin_helper {
         margin-top: 152px;
     }
@@ -133,7 +112,6 @@
         }
 
         &:last-child {
-            // margin-top: 132px;
             margin-bottom: 400px;
         }
 

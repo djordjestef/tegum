@@ -5,9 +5,9 @@ const jsonEN = {
   main_nav_mobile_1: 'Services',
   main_nav_mobile_2: 'Products',
   main_nav_mobile_3: 'Company',
-  sub_nav_title_1:'PROJECT MANAGEMENT',
-  sub_nav_title_2:'CONSULTING',
-  sub_nav_title_3:'CUSTOM MANUFACTURING',
+  sub_nav_title_1: 'PROJECT MANAGEMENT',
+  sub_nav_title_2: 'CONSULTING',
+  sub_nav_title_3: 'CUSTOM MANUFACTURING',
   sub_nav_1_1: 'Industrial Project Management',
   sub_nav_1_2: 'Production Efficiency and Improvement',
   sub_nav_1_3: 'Quality Control',
@@ -397,9 +397,9 @@ const jsonSR = {
   main_nav_mobile_1: 'Usluge',
   main_nav_mobile_2: 'Proizvodi',
   main_nav_mobile_3: 'Kompanija',
-  sub_nav_title_1:'UPRAVLJANJE PROJEKTIMA',
-  sub_nav_title_2:'KONSALTING',
-  sub_nav_title_3:'IZRADA PO MERI',
+  sub_nav_title_1: 'UPRAVLJANJE PROJEKTIMA',
+  sub_nav_title_2: 'KONSALTING',
+  sub_nav_title_3: 'IZRADA PO MERI',
   sub_nav_1_1: 'Upravljanje industrijskim projektima',
   sub_nav_1_2: 'Efikasnost i poboljšanje proizvodnje',
   sub_nav_1_3: 'Kontrola kvaliteta',
@@ -786,13 +786,11 @@ const jsonSR = {
 
 $(document).on('click', '.en', function (event) {
   localStorage.setItem('lang', 'en');
-  // setTimeout(() => location.reload(), 100);
   window.location.href = window.location.href;
 });
 
 $(document).on('click', '.sr', function (event) {
   localStorage.setItem('lang', 'sr');
-  // setTimeout(() => location.reload(), 100);
   window.location.href = window.location.href;
 });
 

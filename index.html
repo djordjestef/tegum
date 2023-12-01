@@ -112,8 +112,7 @@
             </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 padding_helper">
-                  <!-- <div class="services_small_title"></div> -->
+                <div class="col-lg-7 padding_helper">
                   <div class="option_holder">
                     <span class="option_holder_1_number option_holder_number">01A</span>
                     <a href="industrial-project-management.html">
@@ -147,7 +146,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-6 position_helper">
+                <div class="col-lg-5 position_helper">
                   <img src="assets/upravljanje-industrijskim-projektima.png" class="item_img_1_1" />
                   <img src="assets/efikasnost-i-poboljšanje-proizvodnje.png" class="item_img_1_2" />
                   <img src="assets/kontrola-kvaliteta.png" class="item_img_1_3" />
@@ -179,8 +178,7 @@
             </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 padding_helper">
-                  <!-- <div class="services_small_title"></div> -->
+                <div class="col-lg-7 padding_helper">
                   <div class="option_holder">
                     <span class="option_holder_2_number option_holder_number">01A</span>
                     <a href="process-improvement-and-strategy-support.html">
@@ -214,7 +212,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-6 position_helper">
+                <div class="col-lg-5 position_helper">
                   <img
                     src="assets/poboljšanje-procesa-i-podrška-strategije.png"
                     class="item_img_2_1"
@@ -246,8 +244,7 @@
             </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-6 padding_helper">
-                  <!-- <div class="services_small_title"></div> -->
+                <div class="col-lg-7 padding_helper">
                   <div class="option_holder">
                     <span class="option_holder_3_number option_holder_number">01A</span>
                     <a href="conveying-systems.html">
@@ -289,7 +286,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-6 position_helper">
+                <div class="col-lg-5 position_helper">
                   <img src="assets/transportni-sistemi.png" class="item_img_3_1" />
                   <img src="assets/specijalne-mašine-i-delovi.png" class="item_img_3_2" />
                   <img
@@ -493,45 +490,16 @@
         </div>
       </div>
     </section>
-    <section class="footer">
-      <img src="assets/footer_logo.svg" class="footer_logo" alt="" />
-      <div class="container-fluid container_helper">
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-10">
-            <div class="footer_list">
-              <ul>
-                <li><a href="about.html" class="footer_nav footer_nav_1"></a></li>
-                <li><a href="" class="footer_nav footer_nav_2"></a></li>
-                <li><a href="" class="footer_nav footer_nav_3"></a></li>
-                <li>
-                  <button class="en">^ English</button>
+    <div id="footer"></div>
 
-                  <button class="sr">^ Serbian</button>
-                </li>
-              </ul>
-            </div>
-            <div class="footer_contact">
-              <div class="footer_contact_address"></div>
-              <span class="footer_contact_phone"></span
-              ><a href="tel:+381 62 365 745"> +381 62 365 745</a>
-              <div class="footer_contact_email">Email: info@tegum.rs</div>
-            </div>
-            <div class="footer_rights">
-              <div class="footer_rights_lang">©2023. All rights reserved.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="contact.html">
-        <button class="footer_btn"></button>
-      </a>
-    </section>
     <script>
       $.get('navigation.html', function (data) {
-        console.log('nav');
-        //ovo mora pre petlje language da se ucita!!!!
+        //this must be loaded before language
         $('#nav-placeholder').replaceWith(data);
+      });
+      $.get('footer.html', function (data) {
+        //this must be loaded before language
+        $('#footer').replaceWith(data);
       });
     </script>
     <script src="main.js"></script>

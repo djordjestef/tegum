@@ -16,7 +16,6 @@ $(document).ready(function () {
         // end: '+=' + (window.innerHeight * 3 - 900),
         end: '+=300%', //500, possible height of end
         scrub: true,
-        // markers: true,
         pin: '.acc_container',
       },
     });
