@@ -364,10 +364,6 @@ $(document).on('click', '.subject_btn', function (event) {
   }
 });
 
-$('.footer_btn').click(() => {
-  localStorage.setItem('subject', '');
-});
-
 //contact form
 
 document.addEventListener('change', function (event) {
@@ -377,13 +373,13 @@ document.addEventListener('change', function (event) {
   }
 });
 
-function getFormData() {
-  const data = $('form').serializeArray();
-  var obj = {};
-  for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
-  console.log('obj', obj);
-  $('form')[0].reset();
-  $('.form-element-field').removeClass('-hasvalue');
+// function getFormData() {
+//   const data = $('form').serializeArray();
+//   var obj = {};
+//   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
+//   console.log('obj', obj);
+//   $('form')[0].reset();
+//   $('.form-element-field').removeClass('-hasvalue');
 
-  return false;
-}
+//   return false;
+// }
