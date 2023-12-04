@@ -11,6 +11,10 @@
         width: 100%;
         margin-bottom: 113px;
 
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 23px;
+        }
+
         &_title {
             font-size: 52px;
             font-weight: 800;
@@ -46,6 +50,10 @@
 
     .height_helper {
         height: 100px !important;
+
+        @media only screen and (max-width: 991px) {
+            height: 60px !important;
+        }
     }
 
     &_btn {
@@ -71,6 +79,10 @@
 
         @media only screen and (max-width: 1200px) {
             // margin-bottom: 28px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 23px;
         }
     }
 

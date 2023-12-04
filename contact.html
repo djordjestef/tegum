@@ -134,12 +134,7 @@
         ) {
           $('#subject').focus();
           $('#subject').addClass('-hasvalue');
-        }
-
-        if (
-          localStorage.getItem('subject') === 'index' ||
-          localStorage.getItem('subject') === 'contact'
-        ) {
+        } else {
           localStorage.setItem('subject', '');
           $('#subject').val('');
         }

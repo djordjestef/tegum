@@ -97,15 +97,6 @@ $(document).ready(function () {
 
     function hasScrolled() {
       var st = $(this).scrollTop();
-      // var isInsideAboutUs = st >= aboutUsSection.offset().top && st <= aboutUsSection.offset().top + aboutUsHeight;
-
-      // if (isInsideAboutUs) {
-      //   // The user is inside the .about_us section
-      //   console.log('Inside About Us section');
-      // } else {
-      //   // The user is outside the .about_us section
-      //   console.log('Outside About Us section');
-      // }
 
       var navbarHeight = $('.main-navigation').outerHeight();
 
@@ -372,14 +363,3 @@ document.addEventListener('change', function (event) {
     element.classList[element.value ? 'add' : 'remove']('-hasvalue');
   }
 });
-
-// function getFormData() {
-//   const data = $('form').serializeArray();
-//   var obj = {};
-//   for (var a = 0; a < data.length; a++) obj[data[a].name] = data[a].value;
-//   console.log('obj', obj);
-//   $('form')[0].reset();
-//   $('.form-element-field').removeClass('-hasvalue');
-
-//   return false;
-// }

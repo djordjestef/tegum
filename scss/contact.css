@@ -10,6 +10,11 @@
   width: 100%;
   margin-bottom: 113px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_contact_holder {
+    margin-bottom: 23px;
+  }
+}
 .main_section_contact_holder_title {
   font-size: 52px;
   font-weight: 800;
@@ -45,6 +50,11 @@
 .form .height_helper {
   height: 100px !important;
 }
+@media only screen and (max-width: 991px) {
+  .form .height_helper {
+    height: 60px !important;
+  }
+}
 .form_btn {
   all: unset;
   width: 150px;
@@ -60,6 +70,11 @@
 .form .form-element {
   position: relative;
   margin-bottom: 31px;
+}
+@media only screen and (max-width: 991px) {
+  .form .form-element {
+    margin-bottom: 23px;
+  }
 }
 .form .form-element-hint {
   font-weight: 400;
