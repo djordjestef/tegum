@@ -1,7 +1,8 @@
 $(document).ready(function () {
+  const isMobileTablet = window.innerWidth < 992;
   history.scrollRestoration = 'manual'
   //accordion
-
+if(!isMobileTablet){
   setTimeout(() => {
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
@@ -35,6 +36,8 @@ $(document).ready(function () {
           : window.innerHeight + 780), //height of spacer//podesi za sve visine
     });
   }, 500);
+}
+  
 
   //end of accordion
 

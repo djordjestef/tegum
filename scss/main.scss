@@ -112,6 +112,10 @@ html {
         @media only screen and (max-width: 1400px) {
             height: 337px;
         }
+
+        @media only screen and (max-width: 991px) {
+            height: 50px;
+        }
     }
 
     .width_helper {
@@ -119,7 +123,7 @@ html {
         padding-left: 72px;
 
         @media only screen and (max-width: 991px) {
-            margin-left: 12px;
+            margin-left: 0;
             padding-left: 0;
         }
     }
@@ -134,8 +138,8 @@ html {
         display: block;
         width: 750px;
 
-        @media only screen and (max-width: 576px) {
-            min-width: 300px;
+        @media only screen and (max-width: 991px) {
+            min-width: 100vw;
         }
     }
     .horizontal {
@@ -145,6 +149,9 @@ html {
         @media only screen and (max-width: 991px) {
             overflow-x: scroll;
             overflow-y: hidden;
+            margin-left: 100px;
+            margin-right: 17px;
+            padding-top: 50px;
         }
     }
 
@@ -173,8 +180,8 @@ html {
         width: 575px;
         margin-right: 175px;
 
-        @media only screen and (max-width: 576px) {
-            width: 300px;
+        @media only screen and (max-width: 991px) {
+            width: 100vw;
         }
 
         &_plus {
@@ -187,7 +194,7 @@ html {
             width: 20px;
 
             @media only screen and (max-width: 991px) {
-                top: 9px;
+                display: none;
             }
             &:before,
             &:after {
@@ -226,7 +233,7 @@ html {
 
             @media only screen and (max-width: 991px) {
                 font-size: 14px;
-                padding-left: 30px;
+                padding-left: 0;
             }
         }
 
@@ -235,7 +242,7 @@ html {
             padding-left: 40px;
             @media only screen and (max-width: 991px) {
                 font-size: 12px;
-                padding-left: 30px;
+                padding-left: 0;
             }
         }
     }
@@ -297,6 +304,7 @@ html {
                 @media only screen and (max-width: 991px) {
                     margin-left: 12px;
                     margin-right: 12px;
+                    padding-right: 0;
                 }
 
                 .container-fluid {
@@ -304,6 +312,10 @@ html {
                     background-color: #fff;
                     &::-webkit-scrollbar {
                         width: 0;
+                    }
+
+                    @media only screen and (max-width: 991px) {
+                        background-color: #a3f34a;
                     }
                 }
 
@@ -333,6 +345,10 @@ html {
 
                     @media only screen and (max-width: 1200px) {
                         padding: 55px 0 55px 37px;
+                    }
+
+                    @media only screen and (max-width: 991px) {
+                        padding: 0;
                     }
                 }
 
@@ -372,6 +388,10 @@ html {
                             font-size: 18px;
                             margin-right: 14px;
                         }
+
+                        @media only screen and (max-width: 991px) {
+                            color: #0011ff;
+                        }
                     }
 
                     &_title {
@@ -390,6 +410,10 @@ html {
 
                         @media only screen and (max-width: 1200px) {
                             font-size: 18px;
+                        }
+
+                        @media only screen and (max-width: 991px) {
+                            color: #0011ff;
                         }
 
                         &:hover {
@@ -526,6 +550,20 @@ html {
 
                     @media only screen and (max-width: 1400px) {
                         font-size: 14px;
+                    }
+
+                    @media only screen and (max-width: 991px) {
+                        width: 100vw;
+                        display: block;
+                        display: -webkit-box;
+                        height: 66px;
+
+                        // line-height: 1;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        line-height: inherit;
                     }
                 }
 
@@ -692,6 +730,26 @@ html {
                     .btn_3:hover span::before,
                     .btn_3:hover span::after {
                         top: 0;
+                    }
+                }
+            }
+
+            .what_we_do_btn_mobile {
+                text-align: center;
+                a {
+                    all: unset;
+
+                    button {
+                        all: unset;
+                        width: 150px;
+                        height: 42px;
+                        text-align: center;
+                        background: #000000;
+                        border: 2px solid #000;
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
                     }
                 }
             }

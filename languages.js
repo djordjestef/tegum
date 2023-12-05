@@ -57,6 +57,9 @@ const jsonEN = {
   hovered_btn_1: 'Hire us',
   hovered_btn_2: 'Hire us',
   hovered_btn_3: 'Hire us',
+  btn_1_mobile: 'Hire us',
+  btn_2_mobile: 'Hire us',
+  btn_3_mobile: 'Hire us',
   what_we_do_description_1:
     'Optimizing projects with agility and innovation, we guarantee on-time and bud- get-friendly delivery. Specializing in production efficiency, our services encompass procurement, layout design, Six Sigma methodologies, and total productive main- tenance. Committed to ensuring quality and regulatory compliance, we uphold industry norms, delivering excellence in every process.',
   what_we_do_description_2:
@@ -453,6 +456,9 @@ const jsonSR = {
   hovered_btn_1: 'Unajmi nas',
   hovered_btn_2: 'Unajmi nas',
   hovered_btn_3: 'Unajmi nas',
+  btn_1_mobile: 'Unajmi nas',
+  btn_2_mobile: 'Unajmi nas',
+  btn_3_mobile: 'Unajmi nas',
   services_small_title: 'USLUGE',
   what_we_do_description_1:
     'Optimizirajući projekte agilnošću i inovativnošću, garantujemo isporuku na vreme i ekonomičnu isporuku. Specijalizovani za efikasnost proizvodnje, naše usluge obuhvataju nabavku, dizajn rasporeda, Sik Sigma metodologije i ukupno produktivno održavanje. Posvećeni obezbeđivanju kvaliteta i usklađenosti sa propisima, mi se pridržavamo industrijskih normi, pružajući izvrsnost u svakom procesu.',

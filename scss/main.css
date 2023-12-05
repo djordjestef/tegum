@@ -1118,13 +1118,18 @@ html {
     height: 337px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .about_us .sticky-parent {
+    height: 50px;
+  }
+}
 .about_us .width_helper {
   margin-left: 8.33%;
   padding-left: 72px;
 }
 @media only screen and (max-width: 991px) {
   .about_us .width_helper {
-    margin-left: 12px;
+    margin-left: 0;
     padding-left: 0;
   }
 }
@@ -1139,9 +1144,9 @@ html {
   display: block;
   width: 750px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .about_us .dim {
-    min-width: 300px;
+    min-width: 100vw;
   }
 }
 .about_us .horizontal {
@@ -1152,6 +1157,9 @@ html {
   .about_us .horizontal {
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-left: 100px;
+    margin-right: 17px;
+    padding-top: 50px;
   }
 }
 .about_us .horizontal::-webkit-scrollbar {
@@ -1179,9 +1187,9 @@ html {
   width: 575px;
   margin-right: 175px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .about_us .flex_columns {
-    width: 300px;
+    width: 100vw;
   }
 }
 .about_us .flex_columns_plus {
@@ -1195,7 +1203,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .about_us .flex_columns_plus {
-    top: 9px;
+    display: none;
   }
 }
 .about_us .flex_columns_plus:before, .about_us .flex_columns_plus:after {
@@ -1231,7 +1239,7 @@ html {
 @media only screen and (max-width: 991px) {
   .about_us .flex_columns_title {
     font-size: 14px;
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 .about_us .flex_columns_description {
@@ -1241,7 +1249,7 @@ html {
 @media only screen and (max-width: 991px) {
   .about_us .flex_columns_description {
     font-size: 12px;
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 .about_us .card_scroller::-webkit-scrollbar {
@@ -1298,6 +1306,7 @@ html {
   .what_we_do .wrapper .acc_container .item {
     margin-left: 12px;
     margin-right: 12px;
+    padding-right: 0;
   }
 }
 .what_we_do .wrapper .acc_container .item .container-fluid {
@@ -1306,6 +1315,11 @@ html {
 }
 .what_we_do .wrapper .acc_container .item .container-fluid::-webkit-scrollbar {
   width: 0;
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item .container-fluid {
+    background-color: #a3f34a;
+  }
 }
 .what_we_do .wrapper .acc_container .item .services_small_title {
   position: absolute;
@@ -1336,6 +1350,11 @@ html {
 @media only screen and (max-width: 1200px) {
   .what_we_do .wrapper .acc_container .item .padding_helper {
     padding: 55px 0 55px 37px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item .padding_helper {
+    padding: 0;
   }
 }
 .what_we_do .wrapper .acc_container .item .option_holder {
@@ -1380,6 +1399,11 @@ html {
     margin-right: 14px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item .option_holder_number {
+    color: #0011ff;
+  }
+}
 .what_we_do .wrapper .acc_container .item .option_holder_title {
   display: inline-block;
   color: #000;
@@ -1399,6 +1423,11 @@ html {
 @media only screen and (max-width: 1200px) {
   .what_we_do .wrapper .acc_container .item .option_holder_title {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item .option_holder_title {
+    color: #0011ff;
   }
 }
 .what_we_do .wrapper .acc_container .item .option_holder_title:hover {
@@ -1512,6 +1541,19 @@ html {
 @media only screen and (max-width: 1400px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
+    width: 100vw;
+    display: block;
+    display: -webkit-box;
+    height: 66px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: inherit;
   }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
@@ -1674,6 +1716,24 @@ html {
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_3:hover span::before,
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn_3:hover span::after {
   top: 0;
+}
+.what_we_do .wrapper .acc_container .what_we_do_btn_mobile {
+  text-align: center;
+}
+.what_we_do .wrapper .acc_container .what_we_do_btn_mobile a {
+  all: unset;
+}
+.what_we_do .wrapper .acc_container .what_we_do_btn_mobile a button {
+  all: unset;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  background: #000000;
+  border: 2px solid #000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .testimonials {
