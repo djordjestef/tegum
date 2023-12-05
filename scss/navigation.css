@@ -24,6 +24,11 @@
 .only_desktop_navigation .plus-minus-toggle.collapsed:before {
   transform: rotate(180deg);
 }
+@media only screen and (max-width: 1400px) {
+  .only_desktop_navigation .col_margin_helper {
+    margin-left: 100px;
+  }
+}
 .only_desktop_navigation .main-navigation {
   position: fixed;
   top: 0;

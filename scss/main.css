@@ -24,6 +24,11 @@
 .only_desktop_navigation .plus-minus-toggle.collapsed:before {
   transform: rotate(180deg);
 }
+@media only screen and (max-width: 1400px) {
+  .only_desktop_navigation .col_margin_helper {
+    margin-left: 100px;
+  }
+}
 .only_desktop_navigation .main-navigation {
   position: fixed;
   top: 0;
@@ -874,6 +879,11 @@
   position: relative;
   padding: 114px 0;
   background-color: #a3f34a;
+}
+@media only screen and (max-width: 991px) {
+  .get_started_page {
+    padding: 80px 0;
+  }
 }
 .get_started_page_small_title {
   position: absolute;

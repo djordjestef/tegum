@@ -13,22 +13,25 @@ $(document).ready(function () {
       scrollTrigger: {
         trigger: '.acc_container',
         start: 'top top',
-        // end: '+=' + (window.innerHeight * 3 - 900),
-        end: '+=300%', //500, possible height of end
+        end: '+=300%',
         scrub: true,
         pin: '.acc_container',
       },
     });
 
     accordion.to('#pin1', { height: width < 1400 ? 106 : 114 }, 0);
-
     accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
     // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
     // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
     gsap.set('.spacer.bot', {
       marginTop:
-        '-=' + (window.innerHeight < 760 ? window.innerHeight + 560 : window.innerHeight + 560), //height of spacer//podesi za sve visine
+        '-=' +
+        (window.innerHeight < 800
+          ? window.innerHeight + 460
+          : window.innerHeight < 1200
+          ? window.innerHeight + 640
+          : window.innerHeight + 780), //height of spacer//podesi za sve visine
     });
   }, 500);
 

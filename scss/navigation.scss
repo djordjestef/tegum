@@ -31,6 +31,12 @@
         }
     }
 
+    .col_margin_helper {
+        @media only screen and (max-width: 1400px) {
+            margin-left: 100px;
+        }
+    }
+
     .main-navigation {
         position: fixed;
         top: 0;
