@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  history.scrollRestoration = 'manual'
   //accordion
 
   setTimeout(() => {
@@ -338,7 +339,6 @@ $(document).ready(function () {
           : width < 1661
           ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
           : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.04;
-      console.log('scrollLeft', sticky.scrollLeft);
     }
   }
   //horizontal scroll
