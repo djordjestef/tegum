@@ -340,6 +340,8 @@ $(document).ready(function () {
           ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
           : width < 1661
           ? (scrollWidth / verticalScrollHeight + 40) * -scrolled * 0.05
+          : width < 1900
+          ? (scrollWidth / verticalScrollHeight + 30) * -scrolled * 0.035
           : (scrollWidth / verticalScrollHeight + 30) * -scrolled * 0.02;
     }
   }
