@@ -335,12 +335,12 @@ $(document).ready(function () {
           : width < 1200
           ? (scrollWidth / verticalScrollHeight + 100) * -scrolled * 0.06
           : width < 1400
-          ? (scrollWidth / verticalScrollHeight + 50) * -scrolled * 0.06
+          ? (scrollWidth / verticalScrollHeight + 50) * -scrolled * 0.065
           : width < 1441
           ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
           : width < 1661
-          ? (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.06
-          : (scrollWidth / verticalScrollHeight + 20) * -scrolled * 0.04;
+          ? (scrollWidth / verticalScrollHeight + 40) * -scrolled * 0.05
+          : (scrollWidth / verticalScrollHeight + 30) * -scrolled * 0.02;
     }
   }
   //horizontal scroll
