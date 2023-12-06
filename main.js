@@ -1,43 +1,42 @@
 $(document).ready(function () {
   const isMobileTablet = window.innerWidth < 992;
-  history.scrollRestoration = 'manual'
+  history.scrollRestoration = 'manual';
   //accordion
-if(!isMobileTablet){
-  setTimeout(() => {
-    const width = window.innerWidth;
-    gsap.registerPlugin(ScrollTrigger);
+  if (!isMobileTablet) {
+    setTimeout(() => {
+      const width = window.innerWidth;
+      gsap.registerPlugin(ScrollTrigger);
 
-    const accordion = gsap.timeline({
-      defaults: {
-        ease: 'none',
-        duration: 1,
-      },
-      scrollTrigger: {
-        trigger: '.acc_container',
-        start: 'top top',
-        end: '+=300%',
-        scrub: true,
-        pin: '.acc_container',
-      },
-    });
+      const accordion = gsap.timeline({
+        defaults: {
+          ease: 'none',
+          duration: 1,
+        },
+        scrollTrigger: {
+          trigger: '.acc_container',
+          start: 'top top',
+          end: '+=300%',
+          scrub: true,
+          pin: '.acc_container',
+        },
+      });
 
-    accordion.to('#pin1', { height: width < 1400 ? 106 : 114 }, 0);
-    accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
-    // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
+      accordion.to('#pin1', { height: width < 1400 ? 106 : 114 }, 0);
+      accordion.to('#pin2', { height: width < 1400 ? 106 : 114 }, 1);
+      // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
+      // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
-    gsap.set('.spacer.bot', {
-      marginTop:
-        '-=' +
-        (window.innerHeight < 800
-          ? window.innerHeight + 460
-          : window.innerHeight < 1200
-          ? window.innerHeight + 640
-          : window.innerHeight + 780), //height of spacer//podesi za sve visine
-    });
-  }, 500);
-}
-  
+      gsap.set('.spacer.bot', {
+        marginTop:
+          '-=' +
+          (window.innerHeight < 800
+            ? window.innerHeight + 460
+            : window.innerHeight < 1200
+            ? window.innerHeight + 640
+            : window.innerHeight + 780), //height of spacer//podesi za sve visine
+      });
+    }, 500);
+  }
 
   //end of accordion
 
