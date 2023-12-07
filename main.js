@@ -122,7 +122,7 @@ $(document).ready(function () {
 
   pageScroll();
 
-  $('section').click(function () {
+  $('section, #site-navigation').click(function () {
     $('.plus-minus-toggle').addClass('collapsed');
     $('.dropdown-menu')
       .stop()
