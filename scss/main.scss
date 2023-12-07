@@ -14,8 +14,8 @@ html {
     padding-right: 72px;
 
     @media only screen and (max-width: 991px) {
-        padding-left: 17px;
-        padding-right: 17px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 
@@ -54,14 +54,14 @@ html {
     margin-top: 225px;
 
     @media only screen and (max-width: 991px) {
-        margin-top: 145px;
+        margin-top: 151px;
     }
 
     &_holder {
         margin-bottom: 156px;
 
         @media only screen and (max-width: 991px) {
-            margin-bottom: 80px;
+            margin-bottom: 113px;
         }
 
         &_title {
@@ -75,7 +75,8 @@ html {
             }
 
             @media only screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 24px;
+                margin-bottom: 10px;
             }
 
             @media only screen and (min-width: 1921px) {
@@ -93,18 +94,26 @@ html {
 
             @media only screen and (max-width: 991px) {
                 font-size: 14px;
+                width: 100%;
             }
         }
     }
 
     &_img {
         width: 100%;
+        position: relative;
+        z-index: 999;
     }
 }
 
 .about_us {
     margin-bottom: 241px;
     position: relative;
+
+    @media only screen and (max-width: 991px) {
+        margin-bottom: 0;
+        height: 217px;
+    }
 
     .sticky-parent {
         height: 313px;
@@ -149,9 +158,9 @@ html {
         @media only screen and (max-width: 991px) {
             overflow-x: scroll;
             overflow-y: hidden;
-            margin-left: 100px;
+            margin-left: 123px;
             margin-right: 17px;
-            padding-top: 50px;
+            padding-top: 41px;
         }
     }
 
@@ -170,7 +179,9 @@ html {
         }
 
         @media only screen and (max-width: 991px) {
-            left: 12px;
+            left: 18px;
+            font-size: 12px;
+            top: 41px;
         }
     }
 
@@ -234,6 +245,7 @@ html {
             @media only screen and (max-width: 991px) {
                 font-size: 14px;
                 padding-left: 0;
+                margin-bottom: 5px;
             }
         }
 
@@ -761,7 +773,7 @@ html {
     padding: 290px 0 300px;
 
     @media only screen and (max-width: 991px) {
-        padding: 120px 0 100px;
+        padding: 90px 0 95px;
     }
 
     &_holder {
@@ -774,7 +786,7 @@ html {
 
         @media only screen and (max-width: 991px) {
             width: 100%;
-            padding-left: 12px;
+         padding: 0 18px;
         }
 
         @media only screen and (min-width: 1921px) {
@@ -787,6 +799,11 @@ html {
             width: 55px;
             vertical-align: top;
             margin-top: 9px;
+
+            @media only screen and (max-width: 991px) {
+                display: block;
+                margin: 0 auto 30px;
+            }
         }
 
         &_text {
@@ -799,11 +816,16 @@ html {
             }
 
             @media only screen and (max-width: 991px) {
-                font-size: 14px;
+                font-size: 12px;
+                width: 100%;
             }
 
             &_description {
                 margin-bottom: 20px;
+
+                @media only screen and (max-width: 991px) {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -811,6 +833,8 @@ html {
 
 .expertise {
     background-color: #f3f3f3;
+    position: relative;
+    z-index: 999;
 
     .container_expertise_heleper {
         padding: 0;
@@ -984,6 +1008,7 @@ html {
     color: #a4a4a4;
     background-color: #000;
     position: relative;
+    z-index: 999;
 
     a {
         all: unset;

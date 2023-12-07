@@ -218,15 +218,15 @@
 
 .only_mobile_navigation .nav_logo_mobile {
   position: absolute;
-  top: 10px;
-  left: 17px;
-  width: 110px;
+  top: 11px;
+  left: 18px;
+  width: 100px;
 }
 .only_mobile_navigation .nav_logo_mobile_dropdown {
   position: absolute;
-  top: 8px;
-  left: 17px;
-  width: 110px;
+  top: 11px;
+  left: 18px;
+  width: 100px;
 }
 .only_mobile_navigation .menu-items {
   position: fixed;
@@ -241,7 +241,6 @@
   font-size: 14px;
   letter-spacing: 0.7;
   font-weight: 300;
-  border: 4px solid #000;
   background-color: #000;
   transform: translateX(100%);
   transition: transform 200ms ease-in-out, opacity 100ms;
@@ -428,12 +427,12 @@
   z-index: 0;
 }
 .only_mobile_navigation .ham-menu {
-  height: 33px;
-  width: 45px;
+  height: 50px;
+  width: 56px;
   position: fixed;
-  right: 8px;
-  top: 8px;
-  padding: 8px 10px;
+  right: 0;
+  top: 0;
+  padding: 16px 0;
   background-color: #fff;
   border-radius: 0;
   z-index: 99;
@@ -443,22 +442,23 @@
 }
 .only_mobile_navigation .ham-menu .line {
   background-color: black;
-  width: 1.5rem;
+  width: 19px;
   height: 2px;
 }
 .only_mobile_navigation .ham-menu .line1 {
   transform-origin: 0% 0%;
   transition: transform 100ms ease-in-out;
+  margin: 0 auto;
 }
 .only_mobile_navigation .ham-menu .line3 {
   transform-origin: 0% 100%;
   transition: transform 100ms ease-in-out;
+  margin: 0 auto;
 }
 .only_mobile_navigation .check:checked ~ .ham-menu {
-  height: 3rem;
-  top: 3px;
-  right: 0;
-  transform: scale(0.8);
+  height: 57px;
+  top: -4px;
+  right: -4px;
   background-color: #000;
 }
 .only_mobile_navigation .check:checked ~ .ham-menu .line1 {
@@ -1014,8 +1014,8 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .container_helper {
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
@@ -1056,7 +1056,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .main_section {
-    margin-top: 145px;
+    margin-top: 151px;
   }
 }
 .main_section_holder {
@@ -1064,7 +1064,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .main_section_holder {
-    margin-bottom: 80px;
+    margin-bottom: 113px;
   }
 }
 .main_section_holder_title {
@@ -1080,7 +1080,8 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .main_section_holder_title {
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 1921px) {
@@ -1100,15 +1101,24 @@ html {
 @media only screen and (max-width: 991px) {
   .main_section_holder_description {
     font-size: 14px;
+    width: 100%;
   }
 }
 .main_section_img {
   width: 100%;
+  position: relative;
+  z-index: 999;
 }
 
 .about_us {
   margin-bottom: 241px;
   position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .about_us {
+    margin-bottom: 0;
+    height: 217px;
+  }
 }
 .about_us .sticky-parent {
   height: 313px;
@@ -1157,9 +1167,9 @@ html {
   .about_us .horizontal {
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-left: 100px;
+    margin-left: 123px;
     margin-right: 17px;
-    padding-top: 50px;
+    padding-top: 41px;
   }
 }
 .about_us .horizontal::-webkit-scrollbar {
@@ -1178,7 +1188,9 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .about_us_title {
-    left: 12px;
+    left: 18px;
+    font-size: 12px;
+    top: 41px;
   }
 }
 .about_us .flex_columns {
@@ -1240,6 +1252,7 @@ html {
   .about_us .flex_columns_title {
     font-size: 14px;
     padding-left: 0;
+    margin-bottom: 5px;
   }
 }
 .about_us .flex_columns_description {
@@ -1741,7 +1754,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .testimonials {
-    padding: 120px 0 100px;
+    padding: 90px 0 95px;
   }
 }
 .testimonials_holder {
@@ -1756,7 +1769,7 @@ html {
 @media only screen and (max-width: 991px) {
   .testimonials_holder {
     width: 100%;
-    padding-left: 12px;
+    padding: 0 18px;
   }
 }
 @media only screen and (min-width: 1921px) {
@@ -1771,6 +1784,12 @@ html {
   vertical-align: top;
   margin-top: 9px;
 }
+@media only screen and (max-width: 991px) {
+  .testimonials_holder_img {
+    display: block;
+    margin: 0 auto 30px;
+  }
+}
 .testimonials_holder_text {
   display: inline-block;
   font-size: 18px;
@@ -1783,15 +1802,23 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .testimonials_holder_text {
-    font-size: 14px;
+    font-size: 12px;
+    width: 100%;
   }
 }
 .testimonials_holder_text_description {
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .testimonials_holder_text_description {
+    margin-bottom: 10px;
+  }
+}
 
 .expertise {
   background-color: #f3f3f3;
+  position: relative;
+  z-index: 999;
 }
 .expertise .container_expertise_heleper {
   padding: 0;
@@ -1972,6 +1999,7 @@ html {
   color: #a4a4a4;
   background-color: #000;
   position: relative;
+  z-index: 999;
 }
 .footer a {
   all: unset;
