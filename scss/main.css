@@ -1837,9 +1837,10 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .expertise_holder {
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 46px 0 76px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 30px 0;
+    line-height: 0;
   }
 }
 .expertise_holder:first-child {
@@ -1848,6 +1849,11 @@ html {
 @media only screen and (max-width: 1440px) {
   .expertise_holder:first-child {
     padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .expertise_holder:first-child {
+    padding: 33px 0 30px;
   }
 }
 .expertise_holder:last-child {
@@ -1864,6 +1870,8 @@ html {
 @media only screen and (max-width: 991px) {
   .expertise_holder_number {
     font-size: 14px;
+    position: relative;
+    top: 8px;
   }
 }
 .expertise_holder_number_main {
@@ -1883,6 +1891,10 @@ html {
 @media only screen and (max-width: 991px) {
   .expertise_holder_number_main {
     width: 57%;
+    top: 0;
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 30px;
   }
 }
 .expertise_holder_title {
@@ -1906,6 +1918,13 @@ html {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_title {
+    font-size: 14px;
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+}
 .expertise_holder_description {
   font-size: 16px;
   font-weight: 400;
@@ -1923,6 +1942,11 @@ html {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 991px) {
+  .expertise_holder_description {
+    display: none;
+  }
+}
 .expertise_holder_description_main {
   margin-top: -20px;
   margin-right: unset;
@@ -1934,7 +1958,11 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .expertise_holder_description_main {
-    width: unset;
+    width: 100%;
+    height: 15px;
+    display: block;
+    margin: 0;
+    font-size: 12px;
   }
 }
 
