@@ -280,7 +280,7 @@
         transition:
             transform 200ms ease-in-out,
             opacity 100ms;
-        z-index: 9;
+        z-index: 999;
         height: 100%;
 
         &::-webkit-scrollbar {
@@ -482,6 +482,10 @@
         cursor: pointer;
     }
 
+    .check:checked {
+        z-index: 999999;
+    }
+
     .check:checked ~ .menu-items {
         transform: translateX(0%);
         opacity: 1;
@@ -534,6 +538,7 @@
         right: -4px;
         // transform: scale(0.8);
         background-color: #000;
+        z-index: 9999;
     }
 
     .check:checked ~ .ham-menu .line1 {
