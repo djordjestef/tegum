@@ -2,8 +2,9 @@ $(document).ready(function () {
   const isMobileTablet = window.innerWidth < 992;
   history.scrollRestoration = 'manual';
   //accordion
-  if (!isMobileTablet) {
+  // if (!isMobileTablet) {
   setTimeout(() => {
+    console.log('triger')
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
 
@@ -29,15 +30,16 @@ $(document).ready(function () {
     gsap.set('.spacer.bot', {
       marginTop:
         '-=' +
-        (window.innerHeight < 650
-          ? window.innerHeight + 370
-          : window.innerHeight < 670
-          ? window.innerHeight + 390
-          : window.innerHeight < 700
-          ? window.innerHeight + 420
-          : window.innerHeight < 780
-          ? window.innerHeight + 450
-          : window.innerHeight < 830
+        (
+          // window.innerHeight < 650
+          // ? window.innerHeight + 370
+          // : window.innerHeight < 670
+          // ? window.innerHeight + 390
+          // : window.innerHeight < 700
+          // ? window.innerHeight + 420
+          // : window.innerHeight < 780
+          // ? window.innerHeight + 450
+           window.innerHeight < 830
           ? window.innerHeight + 540
           : window.innerHeight < 850
           ? window.innerHeight + 570
@@ -48,7 +50,7 @@ $(document).ready(function () {
           : window.innerHeight + 780), //height of spacer//podesi za sve visine
     });
   }, 500);
-  }
+  // }
 
   //end of accordion
 
