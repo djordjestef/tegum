@@ -3,7 +3,7 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_contact {
-    margin-top: 145px;
+    margin-top: 151px;
   }
 }
 .main_section_contact_holder {
@@ -27,12 +27,17 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_contact_holder_title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .main_section_contact_img {
   width: 100%;
   margin-top: 120px;
+}
+@media only screen and (max-width: 991px) {
+  .main_section_contact_img {
+    margin-top: 112px;
+  }
 }
 .main_section_contact .page_contact {
   font-size: 14px;
@@ -45,6 +50,8 @@
 @media only screen and (max-width: 991px) {
   .form {
     margin-top: 16px;
+    margin-right: -18px;
+    margin-left: 25px;
   }
 }
 .form .height_helper {
@@ -61,11 +68,16 @@
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .form_btn {
+    font-size: 14px;
+  }
 }
 .form .form-element {
   position: relative;
@@ -85,7 +97,7 @@
 .form .form-element-bar {
   position: relative;
   height: 1px;
-  background: #a4a4a4;
+  background: rgba(0, 0, 0, 0.8);
   display: block;
   margin-top: 10px;
 }
@@ -95,8 +107,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(0, 0, 0);
-  height: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
   display: block;
   transform: rotateY(180deg);
   backface-visibility: hidden;
@@ -114,7 +125,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  color: #000;
+  color: rgba(0, 0, 0, 0.8);
   transform: translateY(-50%);
   transform-origin: left center;
   transition: transform 0.28s ease, color 0.28s linear, opacity 0.28s linear;

@@ -4,7 +4,7 @@
     margin-top: 225px;
 
     @media only screen and (max-width: 991px) {
-        margin-top: 145px;
+        margin-top: 151px;
     }
 
     &_holder {
@@ -25,7 +25,7 @@
             }
 
             @media only screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 24px;
             }
         }
     }
@@ -33,6 +33,11 @@
     &_img {
         width: 100%;
         margin-top: 120px;
+
+
+        @media only screen and (max-width: 991px) {
+           margin-top: 112px;
+        }
     }
 
     .page_contact {
@@ -46,6 +51,8 @@
 
     @media only screen and (max-width: 991px) {
         margin-top: 16px;
+        margin-right: -18px;
+        margin-left: 25px;
     }
 
     .height_helper {
@@ -62,11 +69,15 @@
         height: 42px;
         text-align: center;
         background: #000000;
-        border: 2px solid #000;
+        border: 1px solid #000;
         color: #ffffff;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
+
+        @media only screen and (max-width: 991px) {
+            font-size: 14px;
+        }
     }
 
     .form-element {
@@ -96,7 +107,7 @@
     .form-element-bar {
         position: relative;
         height: 1px;
-        background: #a4a4a4;
+        background: #000000cc;
         display: block;
         margin-top: 10px;
     }
@@ -107,8 +118,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgb(0, 0, 0);
-        height: 2px;
+        background-color: #000000cc;
+        // height: 2px;
         display: block;
         -ms-transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
@@ -132,7 +143,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         margin: 0;
-        color: #000;
+        color: #000000cc;
         transform: translateY(-50%);
         transform-origin: left center;
         transition:

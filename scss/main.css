@@ -479,7 +479,7 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_contact {
-    margin-top: 145px;
+    margin-top: 151px;
   }
 }
 .main_section_contact_holder {
@@ -503,12 +503,17 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_contact_holder_title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .main_section_contact_img {
   width: 100%;
   margin-top: 120px;
+}
+@media only screen and (max-width: 991px) {
+  .main_section_contact_img {
+    margin-top: 112px;
+  }
 }
 .main_section_contact .page_contact {
   font-size: 14px;
@@ -521,6 +526,8 @@
 @media only screen and (max-width: 991px) {
   .form {
     margin-top: 16px;
+    margin-right: -18px;
+    margin-left: 25px;
   }
 }
 .form .height_helper {
@@ -537,11 +544,16 @@
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .form_btn {
+    font-size: 14px;
+  }
 }
 .form .form-element {
   position: relative;
@@ -561,7 +573,7 @@
 .form .form-element-bar {
   position: relative;
   height: 1px;
-  background: #a4a4a4;
+  background: rgba(0, 0, 0, 0.8);
   display: block;
   margin-top: 10px;
 }
@@ -571,8 +583,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(0, 0, 0);
-  height: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
   display: block;
   transform: rotateY(180deg);
   backface-visibility: hidden;
@@ -590,7 +601,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  color: #000;
+  color: rgba(0, 0, 0, 0.8);
   transform: translateY(-50%);
   transform-origin: left center;
   transition: transform 0.28s ease, color 0.28s linear, opacity 0.28s linear;
@@ -1296,6 +1307,11 @@ html {
     padding-top: 100px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do {
+    padding-top: 87px;
+  }
+}
 .what_we_do_small_title {
   position: absolute;
   top: 69px;
@@ -1309,7 +1325,8 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .what_we_do_small_title {
-    left: 12px;
+    left: 18px;
+    top: 50px;
   }
 }
 .what_we_do .wrapper .acc_container #pin1 {
@@ -1326,9 +1343,17 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper .acc_container .item {
-    margin-left: 12px;
-    margin-right: 12px;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .what_we_do .wrapper .acc_container .item::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #707070;
+    width: calc(100% + 18px);
   }
 }
 .what_we_do .wrapper .acc_container .item .container-fluid {
@@ -1392,6 +1417,11 @@ html {
     margin-bottom: 34px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .item .option_holder {
+    margin-bottom: 20px;
+  }
+}
 .what_we_do .wrapper .acc_container .item .option_holder:last-child {
   margin-bottom: 0;
 }
@@ -1423,7 +1453,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper .acc_container .item .option_holder_number {
-    color: #0011ff;
+    display: none;
   }
 }
 .what_we_do .wrapper .acc_container .item .option_holder_title {
@@ -1450,6 +1480,8 @@ html {
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper .acc_container .item .option_holder_title {
     color: #0011ff;
+    font-size: 14px;
+    text-decoration: underline;
   }
 }
 .what_we_do .wrapper .acc_container .item .option_holder_title:hover {
@@ -1512,6 +1544,11 @@ html {
     padding: 3vh 0;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .head_holder {
+    padding: 30px 0 0;
+  }
+}
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
   font-size: 40px;
   font-weight: 600;
@@ -1544,6 +1581,11 @@ html {
     margin-right: 23px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
+    font-size: 20px;
+  }
+}
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
   display: inline-block;
   width: 37vw;
@@ -1567,15 +1609,9 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
-    width: 100vw;
-    display: block;
-    display: -webkit-box;
-    height: 66px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: inherit;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 31px;
   }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
@@ -1741,6 +1777,7 @@ html {
 }
 .what_we_do .wrapper .acc_container .what_we_do_btn_mobile {
   text-align: center;
+  margin-top: 31px;
 }
 .what_we_do .wrapper .acc_container .what_we_do_btn_mobile a {
   all: unset;
