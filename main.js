@@ -4,7 +4,11 @@ $(document).ready(function () {
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
-    console.log('triger');
+    const itemHeight = $('.item').height();
+    const wrappHeight = $('#pin1').height();
+    console.log('itemHeight', itemHeight);
+    console.log('wrappHeight', wrappHeight);
+
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +20,7 @@ $(document).ready(function () {
       scrollTrigger: {
         trigger: '.acc_container',
         start: 'top top',
-        end: '+=300%',
+        end: '+=100%', //speed
         scrub: true,
         pin: '.acc_container',
       },
@@ -24,35 +28,17 @@ $(document).ready(function () {
 
     accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
     accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
-    // accordion.to('#pin3', { height: window.innerHeight - 10, duration: 0 }, 1); //-10
-    // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
-    gsap.set('.spacer.bot', {
-      marginTop: '10px', // Set a fixed height or adjust as needed
-    });
+    if (window.innerHeight <= 500) {
+      $('.spacer.bot').css('margin-top', -650);
+    } else if (window.innerHeight <= 600) {
+      $('.spacer.bot').css('margin-top', -850);
+    } else if (window.innerHeight <= 700) {
+      $('.spacer.bot').css('margin-top', -980);
+    } else {
+      $('.spacer.bot').css('margin-top', -1000);
+    }
 
-    const spacerHeight =
-      window.innerHeight < 650
-        ? 370
-        : window.innerHeight < 670
-        ? 390
-        : window.innerHeight < 700
-        ? 420
-        : window.innerHeight < 780
-        ? 450//nastavi da sredjujes
-        : window.innerHeight < 830
-        ? 1140
-        : window.innerHeight < 850
-        ? 1300
-        : window.innerHeight < 920
-        ? 1480
-        : window.innerHeight < 1200
-        ? 640
-        : 2080;
-
-    gsap.set('.spacer.bot', {
-      marginTop: `-${spacerHeight}px`, // Set the calculated height
-    });
     // gsap.set('.spacer.bot', {
     //   marginTop:
     //     '-=' +
