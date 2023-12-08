@@ -2,7 +2,7 @@ $(document).ready(function () {
   const isMobileTablet = window.innerWidth < 992;
   history.scrollRestoration = 'manual';
   //accordion
-  // if (!isMobileTablet) {
+  if (!isMobileTablet) {
   setTimeout(() => {
     const itemHeight = $('.item').height();
     const wrappHeight = $('#pin1').height();
@@ -62,7 +62,7 @@ $(document).ready(function () {
     //       : window.innerHeight + 780), //height of spacer//podesi za sve visine
     // });
   }, 500);
-  // }
+  }
 
   //end of accordion
 
