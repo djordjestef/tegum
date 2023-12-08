@@ -1312,6 +1312,14 @@ html {
     padding-top: 87px;
   }
 }
+.what_we_do .only_mobile_what_we_do {
+  display: block;
+}
+@media only screen and (max-width: 991px) {
+  .what_we_do .only_mobile_what_we_do {
+    display: none;
+  }
+}
 .what_we_do_small_title {
   position: absolute;
   top: 69px;

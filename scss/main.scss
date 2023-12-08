@@ -291,6 +291,13 @@ html {
         padding-top: 87px;
     }
 
+    .only_mobile_what_we_do {
+        display: block;
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
     &_small_title {
         position: absolute;
         top: 69px;

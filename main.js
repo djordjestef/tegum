@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const isMobileTablet = window.innerWidth < 992;
-  // history.scrollRestoration = 'manual';
+  history.scrollRestoration = 'manual';
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
@@ -11,6 +11,17 @@ $(document).ready(function () {
 
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
+
+
+    if (window.innerHeight <= 500) {
+      $('.spacer.bot').css('margin-top', -650);
+    } else if (window.innerHeight <= 600) {
+      $('.spacer.bot').css('margin-top', -850);
+    } else if (window.innerHeight <= 700) {
+      $('.spacer.bot').css('margin-top', -980);
+    } else {
+      $('.spacer.bot').css('margin-top', -1000);
+    }
 
     const accordion = gsap.timeline({
       defaults: {
@@ -29,15 +40,7 @@ $(document).ready(function () {
     accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
     accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
 
-    if (window.innerHeight <= 500) {
-      $('.spacer.bot').css('margin-top', -650);
-    } else if (window.innerHeight <= 600) {
-      $('.spacer.bot').css('margin-top', -850);
-    } else if (window.innerHeight <= 700) {
-      $('.spacer.bot').css('margin-top', -980);
-    } else {
-      $('.spacer.bot').css('margin-top', -1000);
-    }
+   
 
     // gsap.set('.spacer.bot', {
     //   marginTop:
