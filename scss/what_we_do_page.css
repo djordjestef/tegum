@@ -230,9 +230,14 @@
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .get_started_page_btn {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=what_we_do_page.css.map */

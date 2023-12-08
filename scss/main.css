@@ -925,11 +925,16 @@
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .get_started_page_btn {
+    font-size: 14px;
+  }
 }
 
 .main_section_about_us {
@@ -1746,9 +1751,8 @@ html {
   height: 42px;
   text-align: center;
   background: #000000;
-  border: 2px solid #000;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -1894,7 +1898,7 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .expertise_holder_number_main {
-    width: 57%;
+    width: 67%;
     top: 0;
     line-height: 20px;
     font-size: 12px;
@@ -1963,7 +1967,7 @@ html {
 @media only screen and (max-width: 991px) {
   .expertise_holder_description_main {
     width: 100%;
-    height: 15px;
+    line-height: 15px;
     display: block;
     margin: 0;
     font-size: 12px;
@@ -1975,12 +1979,15 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .challenges {
-    padding: 130px 0;
+    padding: 83px 0 102px;
   }
 }
 .challenges .holder {
   width: 90%;
   margin-top: 30%;
+}
+.challenges .holder a {
+  all: unset;
 }
 @media only screen and (max-width: 1440px) {
   .challenges .holder {
@@ -1993,11 +2000,22 @@ html {
     margin-top: 19%;
   }
 }
-.challenges .holder a {
-  all: unset;
+@media only screen and (max-width: 991px) {
+  .challenges .holder {
+    width: 173%;
+    margin-top: 121px;
+    /* z-index: 999; */
+    position: relative;
+    margin-left: 15px;
+  }
 }
 .challenges_img {
   width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .challenges_img {
+    margin-left: 18px;
+  }
 }
 .challenges_title {
   font-size: 46px;
@@ -2012,6 +2030,7 @@ html {
 @media only screen and (max-width: 991px) {
   .challenges_title {
     font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 .challenges_btn {
@@ -2025,6 +2044,14 @@ html {
   font-weight: 600;
   cursor: pointer;
 }
+@media only screen and (max-width: 991px) {
+  .challenges_btn {
+    width: 128px;
+    height: 37px;
+    font-size: 14px;
+    border: unset;
+  }
+}
 
 .footer {
   padding: 66px 0 308px;
@@ -2032,6 +2059,75 @@ html {
   background-color: #000;
   position: relative;
   z-index: 99;
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding-bottom: 81px;
+  }
+}
+.footer .only_desktop_footer {
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  .footer .only_desktop_footer {
+    display: none;
+  }
+}
+.footer .only_mobile_footer {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .footer .only_mobile_footer {
+    display: block;
+  }
+}
+.footer .only_mobile_footer .footer_list {
+  margin-top: 65px;
+  margin-bottom: 53px;
+  color: #f3f3f3;
+}
+.footer .only_mobile_footer .footer_list_nav {
+  display: block;
+  margin: 25px 0;
+  font-size: 14px;
+}
+.footer .only_mobile_footer .footer_list .footer_nav_margin_helper {
+  margin-bottom: 80px;
+}
+.footer .only_mobile_footer .footer_list .footer_rights_lang_mobile {
+  color: #a4a4a4;
+  text-align: center;
+  margin-top: 53px;
+}
+.footer .only_mobile_footer .sr {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  margin-right: 60px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 26px;
+  top: 45px;
+  margin: 0;
+}
+.footer .only_mobile_footer .sr.active {
+  display: inline-block;
+}
+.footer .only_mobile_footer .en {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  margin-right: 60px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 26px;
+  top: 45px;
+  margin: 0;
+}
+.footer .only_mobile_footer .en.active {
+  display: inline-block;
 }
 .footer a {
   all: unset;
@@ -2041,12 +2137,20 @@ html {
   top: 59px;
   left: 72px;
 }
+@media only screen and (max-width: 991px) {
+  .footer_logo {
+    top: 41px;
+    left: 18px;
+    width: 100px;
+  }
+}
 .footer_list .sr {
   all: unset;
   display: none;
   font-size: 16px;
   margin-right: 60px;
   cursor: pointer;
+  color: #fff;
 }
 .footer_list .sr.active {
   display: inline-block;
@@ -2057,6 +2161,7 @@ html {
   font-size: 16px;
   margin-right: 60px;
   cursor: pointer;
+  color: #fff;
 }
 .footer_list .en.active {
   display: inline-block;
@@ -2088,7 +2193,13 @@ html {
   margin-top: 92px;
   margin-bottom: 80px;
 }
-.footer_btn {
+@media only screen and (max-width: 991px) {
+  .footer_contact {
+    margin-bottom: 40px;
+    margin-top: 42px;
+  }
+}
+.footer_btn, .footer_btn_mobile {
   all: unset;
   width: 152px;
   height: 44px;
@@ -2101,4 +2212,14 @@ html {
   position: absolute;
   top: 57px;
   right: 72px;
+}
+@media only screen and (max-width: 991px) {
+  .footer_btn, .footer_btn_mobile {
+    font-size: 14px;
+    position: relative;
+    top: unset;
+    right: unset;
+    margin: auto;
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

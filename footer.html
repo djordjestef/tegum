@@ -1,14 +1,14 @@
 <section class="footer">
-  <a href="index.html" style="cursor: pointer;">
+  <a href="index.html" style="cursor: pointer">
     <img src="assets/footer_logo.svg" class="footer_logo" alt="" />
   </a>
   <div class="container-fluid container_helper">
-    <div class="row">
+    <div class="row only_desktop_footer">
       <div class="col-lg-2"></div>
       <div class="col-lg-10">
         <div class="footer_list">
           <ul>
-            <li><a href="about.html" class="footer_nav footer_nav_1"></a></li>
+      <a href="about.html" class="footer_nav footer_nav_1"></a></li>
             <li><a href="" class="footer_nav footer_nav_2"></a></li>
             <li><a href="about-us.html" class="footer_nav footer_nav_3"></a></li>
             <li>
@@ -25,12 +25,73 @@
           <div class="footer_contact_email">Email: info@tegum.rs</div>
         </div>
         <div class="footer_rights">
-          <div class="footer_rights_lang">©2023. All rights reserved.</div>
+          <div class="footer_rights_lang"></div>
         </div>
       </div>
     </div>
+    <div class="only_mobile_footer">
+      <button class="en">^ English</button>
+
+      <button class="sr">^ Serbian</button>
+
+      <div class="footer_contact">
+        <div class="footer_contact_address_mobile"></div>
+        <span class="footer_contact_phone_mobile"></span
+        ><a href="tel:+381 62 365 745"> +381 62 365 745</a>
+        <div class="footer_contact_email_mobile">Email: info@tegum.rs</div>
+      </div>
+      <a href="contact.html" class="only_mobile_footer">
+        <button class="footer_btn_mobile" onclick="localStorage.setItem('subject', '')"></button>
+      </a>
+      <div class="footer_list">
+        <a
+          href="industrial-project-management.html"
+          class="footer_list_nav footer_list_nav_1_1"
+        ></a>
+
+        <a
+          href="production-efficiency-and-improvement.html"
+          class="footer_list_nav footer_list_nav_1_2"
+        ></a>
+
+        <a href="quality-control.html" class="footer_list_nav footer_list_nav_1_3"></a>
+
+        <a
+          href="financial-consulting-and-investment-studies.html"
+          class="footer_list_nav footer_list_nav_1_4 footer_nav_margin_helper"
+        ></a>
+
+        <a
+          href="process-improvement-and-strategy-support.html"
+          class="footer_list_nav footer_list_nav_1_5"
+        ></a>
+
+        <a href="procurement-support.html" class="footer_list_nav footer_list_nav_1_6"></a>
+
+        <a href="management-consulting.html" class="footer_list_nav footer_list_nav_1_7"></a>
+
+        <a
+          href="implementation-support.html"
+          class="footer_list_nav footer_list_nav_1_8 footer_nav_margin_helper"
+        ></a>
+        <a href="conveying-systems.html" class="footer_list_nav footer_list_nav_2_1"></a>
+
+        <a href="special-machines-and-parts.html" class="footer_list_nav footer_list_nav_2_2"></a>
+
+        <a
+          href="industrial-hardware-and-software-applications.html"
+          class="footer_list_nav footer_list_nav_2_3"
+        ></a>
+
+        <a href="CNC-and-3D-services.html" class="footer_list_nav footer_list_nav_2_4"></a>
+
+        <a href="processing-equipment.html" class="footer_list_nav footer_list_nav_2_5 footer_nav_margin_helper"></a>
+        <a href="about-us.html" class="footer_list_nav footer_list_nav_2_6"></a>
+        <div class="footer_rights_lang_mobile"></div>
+      </div>
+    </div>
   </div>
-  <a href="contact.html">
+  <a href="contact.html" class="only_desktop_footer">
     <button class="footer_btn" onclick="localStorage.setItem('subject', '')"></button>
   </a>
 </section>
