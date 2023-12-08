@@ -4,7 +4,7 @@ $(document).ready(function () {
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
-    console.log('triger')
+    console.log('triger');
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
 
@@ -28,27 +28,53 @@ $(document).ready(function () {
     // accordion.to('#pin3', { height: width < 1400 ? 106 : 114 }, 2);
 
     gsap.set('.spacer.bot', {
-      marginTop:
-        '-=' +
-        (
-          // window.innerHeight < 650
-          // ? window.innerHeight + 370
-          // : window.innerHeight < 670
-          // ? window.innerHeight + 390
-          // : window.innerHeight < 700
-          // ? window.innerHeight + 420
-          // : window.innerHeight < 780
-          // ? window.innerHeight + 450
-           window.innerHeight < 830
-          ? window.innerHeight + 540
-          : window.innerHeight < 850
-          ? window.innerHeight + 570
-          : window.innerHeight < 920
-          ? window.innerHeight + 580
-          : window.innerHeight < 1200
-          ? window.innerHeight + 640
-          : window.innerHeight + 780), //height of spacer//podesi za sve visine
+      marginTop: '10px', // Set a fixed height or adjust as needed
     });
+
+    const spacerHeight =
+      window.innerHeight < 650
+        ? 370
+        : window.innerHeight < 670
+        ? 390
+        : window.innerHeight < 700
+        ? 420
+        : window.innerHeight < 780
+        ? 450//nastavi da sredjujes
+        : window.innerHeight < 830
+        ? 1140
+        : window.innerHeight < 850
+        ? 1300
+        : window.innerHeight < 920
+        ? 1480
+        : window.innerHeight < 1200
+        ? 640
+        : 2080;
+
+    gsap.set('.spacer.bot', {
+      marginTop: `-${spacerHeight}px`, // Set the calculated height
+    });
+    // gsap.set('.spacer.bot', {
+    //   marginTop:
+    //     '-=' +
+    //     (
+    //       window.innerHeight < 650
+    //       ? window.innerHeight + 370
+    //       : window.innerHeight < 670
+    //       ? window.innerHeight + 390
+    //       : window.innerHeight < 700
+    //       ? window.innerHeight + 420
+    //       : window.innerHeight < 780
+    //       ? window.innerHeight + 450
+    //       : window.innerHeight < 830
+    //       ? window.innerHeight + 540
+    //       : window.innerHeight < 850
+    //       ? window.innerHeight + 570
+    //       : window.innerHeight < 920
+    //       ? window.innerHeight + 580
+    //       : window.innerHeight < 1200
+    //       ? window.innerHeight + 640
+    //       : window.innerHeight + 780), //height of spacer//podesi za sve visine
+    // });
   }, 500);
   // }
 
