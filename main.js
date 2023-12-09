@@ -4,16 +4,9 @@ $(document).ready(function () {
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
-    const itemHeight = $('.item').height();
-    const wrappHeight = $('#pin1').height();
-    console.log('itemHeight', itemHeight);
-    console.log('wrappHeight', wrappHeight);
-
     const width = window.innerWidth;
     gsap.registerPlugin(ScrollTrigger);
 
-
-  
     const accordion = gsap.timeline({
       defaults: {
         ease: 'none',
@@ -21,16 +14,23 @@ $(document).ready(function () {
       },
       scrollTrigger: {
         trigger: '.acc_container',
-        start: 'top top',
+        // start: 'top top',
         end: '+=100%', //speed
         scrub: true,
         pin: '.acc_container',
       },
     });
 
-    accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
-    accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
+  
 
+
+
+    // accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
+    // accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
+
+
+    accordion.to('#pin1', { height: 0}, 0);
+    accordion.to('#pin2', { height: 0 }, 1);
 
     // if (window.innerHeight <= 500) {
     //   $('.spacer.bot').css('margin-top', -650);
@@ -41,8 +41,6 @@ $(document).ready(function () {
     // } else {
     //   $('.spacer.bot').css('margin-top', -1000);
     // }
-
-   
 
     // gsap.set('.spacer.bot', {
     //   marginTop:
