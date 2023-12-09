@@ -21,16 +21,8 @@ $(document).ready(function () {
       },
     });
 
-  
-
-
-
-    // accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
-    // accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
-
-
-    accordion.to('#pin1', { height: 0}, 0);
-    accordion.to('#pin2', { height: 0 }, 1);
+    accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
+    accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
 
     // if (window.innerHeight <= 500) {
     //   $('.spacer.bot').css('margin-top', -650);
