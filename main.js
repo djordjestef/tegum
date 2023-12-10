@@ -4,25 +4,52 @@ $(document).ready(function () {
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
-    const width = window.innerWidth;
-    gsap.registerPlugin(ScrollTrigger);
 
-    const accordion = gsap.timeline({
-      defaults: {
-        ease: 'none',
-        duration: 1,
-      },
-      scrollTrigger: {
-        trigger: '.acc_container',
-        // start: 'top top',
-        end: '+=100%', //speed
-        scrub: true,
-        pin: '.acc_container',
-      },
-    });
 
-    accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
-    accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
+const accordeon = gsap.timeline({
+  defaults: {
+    ease: 'none',
+    duration: 1
+  },
+  scrollTrigger: {
+    trigger: ".acc_container",
+    start: "top top",
+    end: "+=" + (window.innerHeight*3 - 900),
+    scrub: true,
+    // markers: true,
+    pin: '.acc_container'    
+  }
+}) 
+
+// switch from one to two
+accordeon.to("#pin1", { height: 100 }, 0)
+accordeon.to("#pin2", { height: window.innerHeight - 200 }, 0)
+// switch from two to three
+accordeon.to("#pin2", { height: 100 }, 1)
+accordeon.to("#pin3", { height: window.innerHeight - 200 }, 1)
+// close last
+accordeon.to("#pin3", { height: 100 }, 2)
+
+gsap.set('.spacer.bot', { marginTop: "-=" + (window.innerHeight - 300) })
+    // const width = window.innerWidth;
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // const accordion = gsap.timeline({
+    //   defaults: {
+    //     ease: 'none',
+    //     duration: 1,
+    //   },
+    //   scrollTrigger: {
+    //     trigger: '.acc_container',
+    //     // start: 'top top',
+    //     end: '+=100%', //speed
+    //     scrub: true,
+    //     pin: '.acc_container',
+    //   },
+    // });
+
+    // accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
+    // accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
 
     // if (window.innerHeight <= 500) {
     //   $('.spacer.bot').css('margin-top', -650);
