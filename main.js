@@ -22,13 +22,10 @@ const accordeon = gsap.timeline({
 }) 
 
 // switch from one to two
-accordeon.to("#pin1", { height: 100 }, 0)
-accordeon.to("#pin2", { height: window.innerHeight - 200 }, 0)
-// switch from two to three
-accordeon.to("#pin2", { height: 100 }, 1)
-accordeon.to("#pin3", { height: window.innerHeight - 200 }, 1)
-// close last
-accordeon.to("#pin3", { height: 100 }, 2)
+accordeon.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
+accordeon.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
+// accordeon.to("#pin2", { height: window.innerHeight - 200 }, 0)
+
 
 gsap.set('.spacer.bot', { marginTop: "-=" + (window.innerHeight - 300) })
     // const width = window.innerWidth;

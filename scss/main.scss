@@ -319,24 +319,24 @@ html {
             height: 200vh;
 
             @media only screen and (max-height: 1220px) {
-                height: 220vh;
+                height: 297vh;
             }
 
-            @media only screen and (max-height: 1000px) {
-                height: 200vh;
-            }
+            // @media only screen and (max-height: 1000px) {
+            //     height: 200vh;
+            // }
 
-            @media only screen and (max-height: 800px) {
-                height: 220vh;
-            }
+            // @media only screen and (max-height: 800px) {
+            //     height: 220vh;
+            // }
 
-            @media only screen and (max-height: 700px) {
-                height: 230vh;
-            }
+            // @media only screen and (max-height: 700px) {
+            //     height: 230vh;
+            // }
 
-            @media only screen and (max-height: 650px) {
-                height: 1500px;
-            }
+            // @media only screen and (max-height: 650px) {
+            //     height: 1500px;
+            // }
         }
 
         .acc_container {
