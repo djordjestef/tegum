@@ -12,7 +12,7 @@ $(document).ready(function () {
       scrollTrigger: {
         trigger: '.acc_container',
         start: 'top top',
-        end: '+=' + (window.innerHeight * 3 - 500), //speed 900
+        end: '+=' + (window.innerHeight * 3 - 650), //speed 900
         scrub: true,
         pin: '.acc_container',
       },
