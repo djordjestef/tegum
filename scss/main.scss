@@ -316,11 +316,11 @@ html {
     .wrapper {
         height: 360vh;
         @media only screen and (max-width: 991px) {
-            height: 2120px;
+            height: 200vh;
 
-            // @media only screen and (max-height: 1220px) {
-            //     height: 297vh;
-            // }
+            @media only screen and (max-height: 1220px) {
+                height: 297vh;
+            }
 
             // @media only screen and (max-height: 1000px) {
             //     height: 200vh;

@@ -1342,7 +1342,12 @@ html {
 }
 @media only screen and (max-width: 991px) {
   .what_we_do .wrapper {
-    height: 2120px;
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 991px) and (max-height: 1220px) {
+  .what_we_do .wrapper {
+    height: 297vh;
   }
 }
 .what_we_do .wrapper .acc_container #pin1 {
