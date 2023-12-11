@@ -4,82 +4,25 @@ $(document).ready(function () {
   //accordion
   // if (!isMobileTablet) {
   setTimeout(() => {
+    const accordeon = gsap.timeline({
+      defaults: {
+        ease: 'none',
+        duration: 1,
+      },
+      scrollTrigger: {
+        trigger: '.acc_container',
+        start: 'top top',
+        end: '+=' + (window.innerHeight * 3 - 900), //speed
+        scrub: true,
+        pin: '.acc_container',
+      },
+    });
 
+    // switch from one to two
+    accordeon.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
+    accordeon.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
 
-const accordeon = gsap.timeline({
-  defaults: {
-    ease: 'none',
-    duration: 1
-  },
-  scrollTrigger: {
-    trigger: ".acc_container",
-    start: "top top",
-    end: "+=" + (window.innerHeight*3 - 900),
-    scrub: true,
-    // markers: true,
-    pin: '.acc_container'    
-  }
-}) 
-
-// switch from one to two
-accordeon.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
-accordeon.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
-// accordeon.to("#pin2", { height: window.innerHeight - 200 }, 0)
-
-
-gsap.set('.spacer.bot', { marginTop: "-=" + (window.innerHeight - 300) })
-    // const width = window.innerWidth;
-    // gsap.registerPlugin(ScrollTrigger);
-
-    // const accordion = gsap.timeline({
-    //   defaults: {
-    //     ease: 'none',
-    //     duration: 1,
-    //   },
-    //   scrollTrigger: {
-    //     trigger: '.acc_container',
-    //     // start: 'top top',
-    //     end: '+=100%', //speed
-    //     scrub: true,
-    //     pin: '.acc_container',
-    //   },
-    // });
-
-    // accordion.to('#pin1', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 0);
-    // accordion.to('#pin2', { height: width < 992 ? 118 : width < 1400 ? 106 : 114 }, 1);
-
-    // if (window.innerHeight <= 500) {
-    //   $('.spacer.bot').css('margin-top', -650);
-    // } else if (window.innerHeight <= 600) {
-    //   $('.spacer.bot').css('margin-top', -850);
-    // } else if (window.innerHeight <= 700) {
-    //   $('.spacer.bot').css('margin-top', -980);
-    // } else {
-    //   $('.spacer.bot').css('margin-top', -1000);
-    // }
-
-    // gsap.set('.spacer.bot', {
-    //   marginTop:
-    //     '-=' +
-    //     (
-    //       window.innerHeight < 650
-    //       ? window.innerHeight + 370
-    //       : window.innerHeight < 670
-    //       ? window.innerHeight + 390
-    //       : window.innerHeight < 700
-    //       ? window.innerHeight + 420
-    //       : window.innerHeight < 780
-    //       ? window.innerHeight + 450
-    //       : window.innerHeight < 830
-    //       ? window.innerHeight + 540
-    //       : window.innerHeight < 850
-    //       ? window.innerHeight + 570
-    //       : window.innerHeight < 920
-    //       ? window.innerHeight + 580
-    //       : window.innerHeight < 1200
-    //       ? window.innerHeight + 640
-    //       : window.innerHeight + 780), //height of spacer//podesi za sve visine
-    // });
+    gsap.set('.spacer.bot', { marginTop: '-=' + (window.innerHeight - 300) });
   }, 500);
   // }
 
