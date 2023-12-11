@@ -7,12 +7,12 @@ $(document).ready(function () {
     const accordeon = gsap.timeline({
       defaults: {
         ease: 'none',
-        duration: 1,
+        duration: 0.4, //speed
       },
       scrollTrigger: {
         trigger: '.acc_container',
         start: 'top top',
-        end: '+=' + (window.innerHeight * 3 - 650), //speed 900
+        end: '+=' + (window.innerHeight * 3 - 650),
         scrub: true,
         pin: '.acc_container',
       },
