@@ -606,6 +606,7 @@ html {
                     @media only screen and (max-width: 1200px) {
                         font-size: 24px;
                         margin-right: 23px;
+                        min-width: 350px;
                     }
 
                     @media only screen and (max-width: 991px) {
@@ -617,7 +618,7 @@ html {
                     display: inline-block;
                     width: 37vw;
                     vertical-align: top;
-                    margin-top: 11px;
+                    margin-top: -5px;
 
                     @media only screen and (max-width: 1660px) {
                         width: 33vw;
@@ -641,14 +642,14 @@ html {
                 .what_we_do_btn {
                     position: absolute;
                     right: 0;
-                    top: 71px;
+                    top: 50px;
 
                     @media only screen and (max-width: 1440px) {
                         // top: 51px;
                     }
 
                     @media only screen and (max-width: 1200px) {
-                        top: 35px;
+                        top: 20px;
                     }
 
                     .btn {

@@ -1600,6 +1600,7 @@ html {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_title {
     font-size: 24px;
     margin-right: 23px;
+    min-width: 350px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1611,7 +1612,7 @@ html {
   display: inline-block;
   width: 37vw;
   vertical-align: top;
-  margin-top: 11px;
+  margin-top: -5px;
 }
 @media only screen and (max-width: 1660px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_description {
@@ -1638,11 +1639,11 @@ html {
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
   position: absolute;
   right: 0;
-  top: 71px;
+  top: 50px;
 }
 @media only screen and (max-width: 1200px) {
   .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn {
-    top: 35px;
+    top: 20px;
   }
 }
 .what_we_do .wrapper .acc_container .head_holder .what_we_do_btn .btn {
