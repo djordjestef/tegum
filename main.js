@@ -7,7 +7,7 @@ $(document).ready(function () {
     const accordeon = gsap.timeline({
       defaults: {
         ease: 'none',
-        duration: 0.4, //speed
+        duration: 1.3, //speed
       },
       scrollTrigger: {
         trigger: '.acc_container',
