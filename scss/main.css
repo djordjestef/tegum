@@ -2098,14 +2098,6 @@ html {
   font-weight: 600;
   cursor: pointer;
 }
-@media only screen and (max-width: 991px) {
-  .challenges_btn {
-    width: 128px;
-    height: 37px;
-    font-size: 14px;
-    border: unset;
-  }
-}
 
 .footer {
   padding: 66px 0 308px;
@@ -2126,6 +2118,39 @@ html {
   .footer .only_desktop_footer {
     display: none;
   }
+}
+.footer .only_desktop_footer .sr {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+.footer .only_desktop_footer .sr.active {
+  display: inline-block;
+}
+.footer .only_desktop_footer .en {
+  all: unset;
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+.footer .only_desktop_footer .en.active {
+  display: inline-block;
+}
+.footer .only_desktop_footer .footer_list {
+  margin-top: -12px;
+}
+.footer .only_desktop_footer .footer_list_nav {
+  display: block;
+  margin: 27px 0;
+  font-size: 16px;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+.footer .only_desktop_footer .footer_list_nav:first-child {
+  margin-top: 0;
 }
 .footer .only_mobile_footer {
   display: none;
@@ -2244,7 +2269,7 @@ html {
 .footer_contact {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 92px;
+  margin-top: 76px;
   margin-bottom: 80px;
 }
 @media only screen and (max-width: 991px) {

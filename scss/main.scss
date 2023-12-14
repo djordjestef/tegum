@@ -1100,13 +1100,6 @@ html {
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-
-        @media only screen and (max-width: 991px) {
-            width: 128px;
-            height: 37px;
-            font-size: 14px;
-            border: unset;
-        }
     }
 }
 
@@ -1127,7 +1120,66 @@ html {
         @media only screen and (max-width: 991px) {
             display: none;
         }
+
+        .sr {
+            all: unset;
+            display: none;
+            font-size: 16px;
+            // margin-right: 60px;
+            cursor: pointer;
+            color: #f3f3f3;
+            // position: absolute;
+            // right: 26px;
+            // top: 45px;
+            // margin: 0;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+
+        .en {
+            all: unset;
+            display: none;
+            font-size: 16px;
+            // margin-right: 60px;
+            cursor: pointer;
+            color: #f3f3f3;
+            // position: absolute;
+            // right: 26px;
+            // top: 45px;
+            // margin: 0;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+
+        .footer_list {
+            margin-top: -12px;
+
+            &_nav {
+                display: block;
+                margin: 27px 0;
+                font-size: 16px;
+                color: #f3f3f3;
+                cursor: pointer;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
     }
+
+
+
+
+
+
+
+
+
 
     .only_mobile_footer {
         display: none;
@@ -1260,7 +1312,7 @@ html {
     &_contact {
         font-size: 14px;
         font-weight: 400;
-        margin-top: 92px;
+        margin-top: 76px;
         margin-bottom: 80px;
 
         @media only screen and (max-width: 991px) {
