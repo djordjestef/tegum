@@ -1513,8 +1513,11 @@ html {
   position: relative;
 }
 .what_we_do .wrapper .acc_container .item img {
-  width: 100%;
-  padding: 130px 130px 0 0;
+  width: 59%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .what_we_do .wrapper .acc_container .item_img_1_1 {
   display: none;

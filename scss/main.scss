@@ -500,16 +500,11 @@ html {
                 }
 
                 & img {
-                    width: 100%;
-                    padding: 130px 130px 0 0;
-                    @media only screen and (max-width: 1440px) {
-                        // padding: 50px;
-                    }
-
-                    @media only screen and (max-width: 1400px) {
-                        // padding: 0;
-                        // transform: scale(0.7);
-                    }
+                    width: 59%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
 
                 &_img_1_1 {
