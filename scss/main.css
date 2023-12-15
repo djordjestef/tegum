@@ -756,6 +756,23 @@
     margin-bottom: 30px;
   }
 }
+.main_section_what_we_do_page a {
+  text-decoration: none;
+  text-align: center;
+}
+.main_section_what_we_do_page .hire_us_page_btn {
+  all: unset;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  background: #000000;
+  border: 1px solid #000;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 48px;
+}
 
 .main_section_piss_img_holder img,
 .main_section_ipm_img_holder img,
@@ -832,7 +849,7 @@
 @media only screen and (max-width: 991px) {
   .tegum_services_page_holder:last-child {
     margin-top: 42px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 }
 .tegum_services_page_holder_title {
@@ -897,7 +914,8 @@
 }
 @media only screen and (max-width: 991px) {
   .get_started_page {
-    padding: 80px 0;
+    padding: 140px 24px;
+    background-color: #fff;
   }
 }
 .get_started_page_small_title {
@@ -919,12 +937,13 @@
 }
 .get_started_page_title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 28px;
 }
 @media only screen and (max-width: 991px) {
   .get_started_page_title {
-    font-size: 19px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 }
 .get_started_page a {
@@ -945,6 +964,9 @@
 @media only screen and (max-width: 991px) {
   .get_started_page_btn {
     font-size: 14px;
+    background: #a3f34a;
+    color: #000;
+    border: 1px solid #a3f34a;
   }
 }
 

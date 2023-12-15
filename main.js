@@ -343,6 +343,11 @@ $('.get_started_page_btn').on('click', () => {
   localStorage.setItem('subject', current);
 });
 
+$('.hire_us_page_btn').on('click', () => {
+  var current = location.pathname.split('/').pop().replace('.html', '');
+  localStorage.setItem('subject', current);
+});
+
 $(document).on('click', '.subject_btn', function (event) {
   const lang = localStorage.getItem('lang');
   let subject;
