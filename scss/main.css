@@ -910,12 +910,11 @@
 .get_started_page {
   position: relative;
   padding: 114px 0;
-  background-color: #a3f34a;
+  background-color: #fff;
 }
 @media only screen and (max-width: 991px) {
   .get_started_page {
     padding: 140px 24px;
-    background-color: #fff;
   }
 }
 .get_started_page_small_title {
@@ -954,9 +953,9 @@
   width: 150px;
   height: 42px;
   text-align: center;
-  background: #000000;
-  border: 1px solid #000;
-  color: #ffffff;
+  background: #a3f34a;
+  color: #000;
+  border: 1px solid #a3f34a;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -964,9 +963,6 @@
 @media only screen and (max-width: 991px) {
   .get_started_page_btn {
     font-size: 14px;
-    background: #a3f34a;
-    color: #000;
-    border: 1px solid #a3f34a;
   }
 }
 

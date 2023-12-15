@@ -215,11 +215,11 @@
 .get_started_page {
     position: relative;
     padding: 114px 0;
-    background-color: #a3f34a;
+    background-color: #fff;
 
     @media only screen and (max-width: 991px) {
         padding: 140px 24px;
-        background-color: #fff;
+        // background-color: #fff;
     }
     &_small_title {
         position: absolute;
@@ -257,18 +257,16 @@
         width: 150px;
         height: 42px;
         text-align: center;
-        background: #000000;
-        border: 1px solid #000;
-        color: #ffffff;
+        background: #a3f34a;
+        color: #000;
+        border: 1px solid #a3f34a;
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
 
         @media only screen and (max-width: 991px) {
             font-size: 14px;
-            background: #a3f34a;
-            color: #000;
-            border: 1px solid #a3f34a;
+           
         }
     }
 }
