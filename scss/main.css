@@ -1534,6 +1534,11 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 1921px) {
+  .what_we_do .wrapper .acc_container .item img {
+    width: 20vw;
+  }
+}
 @media only screen and (max-width: 1660px) {
   .what_we_do .wrapper .acc_container .item img {
     width: 370px;

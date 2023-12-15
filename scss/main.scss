@@ -518,6 +518,10 @@ html {
                     left: 50%;
                     transform: translate(-50%, -50%);
 
+                    @media only screen and (min-width: 1921px) {
+                        width: 20vw;
+                    }
+
                     @media only screen and (max-width: 1660px) {
                         width: 370px;
                     }
