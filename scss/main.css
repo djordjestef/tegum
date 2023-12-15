@@ -909,7 +909,7 @@
 
 .get_started_page {
   position: relative;
-  padding: 114px 0;
+  padding: 114px 0 220px;
   background-color: #fff;
 }
 @media only screen and (max-width: 991px) {
