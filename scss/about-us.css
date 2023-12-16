@@ -11,7 +11,7 @@
 }
 .main_section_about_us_holder {
   width: 100%;
-  margin-bottom: 113px;
+  margin-bottom: 47px;
 }
 .main_section_about_us_holder_title {
   font-size: 52px;
@@ -33,7 +33,8 @@
 }
 
 .history {
-  margin-top: 100px;
+  margin-top: 79px;
+  margin-bottom: 200px;
 }
 .history_subtitle {
   font-size: 22px;
@@ -53,6 +54,7 @@
 .history_title {
   font-size: 52px;
   font-weight: 600;
+  margin-bottom: 21px;
 }
 @media only screen and (max-width: 1400px) {
   .history_title {
@@ -68,6 +70,24 @@
   font-size: 16px;
   font-weight: 400;
 }
-.history_description_1 {
-  margin-bottom: 36px;
+
+.green_expertise_title {
+  margin-top: 245px;
+  margin-bottom: 245px;
+  font-size: 52px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1400px) {
+  .green_expertise_title {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .green_expertise_title {
+    font-size: 30px;
+  }
+}
+
+.strategy {
+  margin: 104px 0;
 }/*# sourceMappingURL=about-us.css.map */

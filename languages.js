@@ -191,12 +191,12 @@ const jsonEN = {
   main_section_about_us_holder_title:
     'Tegum was founded in 2002, focusing initially on mechanical engineering within the chemical and process industries.',
   history_subtitle:
-    'As Tegum grew, it expanded its services into the design and execution of thermo-technical installations and equipment for various industrial sectors.',
-  history_title: '20 Years of Expertise',
-  history_description_1:
-    'With over two decades of experience, we established ourselves as an expert in the industry, particularly in the food and beverage sector, while maintaining its core competency in thermo-technical installations.',
-  history_description_2:
-    'Industry 4.0 Integration: Tegum embraces the possibilities of the Industry 4.0 revolution, integrating its diverse knowledge and expertise to ensure continuous growth and provide top-quality consulting services to its clients.',
+    'As our journey progressed, we diversified our services, extending into the design and implementation of thermo-technical installations and equipment across various industrial sectors.',
+  history_title: 'Years of Expertise',
+  history_description_1:'With over two decades of experience, we established ourselves as an expert in the industry, particularly in the food and beverage sector, while maintaining its core competency in thermo-technical installations.',
+  green_expertise_title:'Embracing the transformative wave of Industry 4.0, Tegum has seamlessly integrated its diverse knowledge and expertise.',
+  strategy_description_1:'Our strategies ensure continuous growth and positions us as a provider of top-quality consulting services to our valued clients.',
+  strategy_description_2:'Our journey reflects not just a timeline but a testament to our adaptability, innovation, and commitment to staying at the forefront of industry advancements.',
   main_section_piss_holder_title: 'Process Improvement and Strategy Support',
   main_section_piss_holder_description: `Our consulting team focuses on enhancing your operations, improving processes, and supporting your strategic goals. We analyze processes, identify challenges, and implement innovative solutions. We offer support in supply chain efficiency, automation, and innovation to improve performance and drive profitability.`,
   tegum_services_piss_small_title: 'TEGUM Services',
@@ -638,12 +638,12 @@ const jsonSR = {
   main_section_about_us_holder_title:
     'Tegum je osnovan 2002. godine, u početku se fokusirajući na mašinstvo u okviru hemijske i procesne industrije.',
   history_subtitle:
-    'Kako je Tegum rastao, proširio je svoje usluge na projektovanje i izvođenje termotehničkih instalacija i opreme za različite industrijske sektore.',
-  history_title: '20 godina stručnosti',
-  history_description_1:
-    'Sa više od dve decenije iskustva, etablirali smo se kao ekspert u industriji, posebno u sektoru hrane i pića, zadržavajući svoju osnovnu kompetenciju u termotehničkim instalacijama.',
-  history_description_2:
-    'Integracija industrije 4.0: Tegum prihvata mogućnosti revolucije industrije 4.0, integrišući svoje raznovrsno znanje i stručnost kako bi osigurao kontinuirani rast i pružio vrhunske konsultantske usluge svojim klijentima.',
+    'Kako je naše putovanje napredovalo, diverzifikovali smo naše usluge, proširivši se na projektovanje i implementaciju termotehničkih instalacija i opreme u različitim industrijskim sektorima.',
+  history_title: ' Godina stručnosti',
+  history_description_1:'Sa više od dve decenije iskustva, etablirali smo se kao stručnjak u industriji, posebno u sektoru hrane i pića, zadržavajući svoju osnovnu kompetenciju u termotehničkim instalacijama.',
+  green_expertise_title:'Prihvatajući transformativni talas Industrije 4.0, Tegum je neprimetno integrisao svoje raznovrsno znanje i stručnost.',
+  strategi_description_1:'Naše strategije obezbeđuju kontinuirani rast i pozicioniraju nas kao pružaoca konsultantskih usluga vrhunskog kvaliteta našim cenjenim klijentima.',
+  Strategi_description_2:'Naše putovanje ne odražava samo vremensku liniju, već svedočanstvo naše prilagodljivosti, inovativnosti i posvećenosti da ostanemo na čelu napretka u industriji.',
   main_section_piss_holder_title: 'Poboljšanje procesa i podrška strategije',
   main_section_piss_holder_description: `Naš konsultantski tim se fokusira na unapređenje vašeg poslovanja, poboljšanje procesa i podršku vašim strateškim ciljevima. Analiziramo procese, identifikujemo izazove i implementiramo inovativna rešenja. Nudimo podršku u efikasnosti lanca snabdevanja, automatizaciji i inovacijama za poboljšanje performansi i povećanje profitabilnosti.`,
   tegum_services_piss_small_title: 'TEGUM usluge',
