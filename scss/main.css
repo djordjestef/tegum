@@ -1004,6 +1004,12 @@
   margin-top: 79px;
   margin-bottom: 200px;
 }
+@media only screen and (max-width: 1660px) {
+  .history_img {
+    width: 122%;
+    margin-top: 10px;
+  }
+}
 .history_subtitle {
   font-size: 22px;
   font-weight: 600;
@@ -1023,10 +1029,17 @@
   font-size: 52px;
   font-weight: 600;
   margin-bottom: 21px;
+  margin-left: 50px;
 }
 @media only screen and (max-width: 1400px) {
   .history_title {
     font-size: 44px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .history_title {
+    font-size: 37px;
+    margin-bottom: 6px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1037,8 +1050,14 @@
 .history_description {
   font-size: 16px;
   font-weight: 400;
+  margin-left: 50px;
 }
 
+@media only screen and (max-width: 991px) {
+  .green_expertise .container_helper {
+    background-color: #a3f34a;
+  }
+}
 .green_expertise_title {
   margin-top: 245px;
   margin-bottom: 245px;
@@ -1057,7 +1076,12 @@
 }
 
 .strategy {
-  margin: 104px 0;
+  margin: 104px 0 150px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.strategy_description_1 {
+  margin-bottom: 40px;
 }
 
 body,
@@ -2202,6 +2226,11 @@ html {
   cursor: pointer;
   color: #f3f3f3;
 }
+@media only screen and (max-width: 1400px) {
+  .footer .only_desktop_footer .sr {
+    font-size: 14px;
+  }
+}
 .footer .only_desktop_footer .sr.active {
   display: inline-block;
 }
@@ -2211,6 +2240,11 @@ html {
   font-size: 16px;
   cursor: pointer;
   color: #f3f3f3;
+}
+@media only screen and (max-width: 1400px) {
+  .footer .only_desktop_footer .en {
+    font-size: 14px;
+  }
 }
 .footer .only_desktop_footer .en.active {
   display: inline-block;

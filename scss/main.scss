@@ -1156,6 +1156,10 @@ html {
             // top: 45px;
             // margin: 0;
 
+            @media only screen and (max-width: 1400px) {
+                font-size: 14px;
+            }
+
             &.active {
                 display: inline-block;
             }
@@ -1172,6 +1176,10 @@ html {
             // right: 26px;
             // top: 45px;
             // margin: 0;
+
+            @media only screen and (max-width: 1400px) {
+                font-size: 14px;
+            }
 
             &.active {
                 display: inline-block;

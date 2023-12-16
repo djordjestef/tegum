@@ -35,6 +35,13 @@
     margin-top: 79px;
     margin-bottom: 200px;
 
+    &_img {
+        @media only screen and (max-width: 1660px) {
+            width: 122%;
+            margin-top: 10px;
+        }
+    }
+
     &_subtitle {
         font-size: 22px;
         font-weight: 600;
@@ -53,9 +60,15 @@
         font-size: 52px;
         font-weight: 600;
         margin-bottom: 21px;
+        margin-left: 50px;
 
         @media only screen and (max-width: 1400px) {
             font-size: 44px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 37px;
+            margin-bottom: 6px;
         }
         @media only screen and (max-width: 991px) {
             font-size: 30px;
@@ -65,10 +78,16 @@
     &_description {
         font-size: 16px;
         font-weight: 400;
+        margin-left: 50px;
     }
 }
 
 .green_expertise {
+    .container_helper {
+        @media only screen and (max-width: 991px) {
+            background-color: #a3f34a;
+        }
+    }
     &_title {
         margin-top: 245px;
         margin-bottom: 245px;
@@ -85,5 +104,11 @@
 }
 
 .strategy {
-    margin: 104px 0;
+    margin: 104px 0 150px;
+    font-size: 16px;
+    font-weight: 400;
+
+    &_description_1 {
+        margin-bottom: 40px;
+    }
 }
