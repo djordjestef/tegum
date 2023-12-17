@@ -13,6 +13,11 @@
   width: 100%;
   margin-bottom: 47px;
 }
+@media only screen and (max-width: 991px) {
+  .main_section_about_us_holder {
+    margin-bottom: 74px;
+  }
+}
 .main_section_about_us_holder_title {
   font-size: 52px;
   font-weight: 600;
@@ -25,7 +30,7 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_about_us_holder_title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .main_section_about_us_img {
@@ -36,10 +41,23 @@
   margin-top: 79px;
   margin-bottom: 200px;
 }
+@media only screen and (max-width: 991px) {
+  .history {
+    margin-top: 31px;
+    margin-bottom: 90px;
+  }
+}
 @media only screen and (max-width: 1660px) {
   .history_img {
     width: 122%;
     margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .history_img {
+    width: 170px;
+    margin: auto;
+    margin-bottom: 26px;
   }
 }
 .history_subtitle {
@@ -54,7 +72,7 @@
 }
 @media only screen and (max-width: 991px) {
   .history_subtitle {
-    font-size: 14px;
+    margin-bottom: 90px;
   }
 }
 .history_title {
@@ -76,13 +94,22 @@
 }
 @media only screen and (max-width: 991px) {
   .history_title {
-    font-size: 30px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-weight: 800;
   }
 }
 .history_description {
   font-size: 16px;
   font-weight: 400;
   margin-left: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .history_description {
+    font-size: 14px;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -103,7 +130,11 @@
 }
 @media only screen and (max-width: 991px) {
   .green_expertise_title {
-    font-size: 30px;
+    font-size: 18px;
+    margin-top: 141px;
+    margin-bottom: 141px;
+    margin-left: 43px;
+    margin-right: 43px;
   }
 }
 
@@ -112,6 +143,17 @@
   font-size: 16px;
   font-weight: 400;
 }
+@media only screen and (max-width: 991px) {
+  .strategy {
+    margin: 90px 0 60px;
+    font-size: 14px;
+  }
+}
 .strategy_description_1 {
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .strategy_description_1 {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=about-us.css.map */
