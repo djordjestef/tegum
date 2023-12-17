@@ -264,7 +264,7 @@
     .menu-items {
         position: fixed;
         overflow: scroll;
-        padding: 15vh 3rem 9rem;
+        padding: 184px 0 150px 44px;
         top: 0;
         left: 0;
         right: 0;
@@ -299,7 +299,7 @@
             }
 
             @media only screen and (max-width: 991px) {
-                top: 11px;
+                top: 15px;
                 right: 42px;
             }
 
@@ -310,13 +310,13 @@
             .sr {
                 all: unset;
                 display: none;
-                font-size: 16px;
+                font-size: 14px;
                 margin-right: 60px;
-                color: #a4a4a4;
+                color: #ffffff;
                 cursor: pointer;
 
                 @media only screen and (max-width: 1200px) {
-                    margin-right: 35px;
+                    margin-right: 31px;
                 }
 
                 &.active {
@@ -327,13 +327,13 @@
             .en {
                 all: unset;
                 display: none;
-                font-size: 16px;
+                font-size: 14px;
                 margin-right: 60px;
-                color: #a4a4a4;
+                color: #ffffff;
                 cursor: pointer;
 
                 @media only screen and (max-width: 1200px) {
-                    margin-right: 35px;
+                    margin-right: 31px;
                 }
 
                 &.active {
@@ -348,10 +348,10 @@
             height: 6px;
             position: relative;
             width: 20px;
-            margin-left: 10px;
+            margin-left: 4px;
             &:before,
             &:after {
-                background: #a4a4a4;
+                background: #f3f3f3;
                 content: "";
                 height: 2px;
                 left: 0;
@@ -374,12 +374,12 @@
         }
 
         & li {
-            color: #a4a4a4;
-            padding: 23px 0;
-            width: 95px;
+            color: #f3f3f3;
+            padding-bottom: 34px;
+            // width: 95px;
 
             & a {
-                color: #a4a4a4;
+                color: #f3f3f3;
                 text-decoration: none;
                 cursor: pointer;
                 width: 100%;
@@ -422,6 +422,8 @@
                 display: none;
                 position: relative;
                 min-width: 120px;
+                margin-top: 30px;
+                margin-left: 30px;
                 // height: 60vh;
                 height: auto;
                 background-color: #000;
@@ -447,14 +449,14 @@
                 & .sub_nav_mobile {
                     display: block;
                     color: #a4a4a4;
-                    margin-bottom: 35px;
-                    margin-top: 20px;
+                    margin-bottom: 30px;
+
                     font-size: 14px;
                     text-decoration: none;
 
                     &.active {
                         font-weight: 600;
-                        color: #fff;
+                        color: #f3f3f3;
                         opacity: 0.9;
                     }
                 }
@@ -492,7 +494,7 @@
     }
 
     .check:checked ~ .ham-menu .line {
-        background-color: #a4a4a4;
+        background-color: #fff;
     }
 
     .check:checked ~ .language_mobile {
