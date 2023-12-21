@@ -28,19 +28,19 @@ if (!empty($_POST)) {
    }
 
    if (empty($errors)) {
-       $toEmail = 'test@lazarbulic.com';
+       $toEmail = 'info@tegum.rs';
        $emailSubject = 'Kontakt forma: ' . $subject;
        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
        $body = join(PHP_EOL, $bodyParagraphs);
 
        if (mail($toEmail, $emailSubject, $body, "From:" . $email)) {
-           header('Location: http://localhost:5501/contact.html?result=success');
+           header('Location: http://tegum.rs/contact.html?result=success');
        } else {
-           header('Location: http://localhost:5501/contact.html?result=error');
+           header('Location: http://tegum.rs/contact.html?result=error');
        }
    } else {
        $allErrors = join(PHP_EOL, $errors);
        error_log($allErrors);
-       header('Location: http://localhost:5501/contact.html?result=error');
+       header('Location: http://tegum.rs/contact.html?result=error');
    }
 }
