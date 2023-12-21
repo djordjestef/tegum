@@ -12,7 +12,7 @@
         margin-bottom: 113px;
 
         @media only screen and (max-width: 991px) {
-            margin-bottom: 23px;
+            margin-bottom: 111px;
         }
 
         &_title {
@@ -34,9 +34,8 @@
         width: 100%;
         margin-top: 120px;
 
-
         @media only screen and (max-width: 991px) {
-           margin-top: 112px;
+            margin-top: 112px;
         }
     }
 
@@ -84,14 +83,6 @@
         position: relative;
         margin-bottom: 31px;
 
-        @media only screen and (max-width: 1660px) {
-            // margin-bottom: 35px;
-        }
-
-        @media only screen and (max-width: 1200px) {
-            // margin-bottom: 28px;
-        }
-
         @media only screen and (max-width: 991px) {
             margin-bottom: 23px;
         }
@@ -119,7 +110,6 @@
         left: 0;
         right: 0;
         background-color: #000000cc;
-        // height: 2px;
         display: block;
         -ms-transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);

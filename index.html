@@ -521,7 +521,6 @@
 
     <script>
       $.get('navigation.html', function (data) {
-        //this must be loaded before language
         $('#nav-placeholder').replaceWith(data);
       });
       $.get('footer.html', function (data) {

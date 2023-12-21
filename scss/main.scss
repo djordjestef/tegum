@@ -102,7 +102,6 @@ html {
     &_img {
         width: 100%;
         position: relative;
-        z-index: 99;
     }
 }
 
@@ -274,10 +273,6 @@ html {
     background: #fff;
 }
 
-// .spacer.bot {
-//     margin-top: -1520px;
-// }
-
 .what_we_do {
     background: #a3f34a;
     padding: 150px 0 0;
@@ -321,22 +316,6 @@ html {
             @media only screen and (max-height: 1220px) {
                 height: 303vh;
             }
-
-            // @media only screen and (max-height: 1000px) {
-            //     height: 200vh;
-            // }
-
-            // @media only screen and (max-height: 800px) {
-            //     height: 220vh;
-            // }
-
-            // @media only screen and (max-height: 700px) {
-            //     height: 230vh;
-            // }
-
-            // @media only screen and (max-height: 650px) {
-            //     height: 1500px;
-            // }
         }
 
         .acc_container {
@@ -609,7 +588,6 @@ html {
                     margin: 0;
                     min-width: 540px;
                     margin-right: 190px;
-                    // margin-right: 11vw;
 
                     @media only screen and (max-width: 1660px) {
                         margin-right: 113px;
@@ -666,10 +644,6 @@ html {
                     position: absolute;
                     right: 0;
                     top: 50px;
-
-                    @media only screen and (max-width: 1440px) {
-                        // top: 51px;
-                    }
 
                     @media only screen and (max-width: 1200px) {
                         top: 20px;
@@ -918,7 +892,6 @@ html {
 .expertise {
     background-color: #f3f3f3;
     position: relative;
-    z-index: 99;
 
     .container_expertise_heleper {
         padding: 0;
@@ -1131,7 +1104,6 @@ html {
     color: #a4a4a4;
     background-color: #000;
     position: relative;
-    z-index: 99;
 
     @media only screen and (max-width: 991px) {
         padding-bottom: 81px;

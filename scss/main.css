@@ -488,7 +488,7 @@
 }
 @media only screen and (max-width: 991px) {
   .main_section_contact_holder {
-    margin-bottom: 23px;
+    margin-bottom: 111px;
   }
 }
 .main_section_contact_holder_title {
@@ -844,7 +844,7 @@
   margin-top: 0;
 }
 .tegum_services_page_holder:last-child {
-  margin-bottom: 400px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 991px) {
   .tegum_services_page_holder:last-child {
@@ -1231,7 +1231,6 @@ html {
 .main_section_img {
   width: 100%;
   position: relative;
-  z-index: 99;
 }
 
 .about_us {
@@ -2022,7 +2021,6 @@ html {
 .expertise {
   background-color: #f3f3f3;
   position: relative;
-  z-index: 99;
 }
 .expertise .container_expertise_heleper {
   padding: 0;
@@ -2246,7 +2244,6 @@ html {
   color: #a4a4a4;
   background-color: #000;
   position: relative;
-  z-index: 99;
 }
 @media only screen and (max-width: 991px) {
   .footer {
