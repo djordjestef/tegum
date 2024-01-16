@@ -532,7 +532,7 @@ const jsonSR = {
   option_holder_3_title_5: 'Procesna oprema',
   expertise_holder_number_main: 'Vaš industrijski partner za budućnost održivog uspeha.',
   expertise_holder_description_main: 'NAŠA STRUČNOST',
-  expertise_holder_title_1: 'Mašinsko inženjerstvo',
+  expertise_holder_title_1: 'Mašinski inženjering',
   expertise_holder_title_2: 'Procesni inženjering',
   expertise_holder_title_3: 'FMCG industrija',
   expertise_holder_title_4: 'Konsultantske usluge po sistemu ključ u ruke',
