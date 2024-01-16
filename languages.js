@@ -512,7 +512,7 @@ const jsonSR = {
   btn_3_mobile: 'Unajmi nas',
   services_small_title: 'USLUGE',
   what_we_do_description_1:
-    'Optimizirajući projekte agilnošću i inovativnošću, garantujemo isporuku na vreme i ekonomičnu isporuku. Specijalizovani za efikasnost proizvodnje, naše usluge obuhvataju nabavku, dizajn rasporeda, Sik Sigma metodologije i ukupno produktivno održavanje. Posvećeni obezbeđivanju kvaliteta i usklađenosti sa propisima, mi se pridržavamo industrijskih normi, pružajući izvrsnost u svakom procesu.',
+    'Optimizirajući projekte agilnošću i inovativnošću, garantujemo isporuku na vreme i ekonomičnu isporuku. Specijalizovani za efikasnost proizvodnje, naše usluge obuhvataju nabavku, dizajn rasporeda, Six Sigma metodologije i ukupno produktivno održavanje. Posvećeni obezbeđivanju kvaliteta i usklađenosti sa propisima, mi se pridržavamo industrijskih normi, pružajući izvrsnost u svakom procesu.',
   what_we_do_description_2:
     'Poboljšajte operacije, smanjite troškove i osigurajte održivost. Naš tim se nosi sa izazovima u lancu snabdevanja, nabavci i svakodnevnim operacijama sa inovativnim rešenjima. Povećajte profitabilnost kroz podršku strateškim ciljevima i efikasne procese.',
   what_we_do_description_3:
