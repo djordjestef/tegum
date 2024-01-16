@@ -51,7 +51,7 @@ const jsonEN = {
   about_us_description_3: `With a dedication to compliance, reliable management consulting and insightful financial guidance, we're here to drive your business's growth and profitability for a future of sustainable success.`,
   testimonials_holder_text_description:
     '"When you choose us, you choose partner with a proven track record of success in the industrial sector, dedicated to your growth and profitability."',
-  testimonials_holder_text_name: '- Name Surname, Chief Executive Officer at Tegum',
+  testimonials_holder_text_name: '- Nemanja Masic, Co-owner at Tegum',
   what_we_do_title_1: '01 - Project Management',
   what_we_do_title_2: '02 - Consulting Services',
   what_we_do_title_3: '03 - Custom Manufacturing',
@@ -499,7 +499,7 @@ const jsonSR = {
     'Sa posvećenošću usklađenosti, pouzdanim savetovanjem o menadžmentu i pronicljivim finansijskim uputstvima, mi smo tu da pokrenemo rast i profitabilnost vašeg poslovanja za budućnost održivog uspeha.',
   testimonials_holder_text_description:
     '"Kada odaberete nas, birate partnera sa dokazanim uspehom u industrijskom sektoru, posvećen vašem rastu i profitabilnosti."',
-  testimonials_holder_text_name: '- Generalni izvršni direktor Teguma',
+  testimonials_holder_text_name: '- Nemanja Mašić, Suvlasnik, Tegum',
   what_we_do_title_1: '01 - Upravljanje projektima',
   what_we_do_title_2: '02 - Konsultantske usluge',
   what_we_do_title_3: '03 - Izrada po meri',
